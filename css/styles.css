@@ -1,3 +1,16 @@
-.test {
-    color: red;
+header {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+.logo-row {
+    width:fit-content;
+    margin: auto;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+    text-align: center;
 }

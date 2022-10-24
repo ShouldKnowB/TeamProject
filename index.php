@@ -12,9 +12,14 @@
 </head>
 
 <body>
-  <script src="" async defer></script>
 
-  <h1 class="test">Hello World</h1>
+  <header>
+    <div class="row">
+      <div class="logo-row">
+        <img class="logo" src="images/logo(black).png" alt="PUNCH LOGO IN BLACK">
+      </div>
+    </div>
+  </header>
 
 </body>
 
