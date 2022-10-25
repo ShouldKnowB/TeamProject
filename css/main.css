@@ -20,25 +20,36 @@ html {
 
 nav {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
+
+  /* nav:hover {
+    background-color: red;
+} */
 
 nav .logo {
     width: auto;
     height: 40px;
 }
+.left {
+    margin-right: 225px;
+}
+
+.right {
+    margin-left: 425px;
+}
 
 nav ul li {
     list-style: none;
     display: inline-block;
-    margin-left: 40px;
+    padding: 13px;
 }
 
 nav ul a {
@@ -46,6 +57,11 @@ nav ul a {
     color: white;
     font-size: 15px;
 }
+
+nav ul a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 27px;
+  }
 
 .content {
     text-align: center;
@@ -64,11 +80,12 @@ nav ul a {
 }
 
 .content a {
+    background-color: transparent;
     text-decoration: none;
     display: inline-block;
     color: white;
     font-size: 15px;
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
@@ -95,16 +112,62 @@ nav ul a {
     }
 }
 
-section {
+.home-page {
     height: 165vh;
 }
 
-.footer {
-    height: 65vh;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: left;
+footer {
+	background: #101010;
+	padding: 86px 0;
+}
+.single-content {
+	text-align: center;
+	padding: 115px 0;
+}
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 100;
+}
+.single-box h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+#basic-addon2 {
+	background: red;
+	color: #fff;
+}
+.socials i {
+	font-size: 18px;
+	margin-right: 15px;
+}
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
 }
