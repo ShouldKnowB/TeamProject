@@ -15,8 +15,6 @@
   <!-- Font Awesome Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
-
   <!-- CSS File Link -->
   <link rel="stylesheet" href="css/main.css" />
 
@@ -26,11 +24,9 @@
 
   <div class="navbar">
 
-    <video autoplay loop muted plays-inline class="background-video">
-      <source src="images/background video.mp4" type="video/mp4">
-    </video>
+    <img class="image1" src="images/background-img.jpeg" type="image"></img>
 
-    <nav class="nav">
+    <header class="header">
       <ul class="left">
         <li><a href="shop.php">SHOP</a></li>
         <li><a href="about-punch.php">ABOUT PUNCH</a></li>
@@ -48,73 +44,75 @@
         <li><a href="#"><i class="fa fa-basket-shopping"></i></a></li>
       </ul>
 
-    </nav>
+    </header>
+
     <div class="content">
       <h1>HYDRATION DRINK</h1>
-      <a href="shop.php">DRINK PUNCH</a>
+      <a href="shop.php">SHOP DRINKS</a>
     </div>
+
   </div>
 
-  <section class="home-page">
-    flkadbfkbdlkfnl
+  <section>
+    <div class="container">
+      <div class="drinks">
+        <a href="#" data-title="Drink #1"><img src="images/"></a>
+        <a href="#" data-title="Drink #2"><img src="images/"></a>
+        <a href="#" data-title="Drink #3"><img src="images/"></a>
+        <a href="#" data-title="Drink #4"><img src="images/"></a>
+        <a href="#" data-title="Drink #5"><img src="images/"></a>
+        <a href="#" data-title="Drink #6"><img src="images/"></a>
+      </div>
+    </div>
   </section>
 
 </body>
 
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-sm-6">
-        <div class="single-box">
-          <img src="img/logo.png" alt="">
-          <p>ABOUT PUNCH HYDRATION</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque earum similique fugiat nobis. Facere?</p>
-          <div class="card-area">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-trello"></i>
-          </div>
+<footer class=" footer">
+  <div class="footer-container">
+    <div class="footer-row">
+
+      <div class="footer-col">
+        <h3>ABOUT PUNCH </h3>
+        <p class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="socials">
+          <a href="https://github.com/ShouldKnowB/TeamProject1"><i class="fa-brands fa-github"></i></a>
+          <a href="https://trello.com/b/QrHTb3ps/project-details"><i class="fa-brands fa-trello"></i></a>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="single-box">
-          <h2>Drinks</h2>
-          <ul>
-            <li><a href="#">Watermelon</a></li>
-            <li><a href="#">Candy Pop</a></li>
-            <li><a href="#">Blue Raspberry</a></li>
-            <li><a href="#">Fruit Punch</a></li>
-            <li><a href="#">Lemon & Lime</a></li>
-            <li><a href="#">Grape</a></li>
-          </ul>
-        </div>
+
+      <div class="footer-col">
+        <h4>DRINKS</h4>
+        <ul>
+          <li><a href="#">Tart Cherry</a></li>
+          <li><a href="#">-----</a></li>
+          <li><a href="#">-----</a></li>
+          <li><a href="#">-----</a></li>
+          <li><a href="#">-----</a></li>
+          <li><a href="#">-----</a></li>
+        </ul>
       </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="single-box">
-          <ul>
-            <li><a href="#">ABOUT PUNCH</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">TERMS OF USE</a></li>
-            <li><a href="#">PRIVACY POLICY</a></li>
-            <li><a href="#">REFUND POLICY</a></li>
-            <li><a href="#">CONTACT US</a></li>
-          </ul>
-        </div>
+
+      <div class="footer-col">
+        <h4>SUPPORT</h4>
+        <ul>
+          <li><a href="faq.php">FAQ</a></li>
+          <li><a href="terms-of-use.php">Terms Of Use</a></li>
+          <li><a href="privacy-policy.php">Privacy Policy</a></li>
+          <li><a href="refund.policy.php">Refund Policy</a></li>
+          <li><a href="contact-us.php">Contact Us</a></li>
+        </ul>
       </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="single-box">
-          <h2>Newsletter</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque earum similique fugiat nobis. Facere?</p>
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="E-mail Address" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
-            <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
-          </div>
-        </div>
+
+      <div class="footer-col">
+        <h3>NEWSLETTER</h3>
+        <p class="text2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><a class="branding" href="index.php">© Punch LLC</a></p>
       </div>
+
     </div>
   </div>
 </footer>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js">
 
 <!-- JS File Link -->
 <script src="js/script.js"></script>
