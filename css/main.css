@@ -31,7 +31,7 @@ header {
 }
 
 header:hover {
-    background-color: white;
+    background:rgba(255,255,255, 0.9);
 } 
 
 header.active {
@@ -44,7 +44,7 @@ header.active {
     align-items: center;
     justify-content: space-evenly;
     z-index: 100;
-    background: white;
+    background:rgba(255,255,255, 0.9);
     transition: all 0.5s ease;
 }
 
@@ -73,21 +73,27 @@ header ul a {
     color: black;
     text-decoration: none;
     font-size: 15px;
-    transition: 0.3s;
+    --padding: 0.5em;
+    position: relative;
+    padding: var(--padding);
+    transition: scale 0.5s ease;
 }
 
-header ul a::before {
+header ul a::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    width: 0;
+    inset: auto var(--padding) calc(var(--padding) * 0.6);
+    display: block;
     height: 2px;
     background-color: black;
-    transition: 0.25s ease-out;
+    scale: 0 1;
+    transition: inherit;
+    transform-origin: right;
   }
 
-header ul a:hover::before {
-    width: 1.5%;
+header ul a:hover::after {
+    scale: 1 1;
+    transform-origin: left;
   }
 
 .content {
@@ -140,22 +146,8 @@ header ul a:hover::before {
     }
 }
 
-.container {
+section {
     height: 150vh;
-}
-
-.drinks {
-    margin: 10px 50px;
-}
-
-.drinks img {
-    transition: 1s;
-    padding: 15px;
-}
-
-.drinks img:hover {
-    filter: grayscale(100);
-    transform: scale(1.1);
 }
 
 .footer-container {
