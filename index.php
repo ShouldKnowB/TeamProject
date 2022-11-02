@@ -16,7 +16,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <!-- CSS File Link -->
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- JS File Link -->
+  <script type="module" src="js/script.js"></script>
 
 </head>
 
@@ -28,9 +31,9 @@
 
     <header class="header">
       <ul class="left">
-        <li><a href="shop.php">SHOP</a></li>
-        <li><a href="about-punch.php">ABOUT PUNCH</a></li>
-        <li><a href="contact-us.php">CONTACT US</a></li>
+        <li><a href="shop.php">shop</a></li>
+        <li><a href="about-punch.php">about punch</a></li>
+        <li><a href="contact-us.php">contact us</a></li>
       </ul>
 
       <p> <a href="index.php">
@@ -47,8 +50,8 @@
     </header>
 
     <div class="content">
-      <h1>HYDRATION DRINK</h1>
-      <a href="shop.php">SHOP DRINKS</a>
+      <h1>hydration drink</h1>
+      <a href="shop.php">shop drinks</a>
     </div>
 
   </div>
@@ -73,8 +76,8 @@
     <div class="footer-row">
 
       <div class="footer-col">
-        <h3>ABOUT PUNCH </h3>
-        <p class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <h3>about punch</h3>
+        <p class="text1">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         <div class="socials">
           <a href="https://github.com/ShouldKnowB/TeamProject1"><i class="fa-brands fa-github"></i></a>
           <a href="https://trello.com/b/QrHTb3ps/project-details"><i class="fa-brands fa-trello"></i></a>
@@ -82,38 +85,35 @@
       </div>
 
       <div class="footer-col">
-        <h4>DRINKS</h4>
+        <h2>drinks</h2>
         <ul>
-          <li><a href="#">Berry Blast</a></li>
-          <li><a href="#">Blue Raspberry</a></li>
-          <li><a href="#">Lemon and Lime</a></li>
-          <li><a href="#">Tart Cherry</a></li>
-          <li><a href="#">Tropical</a></li>
+          <li><a href="#">berry blast</a></li>
+          <li><a href="#">blue raspberry</a></li>
+          <li><a href="#">lemon and lime</a></li>
+          <li><a href="#">tart cherry</a></li>
+          <li><a href="#">tropical</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>SUPPORT</h4>
+        <h2>support</h2>
         <ul>
           <li><a href="faq.php">FAQ</a></li>
-          <li><a href="terms-of-use.php">Terms Of Use</a></li>
-          <li><a href="privacy-policy.php">Privacy Policy</a></li>
-          <li><a href="refund-policy.php">Refund Policy</a></li>
-          <li><a href="contact-us.php">Contact Us</a></li>
+          <li><a href="terms-of-use.php">terms of use</a></li>
+          <li><a href="privacy-policy.php">privacy policy</a></li>
+          <li><a href="refund-policy.php">refund policy</a></li>
+          <li><a href="contact-us.php">contact us</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h3>NEWSLETTER</h3>
-        <p class="text2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p><a class="branding" href="index.php">© Punch LLC</a></p>
+        <h3>newsletter</h3>
+        <p class="text2"> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p><a class="branding" href="index.php">© punch LLC</a></p>
       </div>
 
     </div>
   </div>
 </footer>
-
-<!-- JS File Link -->
-<script src=" js/script.js"></script>
 
 </html>
