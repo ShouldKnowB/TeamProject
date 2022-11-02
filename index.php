@@ -68,7 +68,7 @@
 
 </body>
 
-<footer class=" footer">
+<footer class="footer">
   <div class="footer-container">
     <div class="footer-row">
 
@@ -106,7 +106,7 @@
       <div class="footer-col">
         <h3>NEWSLETTER</h3>
         <p class="text2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p><a class="branding" href=">© Punch LLC</a></p>
+        <p><a class="branding" href="© Punch LLC"></a></p>
       </div>
 
     </div>
