@@ -34,7 +34,7 @@
       </ul>
 
       <p> <a href="index.php">
-          <img class="logo" src="images/logo(black).png" alt="PUNCH LOGO IN BLACK">
+          <img class="logo" src="images/logo(black).png" alt="logo">
         </a>
       </p>
 
@@ -84,12 +84,11 @@
       <div class="footer-col">
         <h4>DRINKS</h4>
         <ul>
+          <li><a href="#">Berry Blast</a></li>
+          <li><a href="#">Blue Raspberry</a></li>
+          <li><a href="#">Lemon and Lime</a></li>
           <li><a href="#">Tart Cherry</a></li>
-          <li><a href="#">-----</a></li>
-          <li><a href="#">-----</a></li>
-          <li><a href="#">-----</a></li>
-          <li><a href="#">-----</a></li>
-          <li><a href="#">-----</a></li>
+          <li><a href="#">Tropical</a></li>
         </ul>
       </div>
 
