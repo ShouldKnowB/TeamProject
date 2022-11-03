@@ -50,23 +50,14 @@
     </header>
 
     <div class="content">
-      <h1>hydration drink</h1>
+      <h1>energise, hydrate, zero sugar</h1>
       <a href="shop.php">shop drinks</a>
     </div>
 
   </div>
 
   <section>
-    <div class="container">
-      <div class="drinks">
-        <a href="#" data-title="Drink #1"><img src="images/"></a>
-        <a href="#" data-title="Drink #2"><img src="images/"></a>
-        <a href="#" data-title="Drink #3"><img src="images/"></a>
-        <a href="#" data-title="Drink #4"><img src="images/"></a>
-        <a href="#" data-title="Drink #5"><img src="images/"></a>
-        <a href="#" data-title="Drink #6"><img src="images/"></a>
-      </div>
-    </div>
+
   </section>
 
 </body>

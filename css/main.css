@@ -36,6 +36,7 @@ header:hover {
 
 header.active {
     padding: 1rem;
+    padding-block: 15px;
     background:rgba(255,255,255, 0.9);
     transition: all 0.5s ease;
 }
@@ -94,8 +95,8 @@ header ul a:hover::after {
 }
 
 .content h1 {
-    text-transform: uppercase;
-    font-size: 120px;
+    text-transform: capitalize;
+    font-size: 85px;
     color: white;
     font-weight: 600;
     transition: 0.5s;
