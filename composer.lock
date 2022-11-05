@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "bc1aff2695d1a00e6a404283f81c085c",
+=======
+    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+>>>>>>> 654942bc4dfe09beecb1bc843439105ab4c592bb
     "packages": [
         {
             "name": "brick/math",
@@ -1277,6 +1281,7 @@
             "time": "2022-03-23T12:38:24+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laravel/ui",
             "version": "v4.0.2",
             "source": {
@@ -1349,6 +1354,19 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/857afc47ce113454bd629037213378ba3219dd40",
                 "reference": "857afc47ce113454bd629037213378ba3219dd40",
+=======
+            "name": "league/commonmark",
+            "version": "2.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "a36bd2be4f5387c0f3a8792a0d76b7d68865abbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/a36bd2be4f5387c0f3a8792a0d76b7d68865abbf",
+                "reference": "a36bd2be4f5387c0f3a8792a0d76b7d68865abbf",
+>>>>>>> 654942bc4dfe09beecb1bc843439105ab4c592bb
                 "shasum": ""
             },
             "require": {
@@ -1441,7 +1459,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2022-10-30T16:45:38+00:00"
+=======
+            "time": "2022-11-03T17:29:46+00:00"
+>>>>>>> 654942bc4dfe09beecb1bc843439105ab4c592bb
         },
         {
             "name": "league/config",
@@ -1673,6 +1695,7 @@
             "time": "2022-04-17T13:12:02+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "livewire/livewire",
             "version": "v2.10.7",
             "source": {
@@ -1746,6 +1769,8 @@
             "time": "2022-08-08T13:52:53+00:00"
         },
         {
+=======
+>>>>>>> 654942bc4dfe09beecb1bc843439105ab4c592bb
             "name": "monolog/monolog",
             "version": "2.8.0",
             "source": {
@@ -5640,6 +5665,7 @@
         },
         {
             "name": "filp/whoops",
+<<<<<<< HEAD
             "version": "2.14.5",
             "source": {
                 "type": "git",
@@ -5650,6 +5676,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filp/whoops/zipball/a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
                 "reference": "a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
+=======
+            "version": "2.14.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "f7948baaa0330277c729714910336383286305da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/f7948baaa0330277c729714910336383286305da",
+                "reference": "f7948baaa0330277c729714910336383286305da",
+>>>>>>> 654942bc4dfe09beecb1bc843439105ab4c592bb
                 "shasum": ""
             },
             "require": {
@@ -5699,7 +5737,11 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/filp/whoops/tree/2.14.5"
+=======
+                "source": "https://github.com/filp/whoops/tree/2.14.6"
+>>>>>>> 654942bc4dfe09beecb1bc843439105ab4c592bb
             },
             "funding": [
                 {
@@ -5707,7 +5749,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2022-01-07T12:00:00+00:00"
+=======
+            "time": "2022-11-02T16:23:29+00:00"
+>>>>>>> 654942bc4dfe09beecb1bc843439105ab4c592bb
         },
         {
             "name": "hamcrest/hamcrest-php",
