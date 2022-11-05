@@ -31,9 +31,9 @@
 
         <header class="header">
             <ul class="left">
-                <li><a href="shop.blade.php">shop</a></li>
-                <li><a href="about-punch.blade.php">about punch</a></li>
-                <li><a href="contact-us.blade.php">contact us</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">about punch</a></li>
+                <li><a href="#">contact us</a></li>
             </ul>
 
             <p>
@@ -43,7 +43,7 @@
             </p>
 
             <ul class="right">
-                <li><a href="signlog.blade.php"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                 <li><a href="#"><i class="fa fa-magnifying-glass"></i></a></li>
                 <li><a href="#"><i class="fa fa-basket-shopping"></i></a></li>
             </ul>
@@ -91,11 +91,11 @@
             <div class="footer-col">
                 <h2>support</h2>
                 <ul>
-                    <li><a href="faq.php">FAQ</a></li>
-                    <li><a href="terms-of-use.php">terms of use</a></li>
-                    <li><a href="privacy-policy.php">privacy policy</a></li>
-                    <li><a href="refund-policy.php">refund policy</a></li>
-                    <li><a href="contact-us.php">contact us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">terms of use</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">refund policy</a></li>
+                    <li><a href="#">contact us</a></li>
                 </ul>
             </div>
 
