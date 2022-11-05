@@ -121,25 +121,12 @@ header ul a:hover::after {
     margin-top: 20px;
 }
 
-.image1 {
+.background-image {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    right: 0;
-    bottom: 0;
     z-index: -1;
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .image1 {
-        width: 180%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .image1 {
-        width: auto;
-        height: 100%;
-    }
 }
 
 section {
