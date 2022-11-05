@@ -1,7 +1,7 @@
- @extends('layouts.admin')
+@extends('layouts.admin')
 
- @section('content')
- <div class="row">
+@section('content')
+<div class="row">
     <div class="col-md-12 grid-margin">
       <div class="d-flex justify-content-between flex-wrap">
         <div class="d-flex align-items-end flex-wrap">
@@ -30,4 +30,5 @@
       </div>
     </div>
   </div>
- @endsection
+
+@endsection

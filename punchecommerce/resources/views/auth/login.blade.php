@@ -1,6 +1,4 @@
 @extends('layouts.app')
-<link href="{{ assert('assets/css/bootstrap.min.css') }}" rel= "stylesheet">
-
 
 @section('content')
 <div class="container">
