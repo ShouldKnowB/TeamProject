@@ -1,14 +1,22 @@
 html {
     scroll-behavior: smooth;
 }
-
+@font-face{
+    font-family: 'ROSpritendio' format('truetype');
+    src: url(assets/fonts/RoSpritendo.ttf);
+}
+@font-face{
+    font-family: 'ROSpritendio2' format('opentype');
+    src: url(assets/fonts/RoSpritendoSemibold.otf);
+}
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'ROSpritendio', 'ROSpritendio2', sans-serif;
 }
 
-.navbar {
+
+nav {
     width: 100%;
     height: 100vh;
     padding: 0 5%;
@@ -32,18 +40,25 @@ header {
 
 header:hover {
     background:rgba(255,255,255, 0.9);
-} 
+}
 
 header.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 1rem;
-    padding-block: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
     background:rgba(255,255,255, 0.9);
     transition: all 0.5s ease;
 }
 
 header .logo {
     width: auto;
-    height: 40px;
+    height: 50px;
 }
 
 .left {
@@ -57,7 +72,6 @@ header .logo {
 }
 
 header ul li {
-    text-transform: uppercase;
     list-style: none;
     display: inline-block;
     padding: 13px;
@@ -90,13 +104,39 @@ header ul a:hover::after {
     transform-origin: left;
   }
 
+  header img {
+    size: 500;
+    justify-content: center;
+  }
+
+body  {
+
+
+    background:  #bad1a3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #FFB6B6
+        #bad1a3
+    );
+    background: linear-gradient(
+        to right,
+        #FFB6B6,
+        #bad1a3
+    ) ;
+}
+
+.main{
+    padding-top: 300px;
+    margin-top: 100px;
+    justify-content: center;
+}
+
 .content {
     text-align: center;
 }
 
 .content h1 {
-    text-transform: capitalize;
-    font-size: 85px;
+    font-size: 120px;
     color: white;
     font-weight: 600;
     transition: 0.5s;
@@ -109,7 +149,6 @@ header ul a:hover::after {
 }
 
 .content a {
-    text-transform: uppercase;
     background-color: transparent;
     text-decoration: none;
     display: inline-block;
@@ -121,12 +160,25 @@ header ul a:hover::after {
     margin-top: 20px;
 }
 
-.background-image {
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+.image1 {
     position: absolute;
+    right: 0;
+    bottom: 0;
     z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .image1 {
+        width: 180%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .image1 {
+        width: auto;
+        height: 100%;
+    }
 }
 
 section {
@@ -158,7 +210,6 @@ footer ul {
 }
 
 .footer-col h3 {
-    text-transform: uppercase;
     font-size: 18px;
     color: white;
     margin-bottom: 50px;
@@ -166,8 +217,7 @@ footer ul {
 	position: relative;
 }
 
-.footer-col h2 {
-    text-transform: uppercase;
+.footer-col h4 {
 	font-size: 16px;
 	color: white;
 	margin-bottom: 50px;
@@ -176,7 +226,7 @@ footer ul {
     margin-left: 40px;
 }
 
-.footer-col h2:before {
+.footer-col h4:before {
 	content: '';
 	position: absolute;
 	left:0;
@@ -192,7 +242,6 @@ footer ul {
 }
 
 .footer-col ul li a {
-    text-transform: capitalize;
 	font-size: 16px;
 	color: white;
 	text-decoration: none;
@@ -212,21 +261,18 @@ footer ul {
 }
 
 .footer-col p a {
-    text-transform: capitalize;
     text-decoration: none;
     color: grey;
     font-size: 16px;
 }
 
 .footer-col p.text1 {
-    text-transform: capitalize;
     font-size: 13px;
     color: white;
     padding-bottom: 5rem;
 }
 
 .footer-col p.text2 {
-    text-transform: capitalize;
     font-size: 13px;
     color: white;
     padding-bottom: 10rem;
@@ -261,3 +307,4 @@ footer ul {
     width: 100%;
     }
 }
+
