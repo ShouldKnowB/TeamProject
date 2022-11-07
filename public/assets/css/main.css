@@ -12,6 +12,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+<<<<<<< HEAD
 .navbar {
     width: 100%;
     height: 100vh;
@@ -93,6 +94,8 @@ header ul a:hover::after {
     scale: 1 1;
     transform-origin: left;
   }
+=======
+>>>>>>> 96a4c688a60881834f2fd14eb9eb87aa96649464
 body  {
     background:  #bad1a3; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -105,6 +108,7 @@ body  {
         #FFB6B6,
         #f2ff68
     ) ;
+<<<<<<< HEAD
 }
 .content {
     text-align: center;
@@ -279,3 +283,6 @@ footer ul {
 }
 
 
+=======
+}
+>>>>>>> 96a4c688a60881834f2fd14eb9eb87aa96649464

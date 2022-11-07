@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="navbar">
 
     <img class="background-image" src="assets/images/background-img.jpeg" type="image">
@@ -67,3 +68,6 @@
 
 
 </div>
+=======
+
+>>>>>>> 96a4c688a60881834f2fd14eb9eb87aa96649464
