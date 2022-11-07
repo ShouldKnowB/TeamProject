@@ -26,8 +26,6 @@
     <div id="app">
 
         @include('layouts.inc.frontend.navbar')
-        <main >
-
 
         <main class="py-4">
             @yield('content')
@@ -38,6 +36,8 @@
     <!-- Scripts -->
     <script src="{{ asset('assets/js/jquery-3.6.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+     <!-- JS File Link -->
+     <script src="{{ assert('assets/js/script.js')}}" type="module"></script>
 
     @livewireScripts
 </body>
