@@ -7,9 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Aston Ecom</title>
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel= "stylesheet">
-
+    <link rel="icon" type="image/x-icon" href="{{url('admin/images/favicon.ico')}}">
    <!-- plugins:css -->
   <link rel="stylesheet" href="{{ url('admin/vendors/mdi/css/materialdesignicons.min.css') }}">
   <link rel="stylesheet" href="{{ url('admin/vendors/base/vendor.bundle.base.css') }}">
