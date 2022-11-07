@@ -1,14 +1,4 @@
-
-@font-face{
-    font-family: 'ROSpritendo' ;
-    src: url("assets/fonts/RoSpritendo.ttf") format('truetype');
-}
-@font-face{
-    font-family: 'ROSpritendo2' ;
-    src: url("../fonts/RoSpritendoSemibold.otf")format('opentype');
-}
 * {
-    /*font-family: 'ROSpritendo', 'ROSpritendo2', sans-serif;*/
     font-family: 'Poppins', sans-serif;
 }
 
@@ -57,7 +47,7 @@ header .logo {
 }
 
 .right {
-    margin-left: 425px;
+    margin-left: 325px;
     padding: 0;
 }
 
