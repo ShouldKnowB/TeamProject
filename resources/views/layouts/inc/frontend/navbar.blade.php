@@ -2,9 +2,9 @@
 
     <header class="header">
         <ul class="left">
-            <li><a href="#">shop</a></li>
-            <li><a href="#">about punch</a></li>
-            <li><a href="#">contact us</a></li>
+    <li><a href="{{ asset('/shop') }}">shop</a></li>
+    <li><a href="{{ asset('/about_us') }}">about punch</a></li>
+    <li><a href="{{ asset('/contact_us') }}">contact us</a></li>
         </ul>
 
         <p>
@@ -30,9 +30,9 @@
                 @endif
             @else
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ route('login') }}" id="navbarDropdown" role="button"
+                    <a href="{{ route('login') }}" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-user"></i> {{ Auth::user()->name }}
+                        {{ Auth::user()->name }}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
