@@ -18,10 +18,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
 
     <!-- CSS File Link -->
-    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{ assert('assets/css/main.css') }}" rel="stylesheet">
 
     <!-- JS File Link -->
-    <script src="assets/js/script.js" type="module"></script>
+    <script src="{{ assert('assets/js/script.js')}}" type="module"></script>
 </head>
 
 <body class="antialiased">
