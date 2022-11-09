@@ -15,22 +15,22 @@
             <div class="footer-col">
                 <h2>drinks</h2>
                 <ul>
-                    <li><a href="#">berry blast</a></li>
-                    <li><a href="#">blue raspberry</a></li>
-                    <li><a href="#">lemon and lime</a></li>
-                    <li><a href="#">tart cherry</a></li>
-                    <li><a href="#">tropical</a></li>
+                    <li><a href="{{ asset('/') }}">berry blast</a></li>
+                    <li><a href="{{ asset('/') }}">blue raspberry</a></li>
+                    <li><a href="{{ asset('/') }}">lemon and lime</a></li>
+                    <li><a href="{{ asset('/') }}">tart cherry</a></li>
+                    <li><a href="{{ asset('/') }}">tropical</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h2>support</h2>
                 <ul>
-                    <li><a href="faq.php">FAQ</a></li>
-                    <li><a href="terms-of-use.php">terms of use</a></li>
-                    <li><a href="privacy-policy.php">privacy policy</a></li>
-                    <li><a href="refund-policy.php">refund policy</a></li>
-                    <li><a href="contact-us.php">contact us</a></li>
+                    <li><a href="{{ asset('/') }}">FAQ</a></li>
+                    <li><a href="{{ asset('/') }}">terms of use</a></li>
+                    <li><a href="{{ asset('/') }}">privacy policy</a></li>
+                    <li><a href="{{ asset('/') }}">refund policy</a></li>
+                    <li><a href="{{ asset('/contact_us') }}">contact us</a></li>
                 </ul>
             </div>
 
