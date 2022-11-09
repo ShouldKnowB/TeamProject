@@ -72,11 +72,11 @@ header ul a:hover::after {
     transform-origin: left;
   }
 
-  body {
+body {
     background-color:  #fff; /* Fallback For Welcome Page*/
   }
 
-  .content {
+.content {
     background-image: linear-gradient(to right, #FFB6B6, #F2FF68);
     min-height: 100vh;
     display: grid;
