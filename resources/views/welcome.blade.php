@@ -1,31 +1,16 @@
 @extends('layouts.app')
 
-<!DOCTYPE html>
+<body>
 
-<html>
+    <div class="content">
+        <h1>energise, hydrate, zero sugar</h1>
+        <a href="{{ asset('/shop') }}">shop drinks</a>
+    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <section class="welcome-body">
 
-    <title>PUNCH</title>
-    <link href="{{ asset('assets/images/favicon.ico') }}" rel="icon">
+        <h1>hello</h1>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Font Awesome Link -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
-
-    <!-- CSS File Link -->
-    <link href="{{ assert('assets/css/main.css') }}" rel="stylesheet">
-
-    <!-- JS File Link -->
-    <script src="{{ assert('assets/js/script.js')}}" type="module"></script>
-</head>
-
-<body class="antialiased">
+    </section>
 
 </body>
-
-</html>
