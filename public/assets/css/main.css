@@ -5,12 +5,14 @@
 header {
     position: fixed;
     inset: 0 0 auto;
-    padding-block: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-evenly;
     z-index: 100;
     background: transparent;
+    border-bottom: 0.5px solid #b5b5b5;
     transition: all 0.5s ease;
 }
 
@@ -19,7 +21,6 @@ header:hover {
 }
 
 header.active {
-    padding: 1rem;
     background:rgba(255,255,255, 0.9);
     transition: all 0.5s ease;
 }
@@ -29,6 +30,7 @@ header .logo {
 }
 
 .left {
+    margin-top: 5px;
     margin-right: 225px;
     padding: 0;
 }
