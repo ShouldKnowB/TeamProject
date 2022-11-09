@@ -134,6 +134,11 @@ body .contact_us-body {
     height: 100vh;
 }
 
+.cartpage {
+    margin: 100px 100px;
+    height: 100vh;
+}
+
 div.row.justify-content-center {
     margin: 100px;
 }
