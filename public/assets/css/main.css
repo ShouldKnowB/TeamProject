@@ -5,12 +5,14 @@
 header {
     position: fixed;
     inset: 0 0 auto;
-    padding-block: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-evenly;
     z-index: 100;
     background: transparent;
+    border-bottom: 0.5px solid #b5b5b5;
     transition: all 0.5s ease;
 }
 
@@ -19,7 +21,6 @@ header:hover {
 }
 
 header.active {
-    padding: 1rem;
     background:rgba(255,255,255, 0.9);
     transition: all 0.5s ease;
 }
@@ -29,6 +30,7 @@ header .logo {
 }
 
 .left {
+    margin-top: 5px;
     margin-right: 225px;
     padding: 0;
 }
@@ -72,11 +74,11 @@ header ul a:hover::after {
     transform-origin: left;
   }
 
-  body {
+body {
     background-color:  #fff; /* Fallback For Welcome Page*/
   }
 
-  .content {
+.content {
     background-image: linear-gradient(to right, #FFB6B6, #F2FF68);
     min-height: 100vh;
     display: grid;
@@ -131,6 +133,11 @@ body .about_us-body {
 body .contact_us-body {
     margin-top: 100px;
     margin-bottom: 100px;
+    height: 100vh;
+}
+
+.cartpage {
+    margin: 100px 100px;
     height: 100vh;
 }
 
