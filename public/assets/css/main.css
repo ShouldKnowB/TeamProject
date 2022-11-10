@@ -5,12 +5,14 @@
 header {
     position: fixed;
     inset: 0 0 auto;
-    padding-block: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-evenly;
     z-index: 100;
     background: transparent;
+    border-bottom: 0.5px solid #b5b5b5;
     transition: all 0.5s ease;
 }
 
@@ -19,7 +21,6 @@ header:hover {
 }
 
 header.active {
-    padding: 1rem;
     background:rgba(255,255,255, 0.9);
     transition: all 0.5s ease;
 }
@@ -29,6 +30,7 @@ header .logo {
 }
 
 .left {
+    margin-top: 5px;
     margin-right: 225px;
     padding: 0;
 }
@@ -72,11 +74,11 @@ header ul a:hover::after {
     transform-origin: left;
   }
 
-  body {
+body {
     background-color:  #fff; /* Fallback For Welcome Page*/
   }
 
-  .content {
+.content {
     background-image: linear-gradient(to right, #FFB6B6, #F2FF68);
     min-height: 100vh;
     display: grid;
@@ -134,6 +136,11 @@ body .contact_us-body {
     height: 100vh;
 }
 
+.cartpage {
+    margin: 100px 100px;
+    height: 100vh;
+}
+
 div.row.justify-content-center {
     margin: 100px;
 }
@@ -153,8 +160,11 @@ footer ul {
 }
 
 .footer {
+    display:flex; 
+    flex-flow:column; 
+    justify-content:space-between;
 	background-color: #000;
-    padding: 70px 0;
+    padding-block: 70px;
 }
 
 .footer-col {
@@ -240,12 +250,12 @@ footer ul {
 .footer-col .socials a {
 	display: inline-block;
 	height: 40px;
-	width: 40git px;
+	width: 40px;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
 	text-align: center;
-	line-height: 40px;
 	border-radius: 50%;
+    padding: 10;
 	color: #fff;
 	transition: all 0.5s ease;
 }
