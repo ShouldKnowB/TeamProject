@@ -1,12 +1,17 @@
-A page to display the products that the company sells <i class="fa fa-pagelines" aria-hidden="true"></i>
 @extends('layouts.app')
 
 
 <br><br><br><br><br><br><br>
 
-<!-- BEGINNING OF ENERGY DRINKS SECTION  -->
-<table style="text-align: center; margin-left:auto; margin-right:auto" >    <h1 style="text-align: center; margin-left:auto; margin-right:auto">Energy Drinks</h1>
+<table style="text-align: center; margin-left:auto; margin-right:auto"> 
+<th><img src="/Labelled Images/shop_banner.jpg"></th>
+</table>
 
+<br><br><br><br><br><br><br>
+
+<!-- BEGINNING OF ENERGY DRINKS SECTION  -->
+<table style="text-align: center; margin-left:auto; margin-right:auto"> 
+    <h1 style="text-align: center; margin-left:auto; margin-right:auto">Energy Drinks</h1>
     <tr>
     <th><a href="#"><img src="/Labelled Images/Berry Blast cda6b2/Energy/Matte1.png" width="500" height="350"></a>
     <p>Berry Blast</p>
