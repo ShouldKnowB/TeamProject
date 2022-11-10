@@ -3,9 +3,9 @@
 
 <br><br><br><br><br><br><br>
 
-<table style="text-align: center; margin-left:auto; margin-right:auto"> 
-<th><img src="/Labelled Images/shop_banner.jpg"></th>
-</table>
+<div> 
+<img style="width: 100%" src="/Labelled Images/shop_banner.jpg">
+</div>
 
 <br><br><br><br><br><br><br>
 
