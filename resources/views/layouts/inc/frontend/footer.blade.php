@@ -4,8 +4,9 @@
 
             <div class="footer-col">
                 <h3>about punch</h3>
-                <p class="text1">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. </p>
+                <p class="text1">Punch is the perfect boost for any venture, with powerful, thirst-quenching flavours to
+                    help you refresh, replenish and refuel. We are convinced that you will enjoy it as much as we do. ​
+                </p>
                 <div class="socials">
                     <a href="https://github.com/ShouldKnowB/TeamProject1"><i class="fa-brands fa-github"></i></a>
                     <a href="https://trello.com/b/QrHTb3ps/project-details"><i class="fa-brands fa-trello"></i></a>
@@ -36,8 +37,7 @@
 
             <div class="footer-col">
                 <h3>newsletter</h3>
-                <p class="text2"> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. </p>
+                <p class="text2"> Subscribe to receive updates, access to exclusive deals and more. </p>
                 <p><a class="branding" href="index.php">© punch LLC</a></p>
             </div>
 
