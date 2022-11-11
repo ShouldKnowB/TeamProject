@@ -2,11 +2,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navbar CSS */
 header {
     position: fixed;
     inset: 0 0 auto;
     padding-top: 10px;
-    padding-bottom: 5px;
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
@@ -17,11 +17,11 @@ header {
 }
 
 header:hover {
-    background:rgba(255,255,255, 0.9);
+    background:rgba(255,255,255);
 }
 
 header.active {
-    background:rgba(255,255,255, 0.9);
+    background:rgba(255,255,255);
     transition: all 0.5s ease;
 }
 
@@ -74,10 +74,7 @@ header ul a:hover::after {
     transform-origin: left;
   }
 
-body {
-    background-color:  #fff; /* Fallback For Welcome Page*/
-  }
-
+/* Welcome Page First Body */
 .content {
     background-image: linear-gradient(to right, #FFB6B6, #F2FF68);
     min-height: 100vh;
@@ -93,10 +90,10 @@ body {
     font-size: 85px;
     color: #fff;
     font-weight: 600;
-    transition: 0.5s;
 }
 
 .content h1:hover {
+    transition: 0.8s;
     -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
@@ -112,39 +109,69 @@ body {
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
+    opacity: 0.6;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
 }
+
+.content a:hover {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity 
+}
+
+/* Welcome Page Second Body */
+body {
+    background-color:  #fff; /* Fallback For Welcome Page*/
+  }
 
 body .welcome-body {
-    height: 100vh;
+    background-color: #fff;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    text-align: center;
+    color: #000;
 }
 
-body .shop-body {
+.welcome-body h1 {
+    text-transform: capitalize;
+    font-size: 85px;
+    color: #000;
+    font-weight: 600;
+}
+
+.welcome-body h1:hover {
+    transition: 0.5s;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+}   
+
+/* Shop Page First Body */
+.shop-body {
     margin-top: 100px;
     margin-bottom: 100px;
     height: 100vh;
 }
 
-body .about_us-body {
+/* About Us Page First Body */
+.about_us-body {
     margin-top: 100px;
     margin-bottom: 100px;
     height: 100vh;
 }
 
-body .contact_us-body {
+/* Contact Us Page First Body */
+.contact_us-body {
     margin-top: 100px;
     margin-bottom: 100px;
     height: 100vh;
 }
 
-.cartpage {
-    margin: 100px 100px;
-    height: 100vh;
-}
-
-div.row.justify-content-center {
-    margin: 100px;
-}
-
+/* Footer Page CSS */
 .footer-container {
 	max-width: 1170px;
 	margin:auto;
@@ -265,17 +292,81 @@ footer ul {
 	background-color: #fff;
 }
 
-@media(max-width: 767px) {
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-    }
+/* Cart Page CSS */
+.cartpage {
+    margin: 100px 100px;
+    height: 100vh;
 }
-@media(max-width: 574px) {
-  .footer-col{
-    width: 100%;
-    }
+
+div.row.justify-content-center {
+    margin: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /** --------------------------------------------------------SHOP PAGE CSS ----------------------------------------------------------------------**/
 /** BEGINNING OF TABLE CSS ---------------------------------------------------------------------------------------------**/
@@ -358,3 +449,10 @@ footer ul {
   /** END OF IMAGE SIZE BIGGER WHEN HOVERED ----------------------------------------------------------------------------------**/
 
 /** --------------------------------------------------------  END OF SHOP PAGE CSS --------------------------------------------------------------**/
+
+
+
+
+
+
+
