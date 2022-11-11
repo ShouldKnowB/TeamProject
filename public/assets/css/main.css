@@ -297,6 +297,40 @@ footer ul {
     margin: 100px 100px;
     height: 100vh;
 }
+.cart-header{
+    padding: 10px;
+    font-size: 18px;
+}
+.cart-products .cart-item{
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0 / 8%);
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cart-price .cart-remove{
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 2px;
+}
+
+.cart-quantity {
+    border: 0.5px solid black;
+    font-size: 10px;
+    width: 30%;
+    outline: none;
+    text-align: center;
+}
+
+/**/
 
 div.row.justify-content-center {
     margin: 100px;
