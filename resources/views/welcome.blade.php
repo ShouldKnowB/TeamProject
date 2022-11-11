@@ -2,7 +2,7 @@
 
 <body>
     <div class="content">
-        <h1>energise, hydrate, zero sugar</h1>
+        <img src="{{url('assets/images/punch.png')}}" alt="banner" width="1023" height="546">
         <a href="{{ asset('/shop') }}">shop drinks</a>
     </div>
 </body>

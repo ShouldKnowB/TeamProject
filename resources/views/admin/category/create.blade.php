@@ -26,10 +26,7 @@
                 <label>Description</label>
                 <textarea  name="description" class="form-control" rows="3"></textarea>
             </div>
-            <div class="col-sm-10">
-                <label>Image</label>
-                <input type="file" name="image" class="form-control"/>
-            </div>
+
             <div class="col-sm-10">
                 <label>Status</label><br/>
                 <input type="checkbox" name="status" class="form-control"/>
