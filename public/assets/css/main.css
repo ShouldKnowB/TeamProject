@@ -322,14 +322,86 @@ div.row.justify-content-center {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /** --------------------------------------------------------SHOP PAGE CSS ----------------------------------------------------------------------**/
 /** BEGINNING OF TABLE CSS ---------------------------------------------------------------------------------------------**/
 .productTables{
     text-align: center; 
     margin-left:auto; 
-    margin-right:auto
+    margin-right:auto;
+    border-spacing: 50px;   
+    border-collapse: separate;
+    font-weight: bolder;
 }
 
+.cellPaddingPX { 
+    padding: 80px;
+}
 /** END OF TABLE CSS ---------------------------------------------------------------------------------------------**/
 
 /** PRODUCT IMAGE SIZES **/
@@ -375,7 +447,6 @@ div.row.justify-content-center {
   --b: 3px;   /** border thickness **/
   --s: .45em; /** size of the corner **/
   --color: #181818;
-
   padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
@@ -385,8 +456,8 @@ div.row.justify-content-center {
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid rgba(0, 0, 0, 0);
   outline-offset: .6em;
-  font-size: 16px;
-
+  font-size: 17px;
+  font-weight: bold;
   border: 0;
 
   user-select: none;
@@ -399,6 +470,7 @@ div.row.justify-content-center {
   --_p: 0px;
   outline-color: var(--color);
   outline-offset: .05em;
+  color: rgb(31, 31, 31);
 }
 
 .shopAddToCartButtonCSS:active {
@@ -411,6 +483,7 @@ div.row.justify-content-center {
 .drinkName{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    font-weight: bolder;
 }
 /** END OF DRINK NAME TEXT -----------------------------------------------------------------------------------------------**/
 
