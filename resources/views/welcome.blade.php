@@ -13,7 +13,7 @@
                 artificial sweeteners and no artificial colours. It's got a great taste and it's got a great name.</p>
         </div>
         <div class="welcome-body-image">
-            <img src="{{ asset('images/') }}" alt=".">
+            <img src="{{ url('assets/images/punch.png') }}" alt="banner" width="1023" height="546">
         </div>
     </div>
 </body>
