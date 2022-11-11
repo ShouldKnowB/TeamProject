@@ -8,7 +8,7 @@
     <hr>
     <div class ="row">
         <div class = "col-md-12">
-            <div class="cartproducts">
+            <div class="cart-products">
 
                 <div class="cart-header d-none d-sm-none d-mb-block d-lg-block">
                     <div class="row">
@@ -30,16 +30,16 @@
                 <div class="cart-item">
                         <div class="row">
                             <div class = "col-md-6">
-                                <h2>...</h2>
+                                <h5>Blue Raspberry - Energy</h5>
                             </div>
-                            <div class="col-md-2">
-                                <h2>...</h2>
+                            <div class="col-md-2 cart-price">
+                                <h5>£_.__</h5>
                             </div>
-                            <div class="col-md-2">
-                                <h2>...</h2>
+                            <div class="col-md-2 cart-quantity">
+                                <h5>2</h5>
                             </div>
-                            <div class="col-md-2">
-                                <h2>...</h2>
+                            <div class="col-md-2 cart-remove">
+                                <h5>Remove</h5>
                             </div>
                         </div>
                     </div>
