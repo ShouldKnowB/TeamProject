@@ -32,12 +32,14 @@ header.active {
 }
 
 .logo {
+    padding-left: 40;
     justify-content: center;
     height: 40px;
 }
 
 .right {
     flex: 1;
+    padding-right: 40;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -328,7 +330,7 @@ div.row.justify-content-center {
 .shop-banner {
     position: relative; 
     width: 100%;
-    top: -5.5rem; 
+    top: -5.8rem; 
 }
 /** BEGINNING OF TABLE CSS ---------------------------------------------------------------------------------------------**/
 .productTables{
