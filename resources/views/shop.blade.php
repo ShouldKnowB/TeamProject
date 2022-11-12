@@ -4,7 +4,7 @@
 <br><br><br><br><br><br><br>
 
 <div>
-    <img src="{{ url('assets/images/punchbanner(1).png') }}" alt="banner" style="width: 100%">
+    <img class="shop-banner" src="{{ url('assets/images/punchbanner(1).png') }}" alt="banner">
 </div>
 
 <br><br><br><br><br><br><br>
@@ -99,7 +99,7 @@
             </tr>
         </table>
 
-        <table  class="productTables">
+        <table class="productTables">
             <tr>
                 <th class="cellPaddingPX"><a href="#"><img class="shopProductImages carbonatedImageSize"
                             src="{{ url('assets/images/product-images/Tropical ffe1b3/Carbonated/yellow carbonated.png') }}"></a>

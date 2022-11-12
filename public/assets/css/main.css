@@ -12,7 +12,7 @@ header {
     justify-content: space-evenly;
     z-index: 100;
     background: transparent;
-    border-bottom: 0.5px solid #b5b5b5;
+    border-bottom: 0.1px solid #242424;
     transition: all 0.5s ease;
 }
 
@@ -148,27 +148,6 @@ body .welcome-body {
     transition: 0.5s;
     -webkit-text-stroke: 2px #000;
     color: transparent;
-}   
-
-/* Shop Page First Body */
-.shop-body {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 100vh;
-}
-
-/* About Us Page First Body */
-.about_us-body {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 100vh;
-}
-
-/* Contact Us Page First Body */
-.contact_us-body {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 100vh;
 }
 
 /* Footer Page CSS */
@@ -282,6 +261,7 @@ footer ul {
 	margin:0 10px 10px 0;
 	text-align: center;
 	border-radius: 50%;
+    padding-block: 5px;
     padding: 10;
 	color: #fff;
 	transition: all 0.5s ease;
@@ -336,93 +316,12 @@ div.row.justify-content-center {
     margin: 100px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** --------------------------------------------------------SHOP PAGE CSS ----------------------------------------------------------------------**/
+.shop-banner {
+    position: relative; 
+    width: 100%;
+    top: -5.5rem; 
+}
 /** BEGINNING OF TABLE CSS ---------------------------------------------------------------------------------------------**/
 .productTables{
     text-align: center; 
