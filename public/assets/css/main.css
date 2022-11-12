@@ -9,7 +9,6 @@ header {
     padding-top: 10px;
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly;
     z-index: 100;
     background: transparent;
     border-bottom: 0.1px solid #242424;
@@ -25,19 +24,23 @@ header.active {
     transition: all 0.5s ease;
 }
 
-header .logo {
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    justify-content: center;
     height: 40px;
 }
 
-.left {
-    margin-top: 5px;
-    margin-right: 225px;
-    padding: 0;
-}
-
 .right {
-    margin-left: 325px;
-    padding: 0;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 header ul li {
