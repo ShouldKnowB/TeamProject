@@ -141,7 +141,7 @@ input[type="checkbox"] {
 }
 
 .welcome-body .content {
-    max-width: 800px;
+    width: 100%;
     text-align: center;
 }
 
