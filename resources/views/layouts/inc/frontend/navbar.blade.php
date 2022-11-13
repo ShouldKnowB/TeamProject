@@ -1,4 +1,8 @@
-<header class="header">
+<nav>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
     <ul class="left">
         <li><a href="{{ asset('/shop') }}">shop</a></li>
         <li><a href="{{ asset('/about_us') }}">about punch</a></li>
@@ -35,7 +39,8 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa fa-list"></i> My Orders</a></li>
-                    <li><a class="dropdown-item" href="{{ url('cart') }}"><i class="fa fa-shopping-cart"></i> My Cart</a>
+                    <li><a class="dropdown-item" href="{{ url('cart') }}"><i class="fa fa-shopping-cart"></i> My
+                            Cart</a>
                     </li>
                     <li>
 
@@ -56,4 +61,4 @@
         <li><a href="#"><i class="fa fa-basket-shopping"></i></a></li>
 
     </ul>
-</header>
+</nav>

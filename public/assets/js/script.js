@@ -1,6 +1,6 @@
 // Scroller Connected To Header
 
-const header = document.querySelector("header");
+const header = document.querySelector("nav");
 
 window.onscroll = function () {
     var top = window.scrollY;

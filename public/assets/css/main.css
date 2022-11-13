@@ -3,7 +3,7 @@
 }
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
-header {
+nav {
     position: fixed;
     inset: 0 0 auto;
     padding-top: 10px;
@@ -15,29 +15,29 @@ header {
     transition: all 0.5s ease;
 }
 
-header:hover {
+nav:hover {
     background:rgba(255,255,255);
 }
 
-header.active {
+nav.active {
     background:rgba(255,255,255);
     transition: all 0.5s ease;
 }
 
-.left {
+nav .left {
     flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.logo {
+nav .logo {
     padding-left: 40;
     justify-content: center;
     height: 40px;
 }
 
-.right {
+nav .right {
     flex: 1;
     padding-right: 40;
     display: flex;
@@ -45,14 +45,14 @@ header.active {
     align-items: center;
 }
 
-header ul li {
+nav ul li {
     text-transform: uppercase;
     list-style: none;
     display: inline-block;
     padding: 13px;
 }
 
-header ul a {
+nav ul a {
     color: #000;
     text-decoration: none;
     font-size: 15px;
@@ -62,7 +62,7 @@ header ul a {
     transition: scale 0.5s ease;
 }
 
-header ul a::after {
+nav ul a::after {
     content: "";
     position: absolute;
     inset: auto var(--padding) calc(var(--padding) * 0.6);
@@ -72,16 +72,28 @@ header ul a::after {
     scale: 0 1;
     transition: inherit;
     transform-origin: right;
-  }
+}
 
-header ul a:hover::after {
+nav ul a:hover::after {
     scale: 1 1;
     transform-origin: left;
-  }
+}
+
+nav .menu-btn i {
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
 /** -------------------------------------------------------- END OF NAVBAR CSS ----------------------------------------------------------------------**/
 
 /** -------------------------------------------------------- WELCOME PAGE CSS ----------------------------------------------------------------------**/
-.content {
+.welcome-bg {
     background-image: linear-gradient(to right, #FFB6B6, #F2FF68);
     min-height: 100vh;
     display: grid;
@@ -91,20 +103,20 @@ header ul a:hover::after {
     color: white;
 }
 
-.content h1 {
+.welcome-bg h1 {
     text-transform: capitalize;
     font-size: 85px;
     color: #fff;
     font-weight: 600;
 }
 
-.content h1:hover {
+.welcome-bg h1:hover {
     transition: 0.8s;
     -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
 
-.content a {
+.welcome-bg a {
     text-transform: uppercase;
     background-color: transparent;
     text-decoration: none;
@@ -121,13 +133,140 @@ header ul a:hover::after {
     -webkit-transition: opacity 1s ease-in-out;
 }
 
-.content a:hover {
+.welcome-bg a:hover {
     opacity: 1;
     transition: opacity .55s ease-in-out;
     -moz-transition: opacity .55s ease-in-out;
     -webkit-transition: opacity 
 }
+
+.welcome-body .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.welcome-body .content h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.welcome-body .content p {
+    font-size: 20px;
+    color: #000;
+}
 /** -------------------------------------------------------- END OF WELCOME PAGE CSS ----------------------------------------------------------------------**/
+
+/** -------------------------------------------------------- CONTACT US PAGE CSS ----------------------------------------------------------------------**/
+.contact_us {
+    position: relative;
+    min-height: 110vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+.contact_us .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact_us .content h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.contact_us .content p {
+    font-size: 20px;
+    color: #000;
+}
+
+.contact_us .container  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #000;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    background: transparent;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    text-transform: capitalize;
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    background: #ffcdab;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contactForm .inputBox input:focus ~ span, 
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span, 
+.contactForm .inputBox textarea:valid ~ span {
+    color: #ffcdab;
+    font-size: 12px;
+    top: -20px;
+    left: 0;
+}
+
+@media (max-width: 967) {
+    .contact_us {
+        padding: 50px 
+    }
+    .container  {
+        flex-direction: column;
+    }
+    .container .contactForm {
+        width: 100%;
+    }
+}
+/** -------------------------------------------------------- END OF CONTACT US PAGE CSS ----------------------------------------------------------------------**/
 
 /** -------------------------------------------------------- HOMe PAGE CSS ----------------------------------------------------------------------**/
 body {
@@ -158,7 +297,7 @@ body .welcome-body {
 }
 /** -------------------------------------------------------- END OF HOME PAGE CSS ----------------------------------------------------------------------**/
 
-/** -------------------------------------------------------- FOOTERP PAGE CSS ----------------------------------------------------------------------**/
+/** -------------------------------------------------------- FOOTER PAGE CSS ----------------------------------------------------------------------**/
 .footer-container {
 	max-width: 1170px;
 	margin:auto;
@@ -200,7 +339,7 @@ footer ul {
 	font-size: 16px;
 	color: #fff;
 	margin-bottom: 50px;
-	font-weight: 500;
+	font-weight: bold;
 	position: relative;
     margin-left: 40px;
 }
@@ -258,8 +397,23 @@ footer ul {
     text-transform: capitalize;
     font-size: 13px;
     color: #fff;
+}
+
+.footer-col .form {
     padding-bottom: 10rem;
 }
+
+.footer-col .input {
+    color: #D3D3D3;
+    border: 0;
+    padding: 2px;
+    width: 100%;
+    outline: none !important;
+    box-sizing: border-box;
+    font-size: 13px;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+  }
 
 .footer-col .socials a {
 	display: inline-block;
@@ -268,8 +422,8 @@ footer ul {
 	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
 	text-align: center;
+    line-height: 40px;
 	border-radius: 50%;
-    padding-block: 5px;
     padding: 10;
 	color: #fff;
 	transition: all 0.5s ease;
@@ -278,6 +432,19 @@ footer ul {
 .footer-col .socials a:hover {
 	color: #808080;
 	background-color: #fff;
+}
+
+@media (max-width:767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-col {
+        width: 100%;
+    }
 }
 /** -------------------------------------------------------- END OF FOOTER PAGE CSS ----------------------------------------------------------------------**/
 
@@ -327,10 +494,15 @@ div.row.justify-content-center {
 /** -------------------------------------------------------- END OF CART PAGE CSS ----------------------------------------------------------------------**/
 
 /** -------------------------------------------------------- SHOP PAGE CSS ----------------------------------------------------------------------**/
+.shop {
+    min-height: 100vh;
+}
+
 .shop-banner {
     position: relative; 
     width: 100%;
-    top: -5.8rem; 
+    margin-top: 4.7rem;
+    margin-bottom: 5rem;
 }
 /** BEGINNING OF TABLE CSS ---------------------------------------------------------------------------------------------**/
 .productTables{

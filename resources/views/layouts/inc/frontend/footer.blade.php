@@ -37,7 +37,11 @@
 
             <div class="footer-col">
                 <h3>newsletter</h3>
-                <p class="text2"> Subscribe to receive updates, access to exclusive deals and more. </p>
+                <p class="text2"> enter email to subscribe for updates, access to exclusive deals and more.
+                </p>
+                <div class="form">
+                    <input class="input" type="email" required="required">
+                </div>
                 <p><a class="branding" href="index.php">© punch LLC</a></p>
             </div>
 
