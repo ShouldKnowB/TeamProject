@@ -1,4 +1,4 @@
-* text=auto
+* text=autoA
 
 *.blade.php diff=html
 *.css diff=css
