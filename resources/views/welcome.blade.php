@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 <body>
     <div class="welcome-bg">
         <h1>energise, hydrate, zero sugar</h1>
