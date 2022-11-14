@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\ProductFormRequest;
-use App\Models\Product;
+
 use Illuminate\Support\Str;
+use App\Models\Category;
+
 
 class ProductController extends Controller
 {
@@ -17,32 +19,39 @@ class ProductController extends Controller
 
     public function create()
     {
-        return view('admin.products.create');
+        $categories = Category::all();
+        return view('admin.products.create', compact('categories'));
 
     }
 
     public function store(ProductFormRequest $request){
 
         $validatedData = $request->validated();
-
-        $product = new Product;
-        $product->name = $validatedData['name'];
-        $product->slug = Str::slug($validatedData['slug']);
-        $product->small_description = $validatedData['small_description'];
-        $product->ingredients = $validatedData['ingredients'];
-        $product->price = $validatedData['price'];
-        $product->quantity = $validatedData['quantity'];
-        $product->status =  $request->status == true ? '1' : '0';
-        $product->meta_title = $validatedData['meta_title'];
-        $product->meta_keyword = $validatedData['meta_keyword'];
-        $product->meta_description = $validatedData['meta_description'];
+        $category = Category::findOrFail($validatedData['category_id']);
 
 
+        $product = $category->products()->create([
+            'category_id' => $validatedData['category_id'],
+            'name' => $validatedData['name'],
+            'slug' =>  Str::slug($validatedData['slug']),
+            'small_description' => $validatedData['small_description'],
+            'price' => $validatedData['price'],
+            'quantity' => $validatedData['quantity'],
+            'category_id' => $validatedData['category_id'],
+            'status' => $request->status == true ? '1' : '0',
+            'meta_title' => $validatedData['meta_title'],
+            'meta_keyword' => $validatedData['meta_keyword'],
+            'meta_description' => $validatedData['meta_description'],
 
-    if($request->hasFile('image')){
+
+        ]);
+
+        if($request->hasFile('image')){
         $uploadPath = 'uploads/products/';
 
-        foreach($request->file('image') as $imageFile){
+
+
+        foreach($request->file('image[]') as $imageFile){
             $extention = $imageFile->getClientOriginalExtension();
             $filename = time().'.'.$extention;
             $imageFile->move($uploadPath,$filename);
