@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
@@ -16,11 +16,11 @@ nav {
 }
 
 nav:hover {
-    background:rgba(255,255,255);
+    background: rgba(255, 255, 255);
 }
 
 nav.active {
-    background:rgba(255,255,255);
+    background: rgba(255, 255, 255);
     transition: all 0.5s ease;
 }
 
@@ -94,12 +94,12 @@ input[type="checkbox"] {
 
 /** -------------------------------------------------------- WELCOME PAGE CSS ----------------------------------------------------------------------**/
 .welcome-bg {
-    background-image: linear-gradient(to right, #FFB6B6, #F2FF68);
+    background-image: linear-gradient(to right, #ffb6b6, #f2ff68);
     min-height: 100vh;
     display: grid;
     place-items: center;
     align-content: center;
-    text-align: center;  
+    text-align: center;
     color: white;
 }
 
@@ -135,9 +135,9 @@ input[type="checkbox"] {
 
 .welcome-bg a:hover {
     opacity: 1;
-    transition: opacity .55s ease-in-out;
-    -moz-transition: opacity .55s ease-in-out;
-    -webkit-transition: opacity 
+    transition: opacity 0.55s ease-in-out;
+    -moz-transition: opacity 0.55s ease-in-out;
+    -webkit-transition: opacity;
 }
 
 .welcome-body .content {
@@ -189,7 +189,7 @@ input[type="checkbox"] {
     color: #000;
 }
 
-.contact_us .container  {
+.contact_us .container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -209,7 +209,7 @@ input[type="checkbox"] {
     margin-top: 10px;
 }
 
-.contactForm .inputBox input, 
+.contactForm .inputBox input,
 .contactForm .inputBox textarea {
     width: 100%;
     padding: 5px 0;
@@ -245,9 +245,9 @@ input[type="checkbox"] {
     font-size: 18px;
 }
 
-.contactForm .inputBox input:focus ~ span, 
+.contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span, 
+.contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span {
     color: #ffcdab;
     font-size: 12px;
@@ -257,9 +257,9 @@ input[type="checkbox"] {
 
 @media (max-width: 967) {
     .contact_us {
-        padding: 50px 
+        padding: 50px;
     }
-    .container  {
+    .container {
         flex-direction: column;
     }
     .container .contactForm {
@@ -270,8 +270,8 @@ input[type="checkbox"] {
 
 /** -------------------------------------------------------- HOMe PAGE CSS ----------------------------------------------------------------------**/
 body {
-    background-color:  #fff; /* Fallback For Welcome Page*/
-  }
+    background-color: #fff; /* Fallback For Welcome Page*/
+}
 
 body .welcome-body {
     background-color: #fff;
@@ -299,30 +299,30 @@ body .welcome-body {
 
 /** -------------------------------------------------------- FOOTER PAGE CSS ----------------------------------------------------------------------**/
 .footer-container {
-	max-width: 1170px;
-	margin:auto;
+    max-width: 1170px;
+    margin: auto;
 }
 
 .footer-row {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer ul {
-	list-style: none;
+    list-style: none;
 }
 
 .footer {
-    display:flex; 
-    flex-flow:column; 
-    justify-content:space-between;
-	background-color: #000;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: #000;
     padding-block: 70px;
 }
 
 .footer-col {
-   width: 25%;
-   padding: 0 15px;
+    width: 25%;
+    padding: 0 15px;
 }
 
 .footer-col h3 {
@@ -330,49 +330,49 @@ footer ul {
     font-size: 18px;
     color: #fff;
     margin-bottom: 50px;
-	font-weight: 500;
-	position: relative;
+    font-weight: 500;
+    position: relative;
 }
 
 .footer-col h2 {
     text-transform: uppercase;
-	font-size: 16px;
-	color: #fff;
-	margin-bottom: 50px;
-	font-weight: bold;
-	position: relative;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: bold;
+    position: relative;
     margin-left: 40px;
 }
 
 .footer-col h2:before {
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #fff;
-	height: 2px;
-	box-sizing: border-box;
-	width: 30px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 30px;
 }
 
 .footer-col ul li:not(:last-child) {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-col ul li a {
     text-transform: capitalize;
-	font-size: 16px;
-	color: #fff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #808080;
-	display: block;
-	transition: all 0.3s ease;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #808080;
+    display: block;
+    transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-	color: #fff;
-	padding-left: 8px;
+    color: #fff;
+    padding-left: 8px;
 }
 
 .footer-col a {
@@ -404,7 +404,7 @@ footer ul {
 }
 
 .footer-col .input {
-    color: #D3D3D3;
+    color: #d3d3d3;
     border: 0;
     padding: 2px;
     width: 100%;
@@ -413,35 +413,35 @@ footer ul {
     font-size: 13px;
     border-bottom: 2px solid #fff;
     background: transparent;
-  }
+}
 
 .footer-col .socials a {
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
     line-height: 40px;
-	border-radius: 50%;
+    border-radius: 50%;
     padding: 10;
-	color: #fff;
-	transition: all 0.5s ease;
+    color: #fff;
+    transition: all 0.5s ease;
 }
 
 .footer-col .socials a:hover {
-	color: #808080;
-	background-color: #fff;
+    color: #808080;
+    background-color: #fff;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .footer-col {
         width: 100%;
     }
@@ -452,72 +452,41 @@ footer ul {
 .cartpage {
     margin: 100px 100px;
     height: 100vh;
-    padding: 2%;
 }
-
-.cart-products .cart-item{
+.cart-header {
+    padding: 10px;
+    font-size: 18px;
+}
+.cart-products .cart-item {
     text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0 / 8%);
     padding: 10px 10px;
     margin-top: 10px;
     font-size: 10px;
     font-weight: 600;
+    width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     cursor: pointer;
 }
 
-.cart-header{
-    font-weight: bold;
-}
-
-.cart-item{
-    height: 100%;
-}
-
-.cart-image{
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cart-name{
-    text-align: left;
-}
-
-.cart-price {
+.cart-price .cart-remove {
     font-size: 10px;
     font-weight: 600;
     padding: 4px 2px;
 }
 
-#cart-quantity {
-    font-size: 20px;
-    text-align: center;
-    border: none;
-    background-color: #f8f9fa;
-}
-
-input[type=number]::-webkit-inner-spin-button {
-    opacity: 1;
-    background-color: #f8f9fa;
-}
-
-.remove-title{
-    text-align: center;
-vertical-align: middle;
-line-height: 90px;
-}
-
-.cart-remove{
-    color: rgb(203, 20, 20);
-    font-weight: 200;
+.cart-quantity {
+    border: 0.5px solid black;
+    font-size: 10px;
+    width: 30%;
+    outline: none;
     text-align: center;
 }
 
+/**/
 
 div.row.justify-content-center {
     margin: 100px;
@@ -530,38 +499,38 @@ div.row.justify-content-center {
 }
 
 .shop-banner {
-    position: relative; 
+    position: relative;
     width: 100%;
     margin-top: 4.7rem;
     margin-bottom: 5rem;
 }
 /** BEGINNING OF TABLE CSS ---------------------------------------------------------------------------------------------**/
-.productTables{
-    text-align: center; 
-    margin-left:auto; 
-    margin-right:auto;
-    border-spacing: 50px;   
+.productTables {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 50px;
     border-collapse: separate;
     font-weight: bolder;
 }
 
-.cellPaddingPX { 
+.cellPaddingPX {
     padding: 80px;
 }
 /** END OF TABLE CSS ---------------------------------------------------------------------------------------------**/
 
 /** PRODUCT IMAGE SIZES **/
-.energyImageSize{
+.energyImageSize {
     width: 180px;
     height: 300px;
 }
 
-.carbonatedImageSize{
+.carbonatedImageSize {
     width: 200px;
     height: 267px;
 }
 
-.hydrationImageSize{
+.hydrationImageSize {
     width: 170px;
     height: 300px;
 }
@@ -589,44 +558,48 @@ div.row.justify-content-center {
 /** END OF TEXT ANIMATION ------------------------------------------------------------------------------------------------**/
 
 /** BEGINNING OF BUTTON CSS ---------------------------------------------------------------------------------------------**/
-.shopAddToCartButtonCSS{
-  --b: 3px;   /** border thickness **/
-  --s: .45em; /** size of the corner **/
-  --color: #181818;
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),rgba(221, 14, 14, 0) 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid rgba(0, 0, 0, 0);
-  outline-offset: .6em;
-  font-size: 17px;
-  font-weight: bold;
-  border: 0;
+.shopAddToCartButtonCSS {
+    --b: 3px; /** border thickness **/
+    --s: 0.45em; /** size of the corner **/
+    --color: #181818;
+    padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(
+            from 90deg at var(--b) var(--b),
+            rgba(221, 14, 14, 0) 90deg,
+            var(--color) 0
+        )
+        var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+        calc(100% - var(--b) - 2 * var(--_p));
+    transition: 0.3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid rgba(0, 0, 0, 0);
+    outline-offset: 0.6em;
+    font-size: 17px;
+    font-weight: bold;
+    border: 0;
 
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .shopAddToCartButtonCSS:hover,
-.shopAddToCartButtonCSS:focus-visible{
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: .05em;
-  color: rgb(31, 31, 31);
+.shopAddToCartButtonCSS:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: 0.05em;
+    color: rgb(31, 31, 31);
 }
 
 .shopAddToCartButtonCSS:active {
-  background: var(--color);
-  color: #fff;
+    background: var(--color);
+    color: #fff;
 }
 /** END OF BUTTON CSS -----------------------------------------------------------------------------------------------------**/
 
 /** DRINK NAME TEXT -----------------------------------------------------------------------------------------------**/
-.drinkName{
+.drinkName {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bolder;
@@ -634,14 +607,14 @@ div.row.justify-content-center {
 /** END OF DRINK NAME TEXT -----------------------------------------------------------------------------------------------**/
 
 /** BEGINNING OF IMAGE SIZE BIGGER WHEN HOVERED -----------------------------------------------------------------------------**/
-.shopProductImages{
-    transition: transform .2s;
+.shopProductImages {
+    transition: transform 0.2s;
     margin: 0 auto;
-  }
-  
-  .shopProductImages:hover {
+}
+
+.shopProductImages:hover {
     transform: scale(1.1);
-  }
+}
 /** END OF IMAGE SIZE BIGGER WHEN HOVERED ----------------------------------------------------------------------------------**/
 
 /** --------------------------------------------------------  END OF SHOP PAGE CSS --------------------------------------------------------------**/
