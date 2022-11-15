@@ -268,7 +268,7 @@ input[type="checkbox"] {
 }
 /** -------------------------------------------------------- END OF CONTACT US PAGE CSS ----------------------------------------------------------------------**/
 
-/** -------------------------------------------------------- HOME PAGE CSS ----------------------------------------------------------------------**/
+/** -------------------------------------------------------- HOMe PAGE CSS ----------------------------------------------------------------------**/
 body {
     background-color: #fff; /* Fallback For Welcome Page*/
 }
@@ -296,134 +296,6 @@ body .welcome-body {
     color: transparent;
 }
 /** -------------------------------------------------------- END OF HOME PAGE CSS ----------------------------------------------------------------------**/
-
-/** -------------------------------------------------------- FAQ PAGE CSS ----------------------------------------------------------------------**/
-.faq {
-    margin-top: 5rem;
-    position: relative;
-    min-height: 110vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #fff;
-}
-
-.faq .content {
-    max-width: 800px;
-    text-align: center;
-}
-
-.faq .content h2 {
-    text-transform: capitalize;
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    color: #000;
-}
-
-.faq .content p {
-    font-size: 20px;
-    color: #000;
-}
-/** -------------------------------------------------------- END OF FAQ PAGE CSS ----------------------------------------------------------------------**/
-
-/** -------------------------------------------------------- TERMS OF USE PAGE CSS ----------------------------------------------------------------------**/
-.terms_of_use {
-    margin-top: 5rem;
-    position: relative;
-    min-height: 110vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #fff;
-}
-
-.terms_of_use .content {
-    max-width: 800px;
-    text-align: center;
-}
-
-.terms_of_use .content h2 {
-    text-transform: capitalize;
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    color: #000;
-}
-
-.terms_of_use .content p {
-    font-size: 20px;
-    color: #000;
-}
-/** -------------------------------------------------------- END OF TERMS OF USE PAGE CSS ----------------------------------------------------------------------**/
-
-/** -------------------------------------------------------- PRIVACY POLICY PAGE CSS ----------------------------------------------------------------------**/
-.privacy_policy {
-    margin-top: 5rem;
-    position: relative;
-    min-height: 110vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #fff;
-}
-
-.privacy_policy .content {
-    max-width: 800px;
-    text-align: center;
-}
-
-.privacy_policy .content h2 {
-    text-transform: capitalize;
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    color: #000;
-}
-
-.privacy_policy .content p {
-    font-size: 20px;
-    color: #000;
-}
-/** -------------------------------------------------------- END OF PRIVACY POLICY PAGE CSS ----------------------------------------------------------------------**/
-
-/** -------------------------------------------------------- REFUND POLICY PAGE CSS ----------------------------------------------------------------------**/
-.refund_policy {
-    margin-top: 5rem;
-    position: relative;
-    min-height: 110vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #fff;
-}
-
-.refund_policy .content {
-    max-width: 800px;
-    text-align: center;
-}
-
-.refund_policy .content h2 {
-    text-transform: capitalize;
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    color: #000;
-}
-
-.refund_policy .content p {
-    font-size: 20px;
-    color: #000;
-}
-/** -------------------------------------------------------- END OF REFUND POLICY PAGE CSS ----------------------------------------------------------------------**/
 
 /** -------------------------------------------------------- FOOTER PAGE CSS ----------------------------------------------------------------------**/
 .footer-container {
@@ -746,3 +618,147 @@ div.row.justify-content-center {
 /** END OF IMAGE SIZE BIGGER WHEN HOVERED ----------------------------------------------------------------------------------**/
 
 /** --------------------------------------------------------  END OF SHOP PAGE CSS --------------------------------------------------------------**/
+
+/** --------------------------------------------------------  ABOUT US PAGE CSS --------------------------------------------------------------**/
+
+body .about {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #fff;
+}
+
+  .Abwrapper {
+      width: 100%;
+
+  }
+
+  .title h1 {
+      color: #000;
+      font-size: 46px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0px 0px ;
+      padding-top: 155px;
+      text-decoration: underline;
+      text-decoration-color: #FFB6B6;
+  }
+  .about{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      padding: 0px 100px;
+
+  }
+
+  .abimage {
+      width: 90%;
+      height: auto;
+      margin: auto;
+
+  }
+
+  .abimage img{
+      height: 750px;
+      width: 850px;
+      border-radius: 150%;
+      display: block;
+      margin: auto;
+
+  }
+
+  article{
+    width: 90%;
+}
+
+article h3{
+    font-size: 32px;
+    font-weight: 500;
+    color: #242424;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #FFB6B6;
+
+}
+
+article h3:hover{
+  color: #FFB6B6;
+  transition: 0.5s ease;
+
+}
+
+
+article p{
+    font-size: 28px;
+    color: #000;
+    margin-top: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    line-height: 1.4;
+    transition: all 1.5s;
+    text-align: center;
+
+}
+article p:hover{
+  color: #FFB6B6;
+  transition: 0.5s ease;
+
+
+}
+
+
+article a{
+    color: #000;
+    padding: 10px 25px;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: none;
+    border: 1px solid #F2FF68;
+    border-radius: 5px;
+}
+
+article a:hover{
+    background-color: #F2FF68;
+    transition: 0.5s ease;
+
+}
+
+@media screen and (max-width: 768px) {
+    .Abwrapper{
+        margin-top: 15px;
+    }
+    .title h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .abimage img{
+        height: 200px;
+        width: 200px;
+
+    }
+    .about{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    article{
+       margin-top: 30px; 
+    }
+    article h3{
+        font-size: 18px;
+    }
+    article p{
+        font-size: 15px;
+    }
+    article .button{
+        margin-bottom: 50px;
+    }
+    article a{
+        padding: 8px 20px ;
+        font-size: 17px;
+    }
+
+}
