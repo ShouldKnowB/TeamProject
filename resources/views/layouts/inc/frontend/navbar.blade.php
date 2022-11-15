@@ -7,6 +7,7 @@
         <li><a href="{{ asset('/shop') }}">shop</a></li>
         <li><a href="{{ asset('/about_us') }}">about punch</a></li>
         <li><a href="{{ asset('/contact_us') }}">contact us</a></li>
+
     </ul>
 
     <p>
