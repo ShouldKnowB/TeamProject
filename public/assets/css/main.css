@@ -268,7 +268,7 @@ input[type="checkbox"] {
 }
 /** -------------------------------------------------------- END OF CONTACT US PAGE CSS ----------------------------------------------------------------------**/
 
-/** -------------------------------------------------------- HOMe PAGE CSS ----------------------------------------------------------------------**/
+/** -------------------------------------------------------- HOME PAGE CSS ----------------------------------------------------------------------**/
 body {
     background-color: #fff; /* Fallback For Welcome Page*/
 }
@@ -296,6 +296,134 @@ body .welcome-body {
     color: transparent;
 }
 /** -------------------------------------------------------- END OF HOME PAGE CSS ----------------------------------------------------------------------**/
+
+/** -------------------------------------------------------- FAQ PAGE CSS ----------------------------------------------------------------------**/
+.faq {
+    margin-top: 5rem;
+    position: relative;
+    min-height: 110vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+.faq .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.faq .content h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.faq .content p {
+    font-size: 20px;
+    color: #000;
+}
+/** -------------------------------------------------------- END OF FAQ PAGE CSS ----------------------------------------------------------------------**/
+
+/** -------------------------------------------------------- TERMS OF USE PAGE CSS ----------------------------------------------------------------------**/
+.terms_of_use {
+    margin-top: 5rem;
+    position: relative;
+    min-height: 110vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+.terms_of_use .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.terms_of_use .content h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.terms_of_use .content p {
+    font-size: 20px;
+    color: #000;
+}
+/** -------------------------------------------------------- END OF TERMS OF USE PAGE CSS ----------------------------------------------------------------------**/
+
+/** -------------------------------------------------------- PRIVACY POLICY PAGE CSS ----------------------------------------------------------------------**/
+.privacy_policy {
+    margin-top: 5rem;
+    position: relative;
+    min-height: 110vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+.privacy_policy .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.privacy_policy .content h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.privacy_policy .content p {
+    font-size: 20px;
+    color: #000;
+}
+/** -------------------------------------------------------- END OF PRIVACY POLICY PAGE CSS ----------------------------------------------------------------------**/
+
+/** -------------------------------------------------------- REFUND POLICY PAGE CSS ----------------------------------------------------------------------**/
+.refund_policy {
+    margin-top: 5rem;
+    position: relative;
+    min-height: 110vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+.refund_policy .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.refund_policy .content h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.refund_policy .content p {
+    font-size: 20px;
+    color: #000;
+}
+/** -------------------------------------------------------- END OF REFUND POLICY PAGE CSS ----------------------------------------------------------------------**/
 
 /** -------------------------------------------------------- FOOTER PAGE CSS ----------------------------------------------------------------------**/
 .footer-container {
