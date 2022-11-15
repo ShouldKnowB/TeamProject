@@ -32,6 +32,7 @@ Route::get('/product_view', [App\Http\Controllers\ProductviewController::class, 
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
 
 Route::get('/faq', [App\Http\Controllers\FAQController::class, 'index'])->name('faq');
+Route::get('/terms_of_use', [App\Http\Controllers\TermsOfUseController::class, 'index'])->name('terms_of_use');
 Route::get('/privacy_policy', [App\Http\Controllers\PrivacypolicyController::class, 'index'])->name('privacy_policy');
 Route::get('/refund_policy', [App\Http\Controllers\RefundpolicyController::class, 'index'])->name('refund_policy');
 Route::get('/terms_of_use', [App\Http\Controllers\TermsofuseController::class, 'index'])->name('terms_of_use');
