@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'punch' ;
+    src: url("../fonts/RoSpritendoSemibold.otf") format("opentype");
+    font-size: small;
+}
 * {
-    font-family: "Poppins", sans-serif;
+    font-family:"Poppins", sans-serif;
+
 }
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
@@ -800,6 +806,7 @@ div.row.justify-content-center {
     border-spacing: 50px;
     border-collapse: separate;
     font-weight: bolder;
+    font-family: 'punch';
 }
 
 .cellPaddingPX {
@@ -826,7 +833,7 @@ div.row.justify-content-center {
 
 /** TEXT ANIMATION -----------------------------------------------------------------------------------------------------**/
 
-/** TESTING RAINBOW ANIMATION 
+/** TESTING RAINBOW ANIMATION
     .animatedText{
     animation: rainbow 4s linear;
     animation-iteration-count: infinite;
