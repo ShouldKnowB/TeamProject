@@ -927,14 +927,14 @@ body .about {
 
 .title h1 {
     color: #000;
-    font-size: 46px;
-    font-weight: 700;
-    text-transform: uppercase;
     text-align: center;
     padding: 0px 0px;
     padding-top: 155px;
-    text-decoration: underline;
-    text-decoration-color: #ffb6b6;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000;
 }
 .about {
     width: 100%;
