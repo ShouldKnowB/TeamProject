@@ -1,11 +1,10 @@
 @font-face {
-    font-family: 'punch' ;
+    font-family: "punch";
     src: url("../fonts/RoSpritendoSemibold.otf") format("opentype");
     font-size: small;
 }
 * {
-    font-family:"Poppins", sans-serif;
-
+    font-family: "Poppins", sans-serif;
 }
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
@@ -733,20 +732,20 @@ footer ul {
     font-weight: bold;
 }
 
-.cart-item{
+.cart-item {
     height: 100%;
 }
 
-.cart-image{
+.cart-image {
     width: 50px;
     height: 50px;
     text-align: center;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.cart-name{
+.cart-name {
     text-align: left;
 }
 
@@ -763,18 +762,18 @@ footer ul {
     background-color: #f8f9fa;
 }
 
-input[type=number]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
     opacity: 1;
     background-color: #f8f9fa;
 }
 
-.remove-title{
+.remove-title {
     text-align: center;
-vertical-align: middle;
-line-height: 90px;
+    vertical-align: middle;
+    line-height: 90px;
 }
 
-.cart-remove{
+.cart-remove {
     color: rgb(203, 20, 20);
     font-weight: 200;
     text-align: center;
@@ -806,7 +805,7 @@ div.row.justify-content-center {
     border-spacing: 50px;
     border-collapse: separate;
     font-weight: bolder;
-    font-family: 'punch';
+    font-family: "punch";
 }
 
 .cellPaddingPX {
