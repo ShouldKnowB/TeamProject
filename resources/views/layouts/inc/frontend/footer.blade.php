@@ -18,17 +18,17 @@
                 <ul>
                     <li><a href="{{ asset('/') }}">berry blast</a></li>
                     <li><a href="{{ asset('/') }}">blue raspberry</a></li>
-                    <li><a href="{{ asset('/') }}">lemon and lime</a></li>
-                    <li><a href="{{ asset('/') }}">tart cherry</a></li>
+                    <li><a href="{{ asset('/') }}">lime and lemon</a></li>
                     <li><a href="{{ asset('/') }}">tropical</a></li>
+                    <li><a href="{{ asset('/') }}">tart cherry</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h2>support</h2>
                 <ul>
-                    <li><a href="{{ asset('/faq') }}">FAQ</a></li>
-                    <li><a href="{{ asset('/terms_of_use') }}">terms of use</a></li>
+                    <li><a href="{{ asset('/faqs') }}">FAQs</a></li>
+                    <li><a href="{{ asset('/terms_and_conditions') }}">terms and conditions</a></li>
                     <li><a href="{{ asset('/privacy_policy') }}">privacy policy</a></li>
                     <li><a href="{{ asset('/refund_policy') }}">refund policy</a></li>
                     <li><a href="{{ asset('/contact_us') }}">contact us</a></li>
