@@ -37,7 +37,7 @@ Route::get('/privacy_policy', [App\Http\Controllers\PrivacypolicyController::cla
 Route::get('/refund_policy', [App\Http\Controllers\RefundpolicyController::class, 'index'])->name('refund_policy');
 Route::get('/terms_of_use', [App\Http\Controllers\TermsofuseController::class, 'index'])->name('terms_of_use');
 
-
+/*Admin Dashboard Routes*/
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
     Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
      //Product Routes
@@ -45,7 +45,10 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
        Route::get('/products', 'index');
        Route::get('/products/create', 'create');
        Route::post('/products', 'store');
-
+       Route::get('/products/{product}/edit', 'edit');
+       Route::put('/products/{product}', 'update');
+       Route::get('product-image/{product_image_id}/delete','destroyImage');
+       Route::get('products/{product_id}/delete','destroy');
 
     });
 
@@ -57,8 +60,11 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
         Route::get('/category/{category}/edit', 'edit');
         Route::put('/category/{category}', 'update');
 
+     });
 
-
+     //Customer Routes
+     Route::controller(App\Http\Controllers\Admin\UserController::class)->group(function () {
+        Route::get('/customer', 'index');
 
      });
 
