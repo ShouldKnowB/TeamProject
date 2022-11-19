@@ -970,7 +970,7 @@ article a:hover {
     transition: 0.5s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1497px) {
     .Abwrapper {
         margin-top: 15px;
     }
@@ -979,11 +979,11 @@ article a:hover {
         text-align: center;
     }
     .abimage img {
-        height: 200px;
-        width: 200px;
+        height: auto;
+        width: 100%;
     }
     .about {
-        flex-direction: column;
+        flex-direction: row;
         margin-top: 10px;
     }
     article {
@@ -993,7 +993,7 @@ article a:hover {
         font-size: 18px;
     }
     article p {
-        font-size: 15px;
+        font-size: 20px;
     }
     article .button {
         margin-bottom: 50px;
