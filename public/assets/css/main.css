@@ -914,8 +914,7 @@ body .about {
 
 .abimage img {
     height: auto;
-    width: 100%;
-    border-radius: 150%;
+    width: 90%;
     display: block;
     margin: auto;
 }

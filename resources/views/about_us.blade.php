@@ -9,7 +9,7 @@
                     <div class="about">
 
                         <div class="abimage">
-                            <img src="{{ url('assets/images/punch.png') }}" alt="">
+                            <img src="{{ url('assets/images/Final-no-bg.png') }}" alt="">
 
                         </div>
                         <article>
