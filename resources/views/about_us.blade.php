@@ -22,6 +22,8 @@
                             refreshing
                             no matter the circumstances.
                         </p>
+                        <div class="button">
+                                <a href="shop">See options</a>
                     </article>
                 </div>
             </div>
