@@ -878,7 +878,7 @@ div.row.justify-content-center {
 
 .about_us {
     width: 100%;
-    min-height: auto;
+    min-height: 70vh;
 }
 
 .about_us h1 {
