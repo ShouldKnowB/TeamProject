@@ -31,7 +31,31 @@
                     <a href="{{ route('register') }}">{{ __('Register') }}</a>
                 </li>
             @endif
-        @else
+
+            @elseif(Auth::user()->role_as =='1')
+            <li class="nav-item dropdown">
+                <a href="{{ route('login') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Admin
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{{url('admin/dashboard')}}"><i class="fa fa-user"></i>View Admin Dashboard</a></li>
+                    <li>
+
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
+                            <i class="fa fa-sign-out"></i>{{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </li>
+                </ul>
+            </li>
+
+            @else
             <li class="nav-item dropdown">
                 <a href="{{ route('login') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
