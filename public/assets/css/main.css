@@ -249,7 +249,6 @@ input[type="checkbox"] {
 .contact_us button:hover {
     background-color: #000;
     color: #fff;
-    border-color: #fff;
 }
 
 .contact-form .input-box input[type="submit"] {
