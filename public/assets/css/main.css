@@ -197,20 +197,20 @@ input[type="checkbox"] {
     margin-top: 30px;
 }
 
-.contactForm {
+.contact-form {
     width: 40%;
     padding: 40px;
     background: #000;
 }
 
-.contactForm .inputBox {
+.contact-form .input-box {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
+.contact-form .input-box input,
+.contact-form .input-box textarea {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -224,7 +224,7 @@ input[type="checkbox"] {
     resize: none;
 }
 
-.contactForm .inputBox span {
+.contact-form .input-box span {
     text-transform: capitalize;
     position: absolute;
     left: 0;
@@ -236,7 +236,23 @@ input[type="checkbox"] {
     transition: 0.5s;
 }
 
-.contactForm .inputBox input[type="submit"] {
+.contact_us button {
+    margin-top: 1rem;
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+.contact_us button:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+.contact-form .input-box input[type="submit"] {
     background: #ffcdab;
     color: #fff;
     border: none;
@@ -245,10 +261,10 @@ input[type="checkbox"] {
     font-size: 18px;
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:valid ~ span {
     color: #ffcdab;
     font-size: 12px;
     top: -20px;
@@ -262,7 +278,7 @@ input[type="checkbox"] {
     .container {
         flex-direction: column;
     }
-    .container .contactForm {
+    .container .contact-form {
         width: 100%;
     }
 }
@@ -279,12 +295,12 @@ input[type="checkbox"] {
     flex-direction: column;
 }
 
-.faqs .content1 {
+.faqs .title {
     max-width: 800px;
     text-align: center;
 }
 
-.faqs .content1 h2 {
+.faqs .title h2 {
     text-transform: capitalize;
     font-size: 35px;
     font-weight: bold;
@@ -292,12 +308,12 @@ input[type="checkbox"] {
     color: #000;
 }
 
-.faqs .content1 p {
+.faqs .title p {
     font-size: 20px;
     color: #000;
 }
 
-.faqs .question {
+.faqs .questions {
     background-color: #fff;
     margin-bottom: 20px;
     padding: 15px 40px;
@@ -305,7 +321,7 @@ input[type="checkbox"] {
     box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
 }
 
-.faqs .answer {
+.faqs .answers {
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -319,7 +335,7 @@ input[type="checkbox"] {
     cursor: pointer;
     padding: 15px 0;
 }
-.faqs .content2 {
+.faqs .information {
     position: relative;
     font-size: 14px;
     text-align: justify;
@@ -361,7 +377,7 @@ input[type="checkbox"] {
     text-align: left;
     text-transform: capitalize;
     font-size: 20px;
-    font-weight: 750;
+    font-weight: bold;
     color: #000;
 }
 
@@ -402,7 +418,7 @@ input[type="checkbox"] {
     text-align: left;
     text-transform: capitalize;
     font-size: 20px;
-    font-weight: 750;
+    font-weight: bold;
     color: #000;
 }
 
@@ -455,7 +471,7 @@ input[type="checkbox"] {
     text-align: left;
     text-transform: capitalize;
     font-size: 20px;
-    font-weight: 750;
+    font-weight: bold;
     color: #000;
 }
 
@@ -1058,7 +1074,7 @@ div.row.justify-content-center {
 .login-page button {
     background-color: #000;
     color: #fff;
-    border-color: white;
+    border-color: #000;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-block: 1.5rem;

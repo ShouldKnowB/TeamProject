@@ -16,31 +16,31 @@
         </div>
         <div class="container">
 
-            <div class="contactForm">
+            <div class="contact-form">
                 <form action="{{ url('contact_us') }}" method="POST">
                     @csrf
-                    <div class="inputBox">
+                    <div class="input-box">
                         <input type="text" name="name" required="required">
                         <span> full name </span>
                         @error('name')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
                     </div>
-                    <div class="inputBox">
+                    <div class="input-box">
                         <input type="email" name="email" required="required" />
                         <span> email </span>
                         @error('email')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
                     </div>
-                    <div class="inputBox">
+                    <div class="input-box">
                         <textarea name="queries" rows="3" required="required"></textarea>
                         <span> type message...</span>
                         @error('queries')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
                     </div>
-                    <button type="submit" class="btn btn-primary float-end">Send</button>
+                    <button type="submit" class="button">Send Message</button>
                 </form>
             </div>
     </section>

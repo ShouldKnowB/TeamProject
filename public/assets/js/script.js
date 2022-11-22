@@ -12,8 +12,8 @@ window.onscroll = function () {
 };
 
 // FAQs Animation
-let toggles = document.getElementsByClassName("answer");
-let contentDiv = document.getElementsByClassName("content2");
+let toggles = document.getElementsByClassName("answers");
+let contentDiv = document.getElementsByClassName("information");
 let icons = document.getElementsByClassName("icon");
 
 for (let i = 0; i < toggles.length; i++) {
