@@ -11,7 +11,7 @@
 
         <table>
             <table class="productTables">
-                <h1 class="productTables">Energy Drinks</h1>
+                <h1 class="productTables">energy drinks</h1>
                 <tr>
                     <th class="cellPaddingPX"><a href="#"><img class="shopProductImages energyImageSize"
                                 src="{{ url('assets/images/product-images/Berry Blast cda6b2/Energy/berryBlastEnergyTransparent.png') }}"></a>
@@ -68,7 +68,7 @@
 
         <table>
             <table class="productTables">
-                <h1 class="productTables">Zero Sugar Drinks</h1>
+                <h1 class="productTables">zero sugar drinks</h1>
                 <tr>
                     <th class="cellPaddingPX"><a href="#"><img class="shopProductImages carbonatedImageSize"
                                 src="{{ url('assets/images/product-images/Berry Blast cda6b2/Carbonated/berryBlastZeroSugarTransparent.png') }}"></a>
@@ -125,7 +125,7 @@
 
         <table>
             <table class="productTables">
-                <h1 class="productTables">Hydration Drinks</h1>
+                <h1 class="productTables">hydration drinks</h1>
                 <tr>
                     <th class="cellPaddingPX"><a href="#"><img class="shopProductImages hydrationImageSize"
                                 src="{{ url('assets/images/product-images/Berry Blast cda6b2/Hydration/berryBlastHydrationTransparent.png') }}"></a>

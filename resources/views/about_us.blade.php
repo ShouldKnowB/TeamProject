@@ -3,7 +3,7 @@
 <body>
     <section>
         <div class="about_us">
-            <h1>About Punch</h1>
+            <h1><div class="about">About</div> punch</h1>
             <div>
                 <div class="content">
                     <div class="abimage">
