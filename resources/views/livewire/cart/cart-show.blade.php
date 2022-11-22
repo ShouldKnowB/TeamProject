@@ -44,6 +44,28 @@
                             </div>
                         </div>
                     </div>
+<!--database
+
+                 
+                    <div class="row">
+                        <div class = "col-md-1">
+                            <img class="cart-image" src="{{ url('assets/images/product-images/Blue Raspberry b836ff/Energy/blueRaspberryEnergyTransparent.png') }}">
+                        </div>
+                        <div class = "col-md-5">
+                            <h5 class="cart-name"><a href="{{ asset('/shop') }}">Blue Raspberry - Energy</a></h5>
+                        </div>
+                        <div class="col-md-2 cart-price">
+                            <h5>£_.__</h5>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="number" id="cart-quantity" name="cart-quantity" min="1" max="5" value="1">
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="cart-remove">X</h5>
+                        </div>
+                    </div>
+            -->
+
                 </div>    
             </div>   
         </div>
