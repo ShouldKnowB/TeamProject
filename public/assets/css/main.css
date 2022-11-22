@@ -1036,12 +1036,12 @@ div.row.justify-content-center {
     border-radius: -10;
 }
 
-.login-page .forgotten {
+/* .login-page .forgotten {
     z-index: 1;
     position: relative;
     bottom: 2rem;
     left: 10rem;
-}
+} */ /* CSS FOR 'FORGETTEN PASSWORD LINK */
 
 .login-page h1 {
     font-size: 30px;
@@ -1072,6 +1072,7 @@ div.row.justify-content-center {
 }
 
 .login-page button {
+    margin-top: 1rem;
     background-color: #000;
     color: #fff;
     border-color: #000;
