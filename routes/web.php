@@ -28,6 +28,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/about_us', [App\Http\Controllers\AboutusController::class, 'index'])->name('about_us');
 Route::get('/shop', [App\Http\Controllers\ShopController::class, 'index'])->name('shop');
 Route::get('/contact_us', [App\Http\Controllers\ContactusController::class, 'index'])->name('contact_us');
+Route::post('/contact_us', [App\Http\Controllers\ContactusController::class, 'store'])->name('contact_us');
 Route::get('/product_view', [App\Http\Controllers\ProductviewController::class, 'index'])->name('product_view');
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
 
