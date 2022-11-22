@@ -14,6 +14,7 @@
                 <p>It's a drink that's made with real fruit juice, natural caffeine and electrolytes. It's got no sugar,
                     no
                     artificial sweeteners and no artificial colours. It's got a great taste and it's got a great name.
+                    Find out more about the company on <a href="/about_us">About Us</a>.
                 </p>
             </div>
         </div>
