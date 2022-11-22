@@ -31,15 +31,13 @@
 
 <body>
     <div id="app">
-
         @include('layouts.inc.frontend.navbar')
 
         <main class="py-4">
             @yield('content')
         </main>
-
-        @include('layouts.inc.frontend.footer')
     </div>
+    @include('layouts.inc.frontend.footer')
 
     @livewireScripts
     <!-- JS File Links -->
