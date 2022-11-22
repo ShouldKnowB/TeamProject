@@ -788,6 +788,7 @@ div.row.justify-content-center {
 /** BEGINNING OF TABLE CSS ---------------------------------------------------------------------------------------------**/
 .productTables {
     text-transform: capitalize;
+    letter-spacing: 5px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -885,6 +886,7 @@ div.row.justify-content-center {
 /** DRINK NAME TEXT -----------------------------------------------------------------------------------------------**/
 .drinkName {
     font-size: 18px;
+    letter-spacing: 5px;
 }
 /** END OF DRINK NAME TEXT -----------------------------------------------------------------------------------------------**/
 
@@ -910,6 +912,7 @@ div.row.justify-content-center {
 
 .about_us h1 {
     text-transform: capitalize;
+    letter-spacing: 5px;
     text-align: center;
     padding-top: 155px;
     font-size: 35px;
