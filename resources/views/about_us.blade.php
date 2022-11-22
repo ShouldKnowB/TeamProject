@@ -3,7 +3,7 @@
 <body>
     <section>
         <div class="about_us">
-            <h1><div class="about">About</div> punch</h1>
+            <h1>About punch</h1>
             <div>
                 <div class="content">
                     <div class="abimage">
@@ -23,7 +23,7 @@
                             no matter the circumstances.
                         </p>
                         <div class="button">
-                                <a href="shop">See options</a>
+                            <a href="shop">See options</a>
                     </article>
                 </div>
             </div>
