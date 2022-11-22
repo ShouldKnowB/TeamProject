@@ -1,8 +1,6 @@
 * {
-    font-family: 'Arimo', sans-serif;
-
+    font-family: "Gill Sans", sans-serif;
 }
-
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
 nav {
@@ -711,7 +709,7 @@ footer ul {
     text-align: left;
 }
 
-.cart-name a{
+.cart-name a {
     text-decoration: none;
     color: white;
 }
@@ -750,10 +748,9 @@ input[type="number"]::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.cart-remove:hover{
+.cart-remove:hover {
     transform: scale(1.2);
 }
-
 
 /**/
 
@@ -1006,23 +1003,79 @@ div.row.justify-content-center {
         margin-bottom: 50px;
     }
 }
-/** -------------------------------------------------------- LOGIN AND REGISTER PAGE CSS --------------------------------------------------------------**/
-.btn-primary {
-    background-color: #ffcdab !important;
-    border-color: #ffcdab !important;
-}
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:visited,
-.btn-primary:focus {
-    background-color: #ffcdab !important;
-    border-color: #ffcdab !important;
-}
-.login{
-    padding: 5rem;
-}
-.register{
-    padding: 5rem;
+
+/** -------------------------------------------------------- LOGIN PAGE CSS --------------------------------------------------------------**/
+.login-page {
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-/** -------------------------------------------------------- END OF LOGIN AND REGISTER PAGE CSS --------------------------------------------------------------**/
+.login-page input {
+    width: 500px;
+    border-radius: -10;
+}
+
+.login-page .forgotten {
+    z-index: 1;
+    position: relative;
+    bottom: 2rem;
+    left: 10rem;
+}
+
+.login-page h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.login-page p {
+    font-size: 18px;
+    color: #999;
+}
+
+.login-page .body {
+    padding-block: 1rem;
+}
+
+.login-page a {
+    color: #000;
+}
+
+.login-page a:hover {
+    color: #ffcdab;
+}
+
+.login-page .links {
+    padding-bottom: 1rem;
+}
+
+.login-page button {
+    background-color: #000;
+    color: #fff;
+    border-color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-block: 1.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    transition: 0.3s;
+}
+
+.login-page button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+/** -------------------------------------------------------- END OF LOGIN PAGE CSS --------------------------------------------------------------**/
+
+/** -------------------------------------------------------- REGISTER PAGE CSS --------------------------------------------------------------**/
+.register {
+    padding: 5rem;
+}
+/** -------------------------------------------------------- END OF REGISTER PAGE CSS --------------------------------------------------------------**/
