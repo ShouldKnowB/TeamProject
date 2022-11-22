@@ -1,6 +1,8 @@
 * {
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'Arimo', sans-serif;
+
 }
+
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
 nav {
@@ -924,6 +926,12 @@ footer ul {
 .btn-primary:focus {
     background-color: #ffcdab !important;
     border-color: #ffcdab !important;
+}
+.login{
+    padding: 5rem;
+}
+.register{
+    padding: 5rem;
 }
 
 /** -------------------------------------------------------- END OF LOGIN AND REGISTER PAGE CSS --------------------------------------------------------------**/
