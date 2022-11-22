@@ -686,7 +686,8 @@ footer ul {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    cursor: pointer;
+    border-color: lightgray;
+    box-shadow: 5px 5px 5px lightgray;
 }
 
 .cart-header {
@@ -710,6 +711,11 @@ footer ul {
     text-align: left;
 }
 
+.cart-name a{
+    text-decoration: none;
+    color: #000;
+}
+
 .cart-price {
     font-size: 10px;
     font-weight: 600;
@@ -720,12 +726,13 @@ footer ul {
     font-size: 20px;
     text-align: center;
     border: none;
-    background-color: #f8f9fa;
+    cursor: pointer;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
     opacity: 1;
     background-color: #f8f9fa;
+    cursor: pointer;
 }
 
 .remove-title {
@@ -738,7 +745,13 @@ input[type="number"]::-webkit-inner-spin-button {
     color: rgb(203, 20, 20);
     font-weight: 200;
     text-align: center;
+    cursor: pointer;
 }
+
+.cart-remove:hover{
+    transform: scale(1.2);
+}
+
 
 /**/
 
