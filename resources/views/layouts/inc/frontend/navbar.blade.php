@@ -39,7 +39,7 @@
                     Admin
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{{url('admin/dashboard')}}"><i class="fa fa-user"></i>View Admin Dashboard</a></li>
+                    <li><a class="dropdown-item" href="{{url('admin/dashboard')}}">View Admin Dashboard</a></li>
                     <li>
 
                         <a class="dropdown-item" href="{{ route('logout') }}"
