@@ -20,22 +20,22 @@
                 <form action="{{ url('contact_us') }}" method="POST">
                     @csrf
                     <div class="inputBox">
+                        <input type="text" name="name" required="required">
                         <span> full name </span>
-                        <input type="text" name="name">
                         @error('name')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
                     </div>
                     <div class="inputBox">
+                        <input type="email" name="email" required="required" />
                         <span> email </span>
-                        <input type="email" name="email" />
                         @error('email')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
                     </div>
                     <div class="inputBox">
+                        <textarea name="queries" rows="3" required="required"></textarea>
                         <span> type message...</span>
-                        <textarea name="queries" rows="3"></textarea>
                         @error('queries')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
