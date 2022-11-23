@@ -22,7 +22,8 @@ class ProductController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('admin.products.create', compact('categories'));
+        $flavours = Flavours::where('status','0')->get();
+        return view('admin.products.create', compact('categories','flavours'));
 
     }
 
@@ -63,6 +64,15 @@ class ProductController extends Controller
             ]);
 
 
+        }
+    }
+    if($request->flavours){
+        foreach($request->flavours as $key => $flavours){
+
+            $product->productFlavours()->create([
+
+            ]);
+            
         }
     }
        return redirect('/admin/products')->with('message','Product Added Sucessfully');
