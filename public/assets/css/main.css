@@ -1,9 +1,5 @@
-/*** {
-    font-family: "Arimo", sans-serif;
-}**/
-
 * {
-    font-family: "Gill Sans", sans-serif;
+    font-family: "Arimo", sans-serif;
 }
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
@@ -244,7 +240,7 @@ input[type="checkbox"] {
     margin-top: 1rem;
     background-color: #fff;
     color: #000;
-    border-color: #000;
+    border-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: 0.3s;
@@ -1099,6 +1095,68 @@ div.row.justify-content-center {
 
 /** -------------------------------------------------------- REGISTER PAGE CSS --------------------------------------------------------------**/
 .register {
-    padding: 5rem;
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.register input {
+    width: 500px;
+    border-radius: -10px;
+}
+
+.register .password {
+    padding-block: 1rem;
+}
+
+.register h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.register p {
+    font-size: 18px;
+    color: #999;
+}
+
+.register .body {
+    padding-block: 1rem;
+}
+
+.register a {
+    color: #000;
+}
+
+.register a:hover {
+    color: #ffcdab;
+}
+
+.register .links {
+    padding-bottom: 1rem;
+}
+
+.register button {
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-block: 1.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    transition: 0.3s;
+}
+
+.register button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
 }
 /** -------------------------------------------------------- END OF REGISTER PAGE CSS --------------------------------------------------------------**/
