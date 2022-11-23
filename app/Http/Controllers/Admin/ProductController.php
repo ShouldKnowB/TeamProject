@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Http\Requests\ProductFormRequest;
-
-use Illuminate\Support\Str;
 use App\Models\Category;
+use App\Models\Flavours;
+use Illuminate\Support\Str;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\ProductFormRequest;
 
 
 class ProductController extends Controller
@@ -20,7 +21,8 @@ class ProductController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('admin.products.create', compact('categories'));
+        $flavours = Flavours::where('status','0')->get();
+        return view('admin.products.create', compact('categories','flavours'));
 
     }
 
@@ -63,6 +65,15 @@ class ProductController extends Controller
             ]);
 
 
+        }
+    }
+    if($request->flavours){
+        foreach($request->flavours as $key => $flavours){
+
+            $product->productFlavours()->create([
+
+            ]);
+            
         }
     }
        return redirect('/admin/products')->with('message','Product Added Sucessfully');

@@ -46,21 +46,35 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
        Route::get('/products/create', 'create');
        Route::post('/products', 'store');
 
-
     });
-
-     //Category Routes
-     Route::controller(App\Http\Controllers\Admin\CategoryController::class)->group(function () {
+    Route::controller(App\Http\Controllers\Admin\FlavoursController::class)->group(function () {
+        Route::get('/flavours', 'index');
+        Route::get('/flavours/create', 'create');
+        Route::post('/flavours/create', 'store');
+        Route::get('/flavours/{flavours_id}/edit','edit');
+        Route::put('/flavours/{flavours}','update');
+        Route::get('/flavours/{flavours_id}/delete','destroy');
+    });
+    Route::controller(App\Http\Controllers\Admin\CategoryController::class)->group(function () {
         Route::get('/category', 'index');
         Route::get('/category/create', 'create');
         Route::post('/category', 'store');
         Route::get('/category/{category}/edit', 'edit');
         Route::put('/category/{category}', 'update');
 
+      });
+    
 
 
 
      });
+     
 
 
-});
+
+
+
+
+     
+     
+
