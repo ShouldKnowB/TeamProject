@@ -9,6 +9,7 @@ use App\Models\Product;
 use Illuminate\Support\Str;
 use App\Models\Category;
 use App\Models\ProductImage;
+use App\Models\Flavours;
 use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
@@ -72,7 +73,7 @@ class ProductController extends Controller
             $product->productFlavours()->create([
 
             ]);
-            
+
         }
     }
        return redirect('/admin/products')->with('message','Product Added Sucessfully');
@@ -123,6 +124,16 @@ class ProductController extends Controller
                     ]);
 
 
+                }
+            }
+            if($request->colors){
+                foreach($request->flavours as $key => $flavours){
+                    $product->productFlavours()->create([
+                        'product_id' => $product->id,
+                        'flavours_id' => $flavours,
+                        'quantity' => $request->flavourquantity[$key] ?? 0
+
+                    ]);
                 }
             }
                return redirect('/admin/products')->with('message','Product Updated Sucessfully');

@@ -1,63 +1,4 @@
-/*------------------------------------------------------------------
- [Master Stylesheet]
 
-  Project:	Majestic Admin
-  Version:	1.1.0
--------------------------------------------------------------------*/
-/*-------------------------------------------------------------------
-  ===== Table of Contents =====
-
-  * Bootstrap functions
-  * Bootstrap variables
-  * Template variables
-  * SCSS Compass Functions
-  * Boostrap Main SCSS
-  * Template mixins
-    + Animation Mixins
-    + Button Mixins
-    + Miscellaneous Mixins
-    + Cards Mixins
-    + Color Functions Mixins
-    + Badge Mixins
-    + Blockquote Mixins
-
-  * Core Styles
-    + Reset Styles
-    + Fonts
-    + Functions
-    + Backgrounds
-    + Typography
-    + Miscellaneous
-    + Footer
-    + Utilities
-    + Demo styles
-  * Components
-    + Buttons
-    + Badges
-    + Bootstrap Progress
-    + Cards
-    + Checkboxes and Radios
-    + Dropdowns
-    + Forms
-    + Icons
-    + Lists
-    + Tables
-  * Plugin overrides
-    + Data-tables
-  * Landing screens
-    + Auth
-  * Layout
-    + Vertical wrapper
-    + Sidebar
-    + Navbar
-    + Layouts
--------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/* === Import Bootstrap functions and variables === */
-/*-------------------------------------------------------------------*/
-/* === Import template variables === */
-/*-------------------------------------------------------------------*/
-/* === SCSS Compass Functions === */
 @-moz-keyframes flash {
   0% {
     opacity: 1;
@@ -22247,106 +22188,6 @@ dl li {
   }
 }
 
-/*-------------------------------------------------------------------*/
-/* === Landing screens === */
-/* Auth */
-.auth .login-half-bg {
-  background: url("../images/auth/login-bg.jpg");
-  background-size: cover;
-}
-
-.auth .register-half-bg {
-  background: url("../images/auth/register-bg.jpg");
-  background-size: cover;
-}
-
-.auth.lock-full-bg {
-  background: url("../images/auth/lockscreen-bg.jpg");
-  background-size: cover;
-}
-
-.auth .lock-profile-img {
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-}
-
-.auth .auth-form-light {
-  background: #ffffff;
-}
-
-.auth .auth-form-light select {
-  color: #c9c8c8;
-}
-
-.auth .auth-form-light .input-group .form-control:focus, .auth .auth-form-light .input-group .dataTables_wrapper select:focus, .dataTables_wrapper .auth .auth-form-light .input-group select:focus, .auth .auth-form-light .input-group .form-control:active, .auth .auth-form-light .input-group .dataTables_wrapper select:active, .dataTables_wrapper .auth .auth-form-light .input-group select:active {
-  border-color: #f3f3f3;
-}
-
-.auth .auth-form-transparent {
-  background: transparent;
-}
-
-.auth .auth-form-transparent .form-control, .auth .auth-form-transparent .dataTables_wrapper select, .dataTables_wrapper .auth .auth-form-transparent select,
-.auth .auth-form-transparent .input-group-text {
-  border-color: #686868;
-}
-
-.auth .auth-form-transparent .form-control:focus, .auth .auth-form-transparent .dataTables_wrapper select:focus, .dataTables_wrapper .auth .auth-form-transparent select:focus, .auth .auth-form-transparent .form-control:active, .auth .auth-form-transparent .dataTables_wrapper select:active, .dataTables_wrapper .auth .auth-form-transparent select:active,
-.auth .auth-form-transparent .input-group-text:focus,
-.auth .auth-form-transparent .input-group-text:active {
-  border-color: #686868;
-}
-
-.auth .auth-form-transparent select {
-  outline-color: #686868;
-}
-
-.auth.auth-img-bg {
-  padding: 0;
-}
-
-@media (min-width: 768px) {
-  .auth.auth-img-bg .auth-form-transparent {
-    width: 55%;
-    margin: auto;
-  }
-}
-
-.auth .brand-logo {
-  margin-bottom: 2rem;
-}
-
-.auth .brand-logo img {
-  width: 150px;
-}
-
-.auth form .form-group {
-  margin-bottom: 1.5rem;
-}
-
-.auth form .form-group label {
-  font-size: .8125rem;
-}
-
-.auth form .form-group .form-control, .auth form .form-group .dataTables_wrapper select, .dataTables_wrapper .auth form .form-group select {
-  background: transparent;
-  border-radius: 0;
-  font-size: .9375rem;
-}
-
-.auth form .auth-form-btn {
-  height: 50px;
-  line-height: 1.5;
-}
-
-.auth form .auth-link {
-  font-size: 0.875rem;
-}
-
-.auth form .auth-link:hover {
-  color: initial;
-}
 
 .page-body-wrapper {
   min-height: calc(100vh - 60px);
@@ -22689,16 +22530,6 @@ dl li {
   }
 }
 
-.navbar .navbar-brand-wrapper .navbar-brand-inner-wrapper .brand-logo-mini {
-  padding-left: 0;
-  text-align: center;
-}
-
-.navbar .navbar-brand-wrapper .navbar-brand-inner-wrapper .brand-logo-mini img {
-  width: calc(70px - 30px);
-  max-width: 100%;
-  margin: auto;
-}
 
 .navbar .navbar-menu-wrapper {
   background: #ffffff;

@@ -1,4 +1,4 @@
-extends('layouts.admin')
+@extends('layouts.admin')
 
 @section('content')
 
@@ -13,9 +13,10 @@ extends('layouts.admin')
                 </h3>
             </div>
             <div class="card-body">
-            <form action="{{url('admin/flavours/'.$flavours->id')}}" method="POST"
+            <form action="{{ url('admin/flavours/'.$flavours->id) }}" method="POST">
             @csrf
             @method('PUT')
+
             <div class="mb-3">
                     <label>Flavour Name</label>
                     <input type="text" name="name" value="{{ $flavours->name }}" class="form-control">
