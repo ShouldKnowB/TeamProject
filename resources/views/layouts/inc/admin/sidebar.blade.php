@@ -26,12 +26,12 @@
 
           <!-- Categories -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#" aria-expanded="false" aria-controls="auth">
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <i class="mdi mdi-barcode menu-icon"></i>
               <span class="menu-title">Categories</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="categories">
+            <div class="collapse" id="auth">
               <ul class="nav flex-column ">
                 <li class="nav-item"> <a class="nav-link" href="{{url('admin/category/create')}}">Add Category</a></li>
                   <li class="nav-item"> <a class="nav-link" href="{{url('admin/category')}}">View Category</a></li>
@@ -39,20 +39,22 @@
             </div>
           </li>
 
+
           <!-- Products -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="mdi mdi-store menu-icon"></i>
               <span class="menu-title">Products</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="products">
+            <div class="collapse" id="ui-basic">
               <ul class="nav flex-column ">
                 <li class="nav-item"> <a class="nav-link" href="{{url('admin/products/create')}}">Add Product</a></li>
                   <li class="nav-item"> <a class="nav-link" href="{{url('admin/products')}}">View Products</a></li>
               </ul>
             </div>
           </li>
+
 
           <!-- Flavours -->
           <li class="nav-item">
@@ -61,11 +63,6 @@
                 <i class="mdi mdi-store menu-icon"></i>
               <span class="menu-title">Flavours</span>
               <i class="menu-arrow"></i>
-=======
-            <a class="nav-link" href="">
-                <i class="mdi mdi-emoticon-tongue menu-icon"></i>
-            <span class="menu-title">Flavours</span>
-
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column ">
@@ -76,42 +73,8 @@
           </li>
 
 
-=======
-       <!-- Categories -->
-       <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-            <i class="mdi mdi-barcode menu-icon"></i>
-          <span class="menu-title">Categories</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="auth">
-          <ul class="nav flex-column ">
-            <li class="nav-item"> <a class="nav-link" href="{{url('admin/category/create')}}">Add Category</a></li>
-              <li class="nav-item"> <a class="nav-link" href="{{url('admin/category')}}">View Category</a></li>
-          </ul>
-        </div>
-      </li>
-<!-- Products -->
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-            <i class="mdi mdi-store menu-icon"></i>
-          <span class="menu-title">Products</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="ui-basic">
-          <ul class="nav flex-column ">
-            <li class="nav-item"> <a class="nav-link" href="{{url('admin/products/create')}}">Add Product</a></li>
-              <li class="nav-item"> <a class="nav-link" href="{{url('admin/products')}}">View Products</a></li>
-          </ul>
-        </div>
-      </li>
-<!-- Flavours -->
-      <li class="nav-item">
-        <a class="nav-link" href="#ui-basic">
-            <i class="mdi mdi-emoticon-tongue menu-icon"></i>
-        <span class="menu-title">Flavours</span>
-        </a>
-    </li>
+
+       
 
 
       </nav>
