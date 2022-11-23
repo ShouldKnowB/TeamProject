@@ -1,14 +1,14 @@
 @extends('layouts.app')
 @section('content')
 <head>
-
+    <link href="{{ asset('assets/css/product.css') }}" rel="stylesheet">
     <title>Product Detail</title>
 
 
 </head>
 
 <body>
-
+<div>products
     <div class="hero">
         <div class="row">
             <div class="col">
@@ -83,4 +83,5 @@
     </script>
 
 </body>
+</div>
 @endsection
