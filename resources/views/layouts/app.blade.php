@@ -13,6 +13,8 @@
     <!-- Font Awesome Link & Google Font Link-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 
     <!-- CSS Styles -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">

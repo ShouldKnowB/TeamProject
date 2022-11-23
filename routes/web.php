@@ -29,7 +29,7 @@ Route::get('/about_us', [App\Http\Controllers\AboutusController::class, 'index']
 Route::get('/shop', [App\Http\Controllers\ShopController::class, 'index'])->name('shop');
 Route::get('/contact_us', [App\Http\Controllers\ContactusController::class, 'index'])->name('contact_us');
 Route::post('/contact_us', [App\Http\Controllers\ContactusController::class, 'store'])->name('contact_us');
-Route::get('/product_view', [App\Http\Controllers\ProductviewController::class, 'index'])->name('product_view');
+Route::get('/product_page', [App\Http\Controllers\ProductPageController::class, 'index'])->name('product_page');
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
 
 Route::get('/faqs', [App\Http\Controllers\FAQsController::class, 'index'])->name('faqs');
