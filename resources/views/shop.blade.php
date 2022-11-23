@@ -17,7 +17,7 @@
                     <th class="cellPaddingPX"><a href="{{url('product_page')}}"><img class="shopProductImages energyImageSize"
                                 src="{{ url('assets/images/product-images/Berry Blast cda6b2/Energy/berryBlastEnergyTransparent.png') }}"></a>
                         <br><br>
-                        <label class="stock bg-success">In Stock</label>
+
                         <div>
                             <p class='drinkName'>BERRY BLAST</p>
                         </div>
