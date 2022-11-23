@@ -26,25 +26,37 @@
                 </div>
                 
                 
+                @forelse($cart as $cartItem)
+                @if($cartItem->product)
                     
-
-
                  <div class="cart-item">
                     <div class="row">
                         <div class = "col-md-6 my-auto">
-                            <a href="{{ asset('/shop') }}">
+                            <a href="{{ url('collections/'.$cartItem->product->category->slug.'/'.$cartItem->product->slug) }}">
                                 <label>
-                                    <img class="cart-image" src="{{ url('assets/images/product-images/Blue Raspberry b836ff/Energy/blueRaspberryEnergyTransparent.png') }}" alt="cart item image"><h4 class="cart-name">Blue Raspberry - Energy</h4>
+                                    @if($cartItem->product->productImages)
+                                    <img class="cart-image" src="{{ asset($cartItem->product->productImages[0]->image) }}" alt="cart item image">
+                                    @else
+                                    <img class="cart-image" src="" alt="">
+                                    @endif
+
+                                    <h4 class="cart-name">{{ $cartItem->product->name }}</h4>
+
+                                    @if ($cartItem->productFlavour)
+                                        @if($cartItem->productFlavour->flavour)
+                                        <span>- Flavour: {{ $cartItem->productFlavour->flavour->name}}</span>
+                                        @endif
+                                    @endif
                                     </label>
                             </a>
                         </div>
                         <div class="col-md-2 my-auto">
                             <label class="cart-price">
-                                <h4>£3</h4>
+                                <h4>{{ $cartItem->product->price}}</h4>
                             </label>
                         </div>
                         <div class="col-md-2 my-auto">
-                            <input type="number" id="cart-quantity" name="cart-quantity" min="1" max="5" value="1">
+                            <input type="number" id="cart-quantity" name="cart-quantity" min="1" max="5" value="{{ $cartItem->quantity}}">
                         </div>
                         <div class="col-md-2 my-auto cart-remove">
                             <a href="" class= "remove-btn">
@@ -53,8 +65,11 @@
                         </div>
                     </div>
                 </div>
+                @endif
 
-
+                @empty
+                    <div>No Cart Items Available</div>
+                @endforelse
                 
             </div>
         </div>
