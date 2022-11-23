@@ -1080,9 +1080,9 @@ div.row.justify-content-center {
     border-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding-block: 1.5rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-block: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     transition: 0.3s;
 }
 
@@ -1148,9 +1148,9 @@ div.row.justify-content-center {
     border-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding-block: 1.5rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-block: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     transition: 0.3s;
 }
 
