@@ -1,8 +1,9 @@
 @extends('layouts.app')
+@section('content')
 <head>
 
     <title>Product Detail</title>
-    
+
 
 </head>
 
@@ -36,7 +37,7 @@
             <div class="col">
 
                 <div class="content">
-                    
+
                     <h2>punch ENERGY DRINKS</h2>
                     <div class="rating">
                         <i class="fa fa-star"></i>
@@ -68,7 +69,7 @@
         </div>
 
 
-        
+
 
 
 
@@ -79,6 +80,7 @@
             fullImg.src = smallImg.src;
 
         }
-
     </script>
+
 </body>
+@endsection
