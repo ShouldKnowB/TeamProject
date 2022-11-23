@@ -700,7 +700,7 @@ footer ul {
     border-color: lightgray;
     border-radius: 5px;
     box-shadow: 5px 5px 5px lightgray;
-    background-color: #ffcdab;
+    background-color: lightgray;
 }
 
 .cart-header {
@@ -740,7 +740,7 @@ footer ul {
     text-align: center;
     border: none;
     cursor: pointer;
-    background-color: #ffcdab;
+    background-color: transparent;
     color: white;
 }
 
