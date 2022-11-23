@@ -1,5 +1,9 @@
-* {
+/*** {
     font-family: "Arimo", sans-serif;
+}**/
+
+* {
+    font-family: "Gill Sans", sans-serif;
 }
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
@@ -1077,7 +1081,7 @@ div.row.justify-content-center {
     margin-top: 1rem;
     background-color: #000;
     color: #fff;
-    border-color: #000;
+    border-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-block: 1.5rem;
