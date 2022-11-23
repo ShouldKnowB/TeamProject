@@ -70,13 +70,14 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
      });
     });
 
+    
      //Customer Routes
      Route::controller(App\Http\Controllers\Admin\UserController::class)->group(function () {
         Route::get('/customer', 'index');
 
      });
      
-
+   
 
 
 
