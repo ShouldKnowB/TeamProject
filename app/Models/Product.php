@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\ProductImage;
+use App\Models\productFlavour;
 
 class Product extends Model
 {
@@ -33,9 +34,9 @@ class Product extends Model
 
         return $this->hasMany(ProductImage::class, 'product_id', 'id');
     }
-   
+
     public function productFlavours(){
-        return $this->hasMany(ProductFlavours::class, 'product_id', 'id');
+        return $this->hasMany(ProductFlavour::class, 'product_id', 'id');
     }
 
 }
