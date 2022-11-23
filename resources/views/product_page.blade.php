@@ -16,20 +16,20 @@
                 <div class="slider">
                     <div class="product">
 
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
 
                     </div>
                     <div class="preview">
-                        <img src="{{url('images1/Energy/BerryBlast.jpg')}}" id="imagebox" alt="">
+                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" id="imagebox" alt="">
                     </div>
                 </div>
 
@@ -49,16 +49,14 @@
                     <p class="price">Price: £ 3.00</p>
                     <p>Flavours: <select name="Flavours">
 
-                        <option value="select Flavour">select Flavour</option>
-                        <option value="Berry Blast">Berry Blast</option>
-                        <option value="Blue Raspberry">Blue Raspberry</option>
-                        <option value="Lime n Lemon">Lime n Lemon</option>
-                        <option value="Tropical">Tropical</option>
-                        <option value="Tart Cherry">Tart Cherry</option>
+                            <option value="select Flavour">select Flavour</option>
+                            <option value="Berry Blast">Berry Blast</option>
+                            <option value="Blue Raspberry">Blue Raspberry</option>
+                            <option value="Lime n Lemon">Lime n Lemon</option>
+                            <option value="Tropical">Tropical</option>
+                            <option value="Tart Cherry">Tart Cherry</option>
 
-
-
-                    </select></p>
+                        </select></p>
                     <p>Quantity: <input type="text" value="1"></p>
                     <button type="button">
                         <i class="fa fa-shopping-cart"></i>
@@ -67,11 +65,7 @@
 
             </div>
         </div>
-
-
-
-
-
+    </div>
 
     <script>
         function clickme(smallImg) {

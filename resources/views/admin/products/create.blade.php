@@ -49,7 +49,12 @@
                           Product Image
                       </button>
                       </li>
-
+                     
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="flavours-tab" data-bs-toggle="tab" data-bs-target="#flavours-tab-pane" type="button" role="tab" aria-controls="flavours-tab-pane" aria-selected="false">
+                          Product Flavour
+                      </button>
+                      </li>
                   </ul>
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade border p-3 show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
@@ -130,6 +135,32 @@
                 <div class="mb3">
                     <label>Upload Product Images</label>
                     <input type="file" name="image[]" multiple class="form-control">
+                </div>
+                
+                <div class="tab-pane fade border p-3" id="flavours-tab-pane" role="tabpanel" aria-labelledby="flavours-tab" tabindex="0">
+                <div class="mb3">
+                    <label>Select Flavour</label>
+                    <hr/>
+                    <div class="row">
+                        @forelse ($flavours as $flavoursitem)
+                        <div class="col-md-3">
+                        <div class="p-2 border mb-2">
+
+                        
+                        Flavour: <input type="checkbox" name="flavours[$flavoursitem->id]" value="{{ $flavoursitem->id}} "/>  
+                        {{ $flavoursitem->name}}
+                        <br/>
+                        Quantity: <input type="number" name="quantity[]" style="width: 70px; border">
+                        </div>
+                    </div>
+                        @empty
+                        <div class="col-md-12">
+                            <h1>No flavours found</h1>
+                        </div>
+                        @endforelse
+            
+                    </div>
+
                 </div>
 
 

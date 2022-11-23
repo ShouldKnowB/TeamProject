@@ -52,9 +52,15 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
        Route::get('products/{product_id}/delete','destroy');
 
     });
-
-     //Category Routes
-     Route::controller(App\Http\Controllers\Admin\CategoryController::class)->group(function () {
+    Route::controller(App\Http\Controllers\Admin\FlavoursController::class)->group(function () {
+        Route::get('/flavours', 'index');
+        Route::get('/flavours/create', 'create');
+        Route::post('/flavours/create', 'store');
+        Route::get('/flavours/{flavours_id}/edit','edit');
+        Route::put('/flavours/{flavours}','update');
+        Route::get('/flavours/{flavours_id}/delete','destroy');
+    });
+    Route::controller(App\Http\Controllers\Admin\CategoryController::class)->group(function () {
         Route::get('/category', 'index');
         Route::get('/category/create', 'create');
         Route::post('/category', 'store');
@@ -62,12 +68,21 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
         Route::put('/category/{category}', 'update');
 
      });
+    });
 
+    
      //Customer Routes
      Route::controller(App\Http\Controllers\Admin\UserController::class)->group(function () {
         Route::get('/customer', 'index');
 
      });
+     
+   
 
 
-});
+
+
+
+     
+     
+
