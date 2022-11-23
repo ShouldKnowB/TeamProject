@@ -2,16 +2,6 @@
 
 namespace App\Http\Controllers\Admin;
 
-<<<<<<< HEAD
-use App\Models\Category;
-use App\Models\Flavours;
-use Illuminate\Support\Str;
-
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\ProductFormRequest;
-
-=======
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\ProductFormRequest;
@@ -20,7 +10,6 @@ use Illuminate\Support\Str;
 use App\Models\Category;
 use App\Models\ProductImage;
 use Illuminate\Support\Facades\File;
->>>>>>> 236dd0396505708c597f948840d1a23b4795e1be
 
 class ProductController extends Controller
 {

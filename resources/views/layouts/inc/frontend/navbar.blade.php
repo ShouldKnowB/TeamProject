@@ -31,7 +31,31 @@
                     <a href="{{ route('register') }}">{{ __('Register') }}</a>
                 </li>
             @endif
-        @else
+
+            @elseif(Auth::user()->role_as =='1')
+            <li class="nav-item dropdown">
+                <a href="{{ route('login') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Admin
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{{url('admin/dashboard')}}">View Admin Dashboard</a></li>
+                    <li>
+
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
+                            <i class="fa fa-sign-out"></i>{{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </li>
+                </ul>
+            </li>
+
+            @else
             <li class="nav-item dropdown">
                 <a href="{{ route('login') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -40,9 +64,6 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa fa-list"></i> My Orders</a></li>
-                    <li><a class="dropdown-item" href="{{ url('cart') }}"><i class="fa fa-shopping-cart"></i> My
-                            Cart</a>
-                    </li>
                     <li>
 
                         <a class="dropdown-item" href="{{ route('logout') }}"
@@ -59,7 +80,7 @@
             </li>
         @endguest
 
-        <li><a href="#"><i class="fa fa-basket-shopping"></i></a></li>
+        <li><a href="{{ asset('/cart') }}"><i class="fa fa-basket-shopping"></i></a></li>
 
     </ul>
 </nav>

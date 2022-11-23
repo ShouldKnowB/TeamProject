@@ -28,7 +28,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/about_us', [App\Http\Controllers\AboutusController::class, 'index'])->name('about_us');
 Route::get('/shop', [App\Http\Controllers\ShopController::class, 'index'])->name('shop');
 Route::get('/contact_us', [App\Http\Controllers\ContactusController::class, 'index'])->name('contact_us');
-Route::get('/product_view', [App\Http\Controllers\ProductviewController::class, 'index'])->name('product_view');
+Route::post('/contact_us', [App\Http\Controllers\ContactusController::class, 'store'])->name('contact_us');
+Route::get('/product_page', [App\Http\Controllers\ProductPageController::class, 'index'])->name('product_page');
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
 
 Route::get('/faqs', [App\Http\Controllers\FAQsController::class, 'index'])->name('faqs');
@@ -45,13 +46,10 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
        Route::get('/products', 'index');
        Route::get('/products/create', 'create');
        Route::post('/products', 'store');
-<<<<<<< HEAD
-=======
        Route::get('/products/{product}/edit', 'edit');
        Route::put('/products/{product}', 'update');
        Route::get('product-image/{product_image_id}/delete','destroyImage');
        Route::get('products/{product_id}/delete','destroy');
->>>>>>> 236dd0396505708c597f948840d1a23b4795e1be
 
     });
     Route::controller(App\Http\Controllers\Admin\FlavoursController::class)->group(function () {
@@ -69,12 +67,8 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
         Route::get('/category/{category}/edit', 'edit');
         Route::put('/category/{category}', 'update');
 
-<<<<<<< HEAD
-      });
-    
-=======
      });
->>>>>>> 236dd0396505708c597f948840d1a23b4795e1be
+    });
 
      //Customer Routes
      Route::controller(App\Http\Controllers\Admin\UserController::class)->group(function () {

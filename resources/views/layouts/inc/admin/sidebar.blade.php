@@ -23,6 +23,7 @@
                 </a>
             </li>
 
+
           <!-- Categories -->
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#" aria-expanded="false" aria-controls="auth">
@@ -55,7 +56,7 @@
 
           <!-- Flavours -->
           <li class="nav-item">
-<<<<<<< HEAD
+
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <i class="mdi mdi-store menu-icon"></i>
               <span class="menu-title">Flavours</span>
@@ -64,7 +65,7 @@
             <a class="nav-link" href="">
                 <i class="mdi mdi-emoticon-tongue menu-icon"></i>
             <span class="menu-title">Flavours</span>
->>>>>>> 236dd0396505708c597f948840d1a23b4795e1be
+
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column ">
@@ -74,6 +75,43 @@
             </div>
           </li>
 
+
+=======
+       <!-- Categories -->
+       <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+            <i class="mdi mdi-barcode menu-icon"></i>
+          <span class="menu-title">Categories</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="auth">
+          <ul class="nav flex-column ">
+            <li class="nav-item"> <a class="nav-link" href="{{url('admin/category/create')}}">Add Category</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('admin/category')}}">View Category</a></li>
+          </ul>
+        </div>
+      </li>
+<!-- Products -->
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <i class="mdi mdi-store menu-icon"></i>
+          <span class="menu-title">Products</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column ">
+            <li class="nav-item"> <a class="nav-link" href="{{url('admin/products/create')}}">Add Product</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{url('admin/products')}}">View Products</a></li>
+          </ul>
+        </div>
+      </li>
+<!-- Flavours -->
+      <li class="nav-item">
+        <a class="nav-link" href="#ui-basic">
+            <i class="mdi mdi-emoticon-tongue menu-icon"></i>
+        <span class="menu-title">Flavours</span>
+        </a>
+    </li>
 
 
       </nav>

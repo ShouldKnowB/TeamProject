@@ -13,21 +13,23 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('product_flavours', function (Blueprint $table) {
+        Schema::create('carts', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('product_id');
-            $table->unsignedBigInteger('flavours_id')->nullable();
+            $table->integer('user_id');
+            $table->integer('product_id');
+            $table->integer('product_flavour_id')->nullable();
             $table->integer('quantity');
-            $table->foregin('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->foregin('flavours_id')->references('id')->on('flavours')->onDelete('set null');
             $table->timestamps();
         });
     }
 
     /**
-    
+     * Reverse the migrations.
      *
      * @return void
      */
-    
+    public function down()
+    {
+        Schema::dropIfExists('carts');
+    }
 };

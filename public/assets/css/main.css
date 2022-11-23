@@ -1,10 +1,5 @@
-@font-face {
-    font-family: "punch";
-    src: url("../fonts/RoSpritendoSemibold.otf") format("opentype");
-    font-size: small;
-}
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Arimo", sans-serif;
 }
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
@@ -37,14 +32,14 @@ nav .left {
 }
 
 nav .logo {
-    padding-left: 40;
+    padding-left: 40px;
     justify-content: center;
     height: 40px;
 }
 
 nav .right {
     flex: 1;
-    padding-right: 40;
+    padding-right: 40px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -202,20 +197,20 @@ input[type="checkbox"] {
     margin-top: 30px;
 }
 
-.contactForm {
+.contact-form {
     width: 40%;
     padding: 40px;
     background: #000;
 }
 
-.contactForm .inputBox {
+.contact-form .input-box {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
+.contact-form .input-box input,
+.contact-form .input-box textarea {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -229,7 +224,7 @@ input[type="checkbox"] {
     resize: none;
 }
 
-.contactForm .inputBox span {
+.contact-form .input-box span {
     text-transform: capitalize;
     position: absolute;
     left: 0;
@@ -241,7 +236,22 @@ input[type="checkbox"] {
     transition: 0.5s;
 }
 
-.contactForm .inputBox input[type="submit"] {
+.contact_us button {
+    margin-top: 1rem;
+    background-color: #fff;
+    color: #000;
+    border-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+.contact_us button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-form .input-box input[type="submit"] {
     background: #ffcdab;
     color: #fff;
     border: none;
@@ -250,10 +260,10 @@ input[type="checkbox"] {
     font-size: 18px;
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:valid ~ span {
     color: #ffcdab;
     font-size: 12px;
     top: -20px;
@@ -267,7 +277,7 @@ input[type="checkbox"] {
     .container {
         flex-direction: column;
     }
-    .container .contactForm {
+    .container .contact-form {
         width: 100%;
     }
 }
@@ -284,12 +294,12 @@ input[type="checkbox"] {
     flex-direction: column;
 }
 
-.faqs .content1 {
+.faqs .title {
     max-width: 800px;
     text-align: center;
 }
 
-.faqs .content1 h2 {
+.faqs .title h2 {
     text-transform: capitalize;
     font-size: 35px;
     font-weight: bold;
@@ -297,20 +307,20 @@ input[type="checkbox"] {
     color: #000;
 }
 
-.faqs .content1 p {
+.faqs .title p {
     font-size: 20px;
     color: #000;
 }
 
-.faqs .question {
+.faqs .questions {
     background-color: #fff;
     margin-bottom: 20px;
     padding: 15px 40px;
     border-radius: 5px;
-    box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+    box-shadow: 0 10px 10px rgba(0, 0, 50, 0.2);
 }
 
-.faqs .answer {
+.faqs .answers {
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -324,7 +334,8 @@ input[type="checkbox"] {
     cursor: pointer;
     padding: 15px 0;
 }
-.faqs .content2 {
+
+.faqs .information {
     position: relative;
     font-size: 14px;
     text-align: justify;
@@ -332,6 +343,10 @@ input[type="checkbox"] {
     height: 0;
     overflow: hidden;
     transition: all 1s;
+}
+
+.faqs .information p {
+    color: #999;
 }
 
 /** -------------------------------------------------------- END OF FAQ PAGE CSS ----------------------------------------------------------------------**/
@@ -366,7 +381,7 @@ input[type="checkbox"] {
     text-align: left;
     text-transform: capitalize;
     font-size: 20px;
-    font-weight: 750;
+    font-weight: bold;
     color: #000;
 }
 
@@ -407,7 +422,7 @@ input[type="checkbox"] {
     text-align: left;
     text-transform: capitalize;
     font-size: 20px;
-    font-weight: 750;
+    font-weight: bold;
     color: #000;
 }
 
@@ -460,7 +475,7 @@ input[type="checkbox"] {
     text-align: left;
     text-transform: capitalize;
     font-size: 20px;
-    font-weight: 750;
+    font-weight: bold;
     color: #000;
 }
 
@@ -678,6 +693,7 @@ footer ul {
 }
 
 .cart-products .cart-item {
+    color: white;
     text-decoration: none;
     padding: 10px 10px;
     margin-top: 10px;
@@ -686,7 +702,10 @@ footer ul {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    cursor: pointer;
+    border-color: lightgray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgray;
+    background-color: lightgray;
 }
 
 .cart-header {
@@ -710,6 +729,11 @@ footer ul {
     text-align: left;
 }
 
+.cart-name a {
+    text-decoration: none;
+    color: white;
+}
+
 .cart-price {
     font-size: 10px;
     font-weight: 600;
@@ -720,12 +744,15 @@ footer ul {
     font-size: 20px;
     text-align: center;
     border: none;
-    background-color: #f8f9fa;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
     opacity: 1;
     background-color: #f8f9fa;
+    cursor: pointer;
 }
 
 .remove-title {
@@ -735,9 +762,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .cart-remove {
-    color: rgb(203, 20, 20);
+    color: white;
     font-weight: 200;
     text-align: center;
+    cursor: pointer;
+}
+
+.cart-remove:hover {
+    transform: scale(1.2);
 }
 
 /**/
@@ -760,13 +792,16 @@ div.row.justify-content-center {
 }
 /** BEGINNING OF TABLE CSS ---------------------------------------------------------------------------------------------**/
 .productTables {
+    text-transform: capitalize;
+    letter-spacing: 5px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     border-spacing: 50px;
     border-collapse: separate;
-    font-weight: bolder;
-    font-family: "punch";
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
 }
 
 .cellPaddingPX {
@@ -855,9 +890,8 @@ div.row.justify-content-center {
 
 /** DRINK NAME TEXT -----------------------------------------------------------------------------------------------**/
 .drinkName {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    font-weight: bolder;
+    letter-spacing: 5px;
 }
 /** END OF DRINK NAME TEXT -----------------------------------------------------------------------------------------------**/
 
@@ -882,12 +916,16 @@ div.row.justify-content-center {
 }
 
 .about_us h1 {
+    text-transform: capitalize;
+    letter-spacing: 5px;
     text-align: center;
     padding-top: 155px;
-    text-transform: capitalize;
     font-size: 35px;
     font-weight: bold;
-    letter-spacing: 5px;
+    color: #000;
+}
+.about_us h1 .about {
+    font-weight: bold;
     color: #000;
 }
 
@@ -925,9 +963,6 @@ div.row.justify-content-center {
     color: #000;
     margin-top: 25px;
     background-color: #fff;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    outline: none;
     line-height: 1.4;
     transition: all 1.5s;
     text-align: center;
@@ -939,15 +974,17 @@ div.row.justify-content-center {
 
 .about_us article a {
     color: #000;
-    padding: 10px 25px;
-    font-size: 19px;
-    font-weight: 300;
+    text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid #ffcdab;
-    border-radius: 5px;
+    display: inline-block;
+    font-size: 15px;
+    border: 1px solid #000;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
 
-.about_us   article .button{
+.about_us article .button {
     margin-bottom: 35px;
 }
 
@@ -985,7 +1022,284 @@ div.row.justify-content-center {
         padding: 8px 20px;
         font-size: 17px;
     }
-    .about_us    article .button{
+    .about_us article .button {
         margin-bottom: 50px;
     }
 }
+
+/** -------------------------------------------------------- LOGIN PAGE CSS --------------------------------------------------------------**/
+.login-page {
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page input {
+    width: 500px;
+    border-radius: -10;
+}
+
+/* .login-page .forgotten {
+    z-index: 1;
+    position: relative;
+    bottom: 2rem;
+    left: 10rem;
+} */ /* CSS FOR 'FORGETTEN PASSWORD LINK */
+
+.login-page h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.login-page p {
+    font-size: 18px;
+    color: #999;
+}
+
+.login-page .body {
+    padding-block: 1rem;
+}
+
+.login-page a {
+    color: #000;
+}
+
+.login-page a:hover {
+    color: #ffcdab;
+}
+
+.login-page .links {
+    padding-bottom: 1rem;
+}
+
+.login-page button {
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-block: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: 0.3s;
+}
+
+.login-page button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+/** -------------------------------------------------------- END OF LOGIN PAGE CSS --------------------------------------------------------------**/
+
+/** -------------------------------------------------------- REGISTER PAGE CSS --------------------------------------------------------------**/
+.register {
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.register input {
+    width: 500px;
+    border-radius: -10px;
+}
+
+.register .password {
+    padding-block: 1rem;
+}
+
+.register h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.register p {
+    font-size: 18px;
+    color: #999;
+}
+
+.register .body {
+    padding-block: 1rem;
+}
+
+.register a {
+    color: #000;
+}
+
+.register a:hover {
+    color: #ffcdab;
+}
+
+.register .links {
+    padding-bottom: 1rem;
+}
+
+.register button {
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-block: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: 0.3s;
+}
+
+.register button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+/** -------------------------------------------------------- END OF REGISTER PAGE CSS --------------------------------------------------------------**/
+
+/** -------------------------------------------------------- Individual Product Page CSS --------------------------------------------------------------**/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%;
+}
+.row{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 45%;
+    padding: 15px;
+}
+.slider{
+    height: 80vh;
+    display: -webkit-inline-flex;
+}
+.product img{
+    height: 7vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.hydration img{
+    height: 15vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.product img:hover{
+    opacity: 1;
+}
+
+.hydration img:hover{
+    opacity: 1;
+}
+
+
+
+.preview img{
+    height: 100%;
+}
+p{
+    margin-bottom: 20px;
+}
+.brand{
+    background: #008000;
+    width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+h2{
+    font-size: 45px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.rating{
+    display: flex;
+    height: 15px;
+}
+.rating .fa{
+    color: #008000;
+}
+.price{
+    color: #fe980f;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+input{
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #fe980f;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+button .fa{
+    margin-right: 10px;
+}
+.related{
+    width: 90%;
+    margin: 0 auto 40px;
+}
+.related .row{
+    width: 100%;
+    height: auto;
+}
+.columns{
+    flex-basis: 22%;
+    height: 100%;
+}
+.items img{
+    width: 100%;
+}
+.details{
+    margin-top: 20px;
+}
+.details p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.details .rating{
+    margin: 10px 0;
+}
+
+/** --------------------------------------------------------End of Individual Product Page CSS --------------------------------------------------------------**/
+
+
+
+
+
+
+
+
+
