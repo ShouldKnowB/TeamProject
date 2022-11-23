@@ -944,7 +944,7 @@ div.row.justify-content-center {
 }
 
 .abimage img {
-    width: 110%;
+    width: 90%;
     height: auto;
     display: block;
     margin: auto;
@@ -959,6 +959,10 @@ div.row.justify-content-center {
     transition: 0.5s ease;
 }
 
+.about_us article p {
+    font-size: 18px;
+}
+/**
 .about_us article p {
     font-size: 28px;
     color: #000;
@@ -1026,7 +1030,7 @@ div.row.justify-content-center {
     .about_us article .button {
         margin-bottom: 50px;
     }
-}
+} **/
 
 /** -------------------------------------------------------- LOGIN PAGE CSS --------------------------------------------------------------**/
 .login-page {
