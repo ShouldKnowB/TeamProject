@@ -80,7 +80,7 @@
             </li>
         @endguest
 
-        <li><a href="#"><i class="fa fa-basket-shopping"></i></a></li>
+        <li><a href="{{ asset('/cart') }}"><i class="fa fa-basket-shopping"></i></a></li>
 
     </ul>
 </nav>
