@@ -32,14 +32,14 @@ nav .left {
 }
 
 nav .logo {
-    padding-left: 40;
+    padding-left: 40px;
     justify-content: center;
     height: 40px;
 }
 
 nav .right {
     flex: 1;
-    padding-right: 40;
+    padding-right: 40px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
