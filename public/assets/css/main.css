@@ -240,7 +240,7 @@ input[type="checkbox"] {
     margin-top: 1rem;
     background-color: #fff;
     color: #000;
-    border-color: #000;
+    border-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: 0.3s;
@@ -317,7 +317,7 @@ input[type="checkbox"] {
     margin-bottom: 20px;
     padding: 15px 40px;
     border-radius: 5px;
-    box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+    box-shadow: 0 10px 10px rgba(0, 0, 50, 0.2);
 }
 
 .faqs .answers {
@@ -334,6 +334,7 @@ input[type="checkbox"] {
     cursor: pointer;
     padding: 15px 0;
 }
+
 .faqs .information {
     position: relative;
     font-size: 14px;
@@ -342,6 +343,10 @@ input[type="checkbox"] {
     height: 0;
     overflow: hidden;
     transition: all 1s;
+}
+
+.faqs .information p {
+    color: #999;
 }
 
 /** -------------------------------------------------------- END OF FAQ PAGE CSS ----------------------------------------------------------------------**/
@@ -1077,12 +1082,12 @@ div.row.justify-content-center {
     margin-top: 1rem;
     background-color: #000;
     color: #fff;
-    border-color: #000;
+    border-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding-block: 1.5rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-block: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     transition: 0.3s;
 }
 
@@ -1095,6 +1100,68 @@ div.row.justify-content-center {
 
 /** -------------------------------------------------------- REGISTER PAGE CSS --------------------------------------------------------------**/
 .register {
-    padding: 5rem;
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.register input {
+    width: 500px;
+    border-radius: -10px;
+}
+
+.register .password {
+    padding-block: 1rem;
+}
+
+.register h1 {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.register p {
+    font-size: 18px;
+    color: #999;
+}
+
+.register .body {
+    padding-block: 1rem;
+}
+
+.register a {
+    color: #000;
+}
+
+.register a:hover {
+    color: #ffcdab;
+}
+
+.register .links {
+    padding-bottom: 1rem;
+}
+
+.register button {
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-block: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: 0.3s;
+}
+
+.register button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
 }
 /** -------------------------------------------------------- END OF REGISTER PAGE CSS --------------------------------------------------------------**/

@@ -1,4 +1,4 @@
-<div>
+
     {{-- To attain knowledge, add things every day; To attain wisdom, subtract things every day. --}}
     
     <div class = "cartpage">
@@ -24,7 +24,8 @@
                         </div>
                     </div>
     
-                    <div class="cart-item">
+                        <div class="cart-item">
+
                             <div class="row">
                                 <div class = "col-md-1">
                                     <img class="cart-image" src="{{ url('assets/images/product-images/Blue Raspberry b836ff/Energy/blueRaspberryEnergyTransparent.png') }}">
@@ -42,8 +43,8 @@
                                     <h5 class="cart-remove">X</h5>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+
+                    
 <!--database
 
                  
@@ -64,10 +65,12 @@
                             <h5 class="cart-remove">X</h5>
                         </div>
                     </div>
-            -->
 
-                </div>    
-            </div>   
+-->
+
+                </div>
+            </div>
         </div>
-    <div>
-</div>
+    </div>
+
+    
