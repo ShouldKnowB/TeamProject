@@ -36,7 +36,7 @@
             </button>
             <div class="content2">
                 <p>Unfortunately, shipping beverages can periodically result in a damaged package. Please refer to <a
-                        href="/refund_policy"> Refund Policy </a> and contact us with your order confirmation and a
+                        href="/refund_policy">Refund Policy</a> and contact us with your order confirmation and a
                     description of the damaged product, and we’ll be
                     happy to make it right! ​ ​ </p>
             </div>

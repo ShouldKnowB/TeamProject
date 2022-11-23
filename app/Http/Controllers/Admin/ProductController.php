@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+<<<<<<< HEAD
 use App\Models\Category;
 use App\Models\Flavours;
 use Illuminate\Support\Str;
@@ -10,12 +11,23 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductFormRequest;
 
+=======
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Http\Requests\ProductFormRequest;
+use App\Models\Product;
+use Illuminate\Support\Str;
+use App\Models\Category;
+use App\Models\ProductImage;
+use Illuminate\Support\Facades\File;
+>>>>>>> 236dd0396505708c597f948840d1a23b4795e1be
 
 class ProductController extends Controller
 {
     public function index()
     {
-        return view('admin.products.index');
+        $products = Product::all();
+        return view('admin.products.index', compact('products'));
     }
 
     public function create()
@@ -39,7 +51,7 @@ class ProductController extends Controller
             'small_description' => $validatedData['small_description'],
             'price' => $validatedData['price'],
             'quantity' => $validatedData['quantity'],
-            'category_id' => $validatedData['category_id'],
+            'ingredients' => $validatedData['ingredients'],
             'status' => $request->status == true ? '1' : '0',
             'meta_title' => $validatedData['meta_title'],
             'meta_keyword' => $validatedData['meta_keyword'],
@@ -51,13 +63,11 @@ class ProductController extends Controller
         if($request->hasFile('image')){
         $uploadPath = 'uploads/products/';
 
-
-
-        foreach($request->file('image[]') as $imageFile){
+        foreach($request->file('image') as $imageFile){
             $extention = $imageFile->getClientOriginalExtension();
             $filename = time().'.'.$extention;
             $imageFile->move($uploadPath,$filename);
-            $finalImagePathName = $uploadPath.'-'.$filename;
+            $finalImagePathName = $uploadPath.'/'.$filename;
 
             $product->productImages()->create([
                 'product_id' => $product->id,
@@ -78,7 +88,88 @@ class ProductController extends Controller
     }
        return redirect('/admin/products')->with('message','Product Added Sucessfully');
 
+    }
+    public function edit(int $product_id)
+    {
+        $categories = Category::all();
+      $product = Product::findOrFail($product_id);
+      return view('admin.products.edit', compact('categories','product'));
 
+    }
+
+    public function update(ProductFormRequest $request, int $product_id )
+    {
+        $validatedData = $request->validated();
+        $product = Category::findOrFail(['category_id'])
+              ->products()->where('id',$product_id)->first();
+        if($product)
+        {
+            $product->update([
+                'category_id' => $validatedData['category_id'],
+                'name' => $validatedData['name'],
+                'slug' =>  Str::slug($validatedData['slug']),
+                'small_description' => $validatedData['small_description'],
+                'price' => $validatedData['price'],
+                'quantity' => $validatedData['quantity'],
+                'ingredients' => $validatedData['ingredients'],
+                'status' => $request->status == true ? '1' : '0',
+                'meta_title' => $validatedData['meta_title'],
+                'meta_keyword' => $validatedData['meta_keyword'],
+                'meta_description' => $validatedData['meta_description'],
+
+            ]);
+
+            if($request->hasFile('image')){
+                $uploadPath = 'uploads/products/';
+
+                foreach($request->file('image') as $imageFile){
+                    $extention = $imageFile->getClientOriginalExtension();
+                    $filename = time().'.'.$extention;
+                    $imageFile->move($uploadPath,$filename);
+                    $finalImagePathName = $uploadPath.'/'.$filename;
+
+                    $product->productImages()->create([
+                        'product_id' => $product->id,
+                        'image' => $finalImagePathName,
+                    ]);
+
+
+                }
+            }
+               return redirect('/admin/products')->with('message','Product Updated Sucessfully');
+
+        }
+        else
+        {
+            return redirect('admin/products')->with('message','No Such Product ID Found');
+        }
+
+    }
+
+    public function destroyImage(int $product_image_id)
+    {
+        $productImage = ProductImage::findOrFail($product_image_id);
+        if(File::exists($productImage->image)){
+             File::delete($productImage->image);
+        }
+        $productImage->delete();
+        return redirect()->back()->with('message','Product Image Deleted');
+
+
+    }
+
+    public function destroy(int $product_id)
+    {
+        $product = Product::findOrFail($product_id);
+         if($product->productImages){
+            foreach($product->productImages as $image){
+                if(File::exists($image->image)){
+                    File::delete($image->image);
+                }
+            }
+         }
+           $product->delete();
+           return redirect()->back()->with('message','Product Deleted with all its image');
 
     }
 }
