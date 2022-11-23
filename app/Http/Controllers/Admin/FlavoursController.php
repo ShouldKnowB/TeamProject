@@ -29,15 +29,15 @@ class FlavoursController extends Controller
 
         return redirect('admin/flavours')->with('message','Flavour Added Successfully');
     }
-    
+
     public function edit(Flavours $flavours){
-    
+
         return view('admin.flavours.edit', compact('flavours'));
 
  }
 
  public function update(FlavoursFormRequest $request, $flavours_id){
-   
+
      $validatedData = $request->validated();
      $validatedData['status'] = $request->status == true ? '1':'0';
     Flavours::find($flavours_id)->update($validatedData);
@@ -46,12 +46,11 @@ class FlavoursController extends Controller
 
  }
  public function destroy($flavours_id){
-    
+
     $flavours = Flavours::findOrFail($flavours_id);
     $flavours->delete();
-
     return redirect('admin/flavours')->with('message','Flavour Deleted Successfully' );
  }
 
-    
+
 }

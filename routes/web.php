@@ -56,8 +56,8 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
         Route::get('/flavours', 'index');
         Route::get('/flavours/create', 'create');
         Route::post('/flavours/create', 'store');
-        Route::get('/flavours/{flavours_id}/edit','edit');
-        Route::put('/flavours/{flavours}','update');
+        Route::get('/flavours/{flavours}/edit','edit');
+        Route::put('/flavours/{flavours_id}','update');
         Route::get('/flavours/{flavours_id}/delete','destroy');
     });
     Route::controller(App\Http\Controllers\Admin\CategoryController::class)->group(function () {
@@ -70,19 +70,19 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
      });
     });
 
-    
+
      //Customer Routes
      Route::controller(App\Http\Controllers\Admin\UserController::class)->group(function () {
         Route::get('/customer', 'index');
 
      });
-     
-   
 
 
 
 
 
-     
-     
+
+
+
+
 

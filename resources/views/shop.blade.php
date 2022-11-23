@@ -13,9 +13,11 @@
             <table class="productTables">
                 <h1 class="productTables">energy drinks</h1>
                 <tr>
+
                     <th class="cellPaddingPX"><a href="{{url('product_page')}}"><img class="shopProductImages energyImageSize"
                                 src="{{ url('assets/images/product-images/Berry Blast cda6b2/Energy/berryBlastEnergyTransparent.png') }}"></a>
                         <br><br>
+
                         <div>
                             <p class='drinkName'>BERRY BLAST</p>
                         </div>
