@@ -37,12 +37,6 @@
             </div>
         </div>
 
-        <!-- @if (Route::has('password.request'))
-    @endif
-                <a class="forgotten" href="{{ route('password.request') }}">
-                    {{ __('Forgot Your Password?') }}
-                </a> -->
-
         <div class="links">
             <div class="button">
                 <button type="submit">
