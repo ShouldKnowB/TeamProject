@@ -28,7 +28,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ( $products as $product )
+                        @forelse ( $products as $product )
                         <tr>
                             <td>{{$product->id}}</td>
                             <td>

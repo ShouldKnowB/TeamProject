@@ -560,6 +560,7 @@ class ComposerStaticInit1b7b7544393a63053e425458e344ab08
         'App\\Http\\Requests\\ProductFormRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProductFormRequest.php',
         'App\\Http\\Requests\\UserFormRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserFormRequest.php',
         'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
+        'App\\Models\\CustomerQueries' => __DIR__ . '/../..' . '/app/Models/CustomerQueries.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
         'App\\Models\\ProductImage' => __DIR__ . '/../..' . '/app/Models/ProductImage.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
