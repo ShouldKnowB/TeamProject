@@ -1,5 +1,5 @@
 * {
-    font-family: "Arimo", sans-serif;
+    font-family: "Gill Sans", sans-serif;
 }
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
@@ -104,6 +104,28 @@ input[type="checkbox"] {
     color: white;
 }
 
+/** .welcome-bg-video {
+    opacity: 78%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .welcome-bg-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .welcome-bg-video {
+        width: auto;
+        height: 100%;
+    }
+} **/ /** This is the code for the video background, but not using at this moment. **/
+
 .welcome-bg h1 {
     text-transform: capitalize;
     font-size: 85px;
@@ -120,25 +142,20 @@ input[type="checkbox"] {
 .welcome-bg a {
     text-transform: uppercase;
     background-color: transparent;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
-    color: #fff;
     font-size: 15px;
     border: 1px solid #fff;
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
-    opacity: 0.6;
-    transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
 }
 
 .welcome-bg a:hover {
-    opacity: 1;
-    transition: opacity 0.55s ease-in-out;
-    -moz-transition: opacity 0.55s ease-in-out;
-    -webkit-transition: opacity;
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
 }
 
 .welcome-body .content {
@@ -706,7 +723,7 @@ footer ul {
     border-color: lightgray;
     border-radius: 5px;
     box-shadow: 5px 5px 5px lightgray;
-    background-color: lightgray;
+    background-color: rgb(223, 223, 223);
 }
 
 .cart-header {
@@ -721,13 +738,15 @@ footer ul {
     width: 50px;
     height: 50px;
     text-align: center;
-    display: block;
-    margin-left: auto;
+    margin-left: 5px;
     margin-right: auto;
 }
 
 .cart-name {
-    text-align: left;
+    text-align: right;
+    float: right;
+    padding-left: 30px;
+    color: white;
 }
 
 .cart-name a {
@@ -762,15 +781,17 @@ input[type="number"]::-webkit-inner-spin-button {
     line-height: 90px;
 }
 
-.cart-remove {
+.cart-remove a {
     color: white;
     font-weight: 200;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .cart-remove:hover {
     transform: scale(1.2);
+    text-decoration: none;
 }
 
 /**/
@@ -945,7 +966,7 @@ div.row.justify-content-center {
 }
 
 .abimage img {
-    width: 110%;
+    width: 90%;
     height: auto;
     display: block;
     margin: auto;
@@ -961,72 +982,7 @@ div.row.justify-content-center {
 }
 
 .about_us article p {
-    font-size: 28px;
-    color: #000;
-    margin-top: 25px;
-    background-color: #fff;
-    line-height: 1.4;
-    transition: all 1.5s;
-    text-align: center;
-}
-.about_us article p:hover {
-    color: #ffcdab;
-    transition: 0.5s ease;
-}
-
-.about_us article a {
-    color: #000;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    border: 1px solid #000;
-    padding: 14px 70px;
-    border-radius: 50px;
-    margin-top: 20px;
-}
-
-.about_us article .button {
-    margin-bottom: 35px;
-}
-
-.about_us article a:hover {
-    background-color: #ffcdab;
-    transition: 0.5s ease;
-}
-
-@media screen and (max-width: 1497px) {
-    .about_us h2 {
-        font-size: 28px;
-        text-align: center;
-    }
-    .abimage img {
-        height: auto;
-        width: 100%;
-    }
-    .about_us {
-        flex-direction: row;
-        margin-top: 10px;
-    }
-    .about_us article {
-        margin-top: 30px;
-    }
-    .about_us article h3 {
-        font-size: 18px;
-    }
-    .about_us article p {
-        font-size: 20px;
-    }
-    .about_us article .button {
-        margin-bottom: 50px;
-    }
-    .about_us article a {
-        padding: 8px 20px;
-        font-size: 17px;
-    }
-    .about_us article .button {
-        margin-bottom: 50px;
-    }
+    font-size: 18px;
 }
 
 /** -------------------------------------------------------- LOGIN PAGE CSS --------------------------------------------------------------**/
@@ -1167,144 +1123,3 @@ div.row.justify-content-center {
     border-color: #000;
 }
 /** -------------------------------------------------------- END OF REGISTER PAGE CSS --------------------------------------------------------------**/
-
-/** -------------------------------------------------------- Individual Product Page CSS --------------------------------------------------------------**/
-
-.hero {
-    width: 100%;
-}
-
-.row {
-    width: 90%;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.col {
-    flex-basis: 45%;
-    padding: 15px;
-}
-
-.slider {
-    height: 80vh;
-    display: -webkit-inline-flex;
-}
-
-.product img {
-    height: 7vh;
-    margin-bottom: 9px;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.hydration img {
-    height: 15vh;
-    margin-bottom: 9px;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.product img:hover {
-    opacity: 1;
-}
-
-.hydration img:hover {
-    opacity: 1;
-}
-
-.preview img {
-    height: 100%;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-.brand {
-    background: #008000;
-    width: fit-content;
-    color: #fff;
-    font-size: 12px;
-    padding: 2px 5px;
-}
-
-h2 {
-    font-size: 45px;
-    color: #555;
-    margin-bottom: 20px;
-}
-.rating {
-    display: flex;
-    height: 15px;
-}
-
-.rating .fa {
-    color: #008000;
-}
-
-.price {
-    color: #fe980f;
-    font-size: 26px;
-    font-weight: bold;
-    padding-top: 30px;
-}
-
-input {
-    width: 30px;
-    border: 1px solid #ccc;
-    font-weight: bold;
-    text-align: center;
-}
-
-button {
-    color: #fff;
-    font-size: 15px;
-    outline: none;
-    border: 0;
-    border-radius: 5px;
-    background: #fe980f;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-button .fa {
-    margin-right: 10px;
-}
-
-.related {
-    width: 90%;
-    margin: 0 auto 40px;
-}
-
-.related .row {
-    width: 100%;
-    height: auto;
-}
-
-.columns {
-    flex-basis: 22%;
-    height: 100%;
-}
-
-.items img {
-    width: 100%;
-}
-
-.details {
-    margin-top: 20px;
-}
-
-.details p {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.details .rating {
-    margin: 10px 0;
-}
-
-/** --------------------------------------------------------End of Individual Product Page CSS --------------------------------------------------------------**/
