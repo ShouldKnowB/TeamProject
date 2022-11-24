@@ -52,7 +52,6 @@ class ProductController extends Controller
 
         if($request->hasFile('image')){
         $uploadPath = 'uploads/products/';
-
         foreach($request->file('image') as $imageFile){
             $extention = $imageFile->getClientOriginalExtension();
             $filename = time().'.'.$extention;
@@ -72,7 +71,7 @@ class ProductController extends Controller
             $product->productFlavours()->create([
                 'product_id' => $product->id,
                 'flavours_id' => $flavour,
-                'quantity' => $request->quantity[$key] ?? 0
+                'quantity' => $request->flavourquantity[$key] ?? 0
 
             ]);
         }
@@ -82,9 +81,11 @@ class ProductController extends Controller
     }
     public function edit(int $product_id)
     {
-        $categories = Category::all();
+      $categories = Category::all();
       $product = Product::findOrFail($product_id);
-      return view('admin.products.edit', compact('categories','product'));
+      $products_flavour = $product->productFlavours->pluck('flavours_id')->toArray();
+      $flavours = Flavours::whereNotIn('id',$products_flavour)->get();
+      return view('admin.products.edit', compact('categories','product','flavours'));
 
     }
 
@@ -128,7 +129,7 @@ class ProductController extends Controller
                 }
             }
 
-               return redirect('/admin/products')->with('message','Product Updated Sucessfully');
+             return redirect('admin/products')->with('message','Product Updated Sucessfully');
 
         }
         else

@@ -51,6 +51,12 @@
                       </button>
                       </li>
 
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="flavours-tab" data-bs-toggle="tab" data-bs-target="#flavours-tab-pane" type="button" role="tab" >
+                          Product Image
+                      </button>
+                      </li>
+
                   </ul>
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade border p-3 show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
@@ -148,6 +154,55 @@
                     <h5>No Image Added</h5>
                     @endif
                 </div>
+            </div>
+
+            <div class="tab-pane fade border p-3" id="flavours-tab-pane" role="tabpanel" tabindex="0">
+                <div class="mb3">
+                    <label>Select Flavour</label>
+                    <hr/>
+                    <div class="row">
+                        @forelse ($flavours as $flavoursitem)
+                        <div class="col-md-3">
+                        <div class="p-2 border mb-2">
+                        Flavour: <input type="checkbox" name="flavours[{{ $flavoursitem->id}}]" value="{{ $flavoursitem->id}} "/>
+                        {{ $flavoursitem->name}}
+                        <br/>
+                        Quantity: <input type="number" name="flavourquantity[{{ $flavoursitem->id}}]" style="width: 70px; border">
+                        </div>
+                    </div>
+                        @empty
+                        <div class="col-md-12">
+                            <h1>No flavours found</h1>
+                        </div>
+                        @endforelse
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-sm table-bordered">
+                    <thead>
+                        <th>Flavour Name</th>
+                        <th>Quantity</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody>
+                        @foreach ( $product->flavour->productFlavours as $prodFlavour)
+                        <tr>
+                            <td>{{$prodFlavour->flavours_id}}</td>
+                            <td>
+                            <div class="input-group mb-3" style="width:150px">
+                                <input type="text" value="{{$prodFlavour->quantity}}" class="form-control form-control -sm">
+                                <button type="button" value="{{$prodFlavour->id}}" class="btn btn-primary btn-sm text-white">Update</button>
+
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button" value="{{$prodFlavour->id}}" class="btn btn-danger btn-sm text-white">Delete</button>
+                        </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+
             </div>
             <div class="py-4 float-end">
                 <button type="submit" class="btn btn-primary">Update</button>

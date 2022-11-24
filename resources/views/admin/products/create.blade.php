@@ -51,7 +51,7 @@
                       </li>
 
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="flavours-tab" data-bs-toggle="tab" data-bs-target="#flavours-tab-pane" type="button" role="tab" aria-controls="flavours-tab-pane" aria-selected="false">
+                        <button class="nav-link" id="flavours-tab" data-bs-toggle="tab" data-bs-target="#flavours-tab-pane" type="button" role="tab">
                           Product Flavour
                       </button>
                       </li>
