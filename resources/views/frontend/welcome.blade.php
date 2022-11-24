@@ -9,7 +9,7 @@
 
         <div class="welcome-bg">
             <h1>energise, hydrate, zero sugar</h1>
-            <a href="{{ asset('/shop') }}">shop drinks</a>
+            <a href="{{ url('/store') }}">shop drinks</a>
         </div>
 
         <div class="welcome-body">
