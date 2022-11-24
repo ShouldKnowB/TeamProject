@@ -104,6 +104,28 @@ input[type="checkbox"] {
     color: white;
 }
 
+/** .welcome-bg-video {
+    opacity: 78%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .welcome-bg-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .welcome-bg-video {
+        width: auto;
+        height: 100%;
+    }
+} **/ /** This is the code for the video background, but not using at this moment. **/
+
 .welcome-bg h1 {
     text-transform: capitalize;
     font-size: 85px;
@@ -120,25 +142,20 @@ input[type="checkbox"] {
 .welcome-bg a {
     text-transform: uppercase;
     background-color: transparent;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
-    color: #fff;
     font-size: 15px;
     border: 1px solid #fff;
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
-    opacity: 0.6;
-    transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
 }
 
 .welcome-bg a:hover {
-    opacity: 1;
-    transition: opacity 0.55s ease-in-out;
-    -moz-transition: opacity 0.55s ease-in-out;
-    -webkit-transition: opacity;
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
 }
 
 .welcome-body .content {
