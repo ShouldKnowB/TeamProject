@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Flavours;
 
 class ProductFlavour extends Model
 {
@@ -19,7 +20,6 @@ class ProductFlavour extends Model
 
     public function flavour()
     {
-        return $this->belongsTo(Flavour::class, 'flavours_id', 'id');
+        return $this->belongsTo(Flavours::class, 'flavours_id', 'id');
     }
-
 }
