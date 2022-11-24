@@ -711,7 +711,7 @@ footer ul {
 }
 
 .cart-products .cart-item {
-    color: white;
+    color: #000;
     text-decoration: none;
     padding: 10px 10px;
     margin-top: 10px;
@@ -746,33 +746,39 @@ footer ul {
     text-align: right;
     float: right;
     padding-left: 30px;
-    color: white;
+    color: #000;
 }
 
 .cart-name a {
     text-decoration: none;
-    color: white;
+    color: #000;
+}
+
+#cart-item-flavour{
+    color: #000;
 }
 
 .cart-price {
     font-size: 10px;
     font-weight: 600;
     padding: 4px 2px;
+    text-align: center;
 }
 
-#cart-quantity {
+.cart-quantity {
+    width: 40%;
+    height: 30px;
+    background-color: transparent;
+    color: #000;
+    border: transparent;
     font-size: 20px;
     text-align: center;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
 }
 
-input[type="number"]::-webkit-inner-spin-button {
-    opacity: 1;
-    background-color: #f8f9fa;
-    cursor: pointer;
+.quantitybtn {
+    background-color: transparent;
+    border: transparent;
+    text-align: center;
 }
 
 .remove-title {
@@ -782,7 +788,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .cart-remove a {
-    color: white;
+    color: red;
     font-weight: 200;
     text-align: center;
     cursor: pointer;
