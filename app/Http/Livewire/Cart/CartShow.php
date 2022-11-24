@@ -8,6 +8,7 @@ use Livewire\Component;
 class CartShow extends Component
 {
     public $cart;
+    public $totalPrice = 0;
 
     public function decreaseQuantity(int $cartId)
     {
