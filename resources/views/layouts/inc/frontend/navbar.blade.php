@@ -12,7 +12,7 @@
 
     <p>
         <a href="{{ url('/') }}">
-            <img class="logo" src="assets/images/logo(black).png" alt="logo">
+            <img class="logo" src="{{asset('assets/images/logo(black).png')}}" alt="logo">
         </a>
     </p>
 
