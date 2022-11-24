@@ -17,26 +17,32 @@ use App\Http\Controllers\ShopController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+/* Main Frontend Routes */
+Route::controller(App\Http\Controllers\FrontendController::class)->group(function() {
+    Route::get('/', 'index');
+    Route::get('/about_us', 'aboutus');
+    Route::get('/store', 'categories');
+    Route::get('/store/{category_slug}','products');
+    Route::get('/store/{category_slug}/{product_slug}','productView');
+    Route::get('/contact_us', 'contactus');
+    Route::get('/home', 'home');
+    Route::get('/faqs', 'faqs');
+    Route::get('/terms_and_conditions', 'tandc');
+    Route::get('/privacy_policy', 'privacypolicy');
+    Route::get('/refund_policy', 'refundpolicy');
+    Route::get('/terms_of_use', 'tou');
+    Route::get('/products/view', 'productView');
+    Route::get('/products/{category_slug}', 'products');
+
 });
-
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/about_us', [App\Http\Controllers\AboutusController::class, 'index'])->name('about_us');
-Route::get('/shop', [App\Http\Controllers\ShopController::class, 'index'])->name('shop');
-Route::get('/contact_us', [App\Http\Controllers\ContactusController::class, 'index'])->name('contact_us');
-Route::post('/contact_us', [App\Http\Controllers\ContactusController::class, 'store'])->name('contact_us');
-Route::get('/product_page', [App\Http\Controllers\ProductPageController::class, 'index'])->name('product_page');
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
 
-Route::get('/faqs', [App\Http\Controllers\FAQsController::class, 'index'])->name('faqs');
-Route::get('/terms_and_conditions', [App\Http\Controllers\TermsandconditionsController::class, 'index'])->name('terms_and_conditions');
-Route::get('/privacy_policy', [App\Http\Controllers\PrivacypolicyController::class, 'index'])->name('privacy_policy');
-Route::get('/refund_policy', [App\Http\Controllers\RefundpolicyController::class, 'index'])->name('refund_policy');
-Route::get('/terms_of_use', [App\Http\Controllers\TermsofuseController::class, 'index'])->name('terms_of_use');
+Route::get('/product_page', [App\Http\Controllers\ProductPageController::class, 'index'])->name('product_page');
+
+
+
 
 /*Admin Dashboard Routes*/
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
