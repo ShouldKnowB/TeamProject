@@ -53,24 +53,15 @@
                         <i class="fa fa-star-half-o"></i>
                     </div>
                     <span class="price">£{{$product->price}}</span>
-                    <div>
+                    <div class="flavours">
                         @if($product->productFlavour)
                         @foreach ($product->productFlavour as $flavourItem )
-                        <input type="radio" name="flavourSelection" value="{{$flavourItem->id}}"/>{{$flavourItem->flavour->name}}
-
+                        <p>Flavours:<select name="flavourSelection">
+                            <option value="{{$flavourItem->id}}">{{$flavourItem->flavour->name}}</option>
+                        </select></p>
                         @endforeach
                         @endif
                     </div>
-                    <p>Flavours: <select name="Flavours">
-
-                            <option value="select Flavour">select Flavour</option>
-                            <option value="Berry Blast">Berry Blast</option>
-                            <option value="Blue Raspberry">Blue Raspberry</option>
-                            <option value="Lime n Lemon">Lime n Lemon</option>
-                            <option value="Tropical">Tropical</option>
-                            <option value="Tart Cherry">Tart Cherry</option>
-
-                        </select></p>
                     <p>Quantity: <input type="text" value="1"></p>
                     <button type="button">
                         <i class="fa fa-shopping-cart"></i>
