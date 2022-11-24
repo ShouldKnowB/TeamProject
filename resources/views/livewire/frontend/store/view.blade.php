@@ -1,22 +1,19 @@
-@extends('layouts.app')
-@section('content')
+<div>
 <head>
     <link href="{{ asset('assets/css/product.css') }}" rel="stylesheet">
-    <title>Product Detail</title>
-
-
+    <title>Product View</title>
 </head>
 
 <body>
-<div>products
-    <div class="hero">
+
+    <div class="images">
         <div class="row">
             <div class="col">
 
                 <div class="slider">
-                    <div class="product">
+                    <!--<div class="product">
 
-                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
+                        <img src="{{ asset($product->productImages[0]->image) }}" alt="" onclick="clickme(this)">
                         <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
                         <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
                         <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
@@ -27,18 +24,27 @@
                         <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
                         <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" alt="" onclick="clickme(this)">
 
-                    </div>
+                    </div>-->
                     <div class="preview">
-                        <img src="{{ url('images1/Energy/BerryBlast.jpg') }}" id="imagebox" alt="">
+                        @if($product->productImages)
+                        <img src="{{ asset($product->productImages[0]->image) }}" id="imagebox" alt="">
+                        @else
+                        No Image Added
+                        @endif
                     </div>
                 </div>
 
             </div>
             <div class="col">
+                <div class="product-view">
+                    <h2 class="product-name">
+                        {{$product->name}}
+                        <label class="label-stock bg-success">In Stock</label>
+                    </h2>
 
-                <div class="content">
-
-                    <h2>punch ENERGY DRINKS</h2>
+                    <p class="product-path">
+                        Home / {{$product->category->name}} / {{$product->name}}
+                    </p>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -46,7 +52,15 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-half-o"></i>
                     </div>
-                    <p class="price">Price: £ 3.00</p>
+                    <span class="price">£{{$product->price}}</span>
+                    <div>
+                        @if($product->productFlavour)
+                        @foreach ($product->productFlavour as $flavourItem )
+                        <input type="radio" name="flavourSelection" value="{{$flavourItem->id}}"/>{{$flavourItem->flavour->name}}
+
+                        @endforeach
+                        @endif
+                    </div>
                     <p>Flavours: <select name="Flavours">
 
                             <option value="select Flavour">select Flavour</option>
@@ -62,10 +76,22 @@
                         <i class="fa fa-shopping-cart"></i>
                         Add to cart</button>
                 </div>
-
+             <div class="small-description">
+                 <h4>Description</h4>
+                 <p>
+                     {!! $product->small_description!!}
+                 </p>
+             </div>
+             <div class="small-description">
+                <h4>Ingredients</h4>
+                <p>
+                    {!! $product->ingredients!!}
+                </p>
             </div>
-        </div>
+
     </div>
+</div>
+
 
     <script>
         function clickme(smallImg) {
@@ -78,4 +104,4 @@
 
 </body>
 </div>
-@endsection
+</div>

@@ -146,10 +146,10 @@
                         @forelse ($flavours as $flavoursitem)
                         <div class="col-md-3">
                         <div class="p-2 border mb-2">
-                        Flavour: <input type="checkbox" name="flavours[{{$flavoursitem->id}}]" value="{{ $flavoursitem->id}} "/>
+                        Flavour: <input type="checkbox" name="flavours[{{ $flavoursitem->id}}]" value="{{ $flavoursitem->id}} "/>
                         {{ $flavoursitem->name}}
                         <br/>
-                        Quantity: <input type="number" name="flavourquantity[{{$flavoursitem->id}}]" style="width: 70px; border">
+                        Quantity: <input type="number" name="flavourquantity[{{ $flavoursitem->id}}]" style="width: 70px; border">
                         </div>
                     </div>
                         @empty

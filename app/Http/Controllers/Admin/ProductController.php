@@ -68,12 +68,13 @@ class ProductController extends Controller
         }
     }
     if($request->flavours){
-        foreach($request->flavours as $key => $flavours){
-
+        foreach($request->flavours as $key => $flavour){
             $product->productFlavours()->create([
+                'product_id' => $product->id,
+                'flavours_id' => $flavour,
+                'quantity' => $request->quantity[$key] ?? 0
 
             ]);
-
         }
     }
        return redirect('/admin/products')->with('message','Product Added Sucessfully');
@@ -126,16 +127,7 @@ class ProductController extends Controller
 
                 }
             }
-            if($request->colors){
-                foreach($request->flavours as $key => $flavours){
-                    $product->productFlavours()->create([
-                        'product_id' => $product->id,
-                        'flavours_id' => $flavours,
-                        'quantity' => $request->flavourquantity[$key] ?? 0
 
-                    ]);
-                }
-            }
                return redirect('/admin/products')->with('message','Product Updated Sucessfully');
 
         }
