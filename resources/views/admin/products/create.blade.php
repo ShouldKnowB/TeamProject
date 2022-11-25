@@ -49,12 +49,6 @@
                           Product Image
                       </button>
                       </li>
-
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="flavours-tab" data-bs-toggle="tab" data-bs-target="#flavours-tab-pane" type="button" role="tab">
-                          Product Flavour
-                      </button>
-                      </li>
                   </ul>
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade border p-3 show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
@@ -138,15 +132,13 @@
                 </div>
             </div>
 
-                <!--flavour-->
-                <div>
+            <div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
 
-                  </div>
-
-            </div>
+                    </div>
+              </div>
         </div>
     </div>
 </div>
