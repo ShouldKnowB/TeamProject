@@ -56,6 +56,7 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
        Route::put('/products/{product}', 'update');
        Route::get('product-image/{product_image_id}/delete','destroyImage');
        Route::get('products/{product_id}/delete','destroy');
+       Route::post('admin/product-flavour/{product_flavour_id}', 'updateProdFlavourQty');
 
     });
     Route::controller(App\Http\Controllers\Admin\FlavoursController::class)->group(function () {

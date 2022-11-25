@@ -134,34 +134,12 @@
             <div class="tab-pane fade border p-3" id="image-tab-pane" role="tabpanel" aria-labelledby="image-tab" tabindex="0">
                 <div class="mb3">
                     <label>Upload Product Images</label>
-                    <input type="file" name="image[]" multiple class="form-control">
+                    <input type="file" name="image[]"multiple class="form-control">
                 </div>
             </div>
 
-                <div class="tab-pane fade border p-3" id="flavours-tab-pane" role="tabpanel" aria-labelledby="flavours-tab" tabindex="0">
-                <div class="mb3">
-                    <label>Select Flavour</label>
-                    <hr/>
-                    <div class="row">
-                        @forelse ($flavours as $flavoursitem)
-                        <div class="col-md-3">
-                        <div class="p-2 border mb-2">
-                        Flavour: <input type="checkbox" name="flavours[{{ $flavoursitem->id}}]" value="{{ $flavoursitem->id}} "/>
-                        {{ $flavoursitem->name}}
-                        <br/>
-                        Quantity: <input type="number" name="flavourquantity[{{ $flavoursitem->id}}]" style="width: 70px; border">
-                        </div>
-                    </div>
-                        @empty
-                        <div class="col-md-12">
-                            <h1>No flavours found</h1>
-                        </div>
-                        @endforelse
-
-                    </div>
-                </div>
-                </div>
-            <div>
+                <!--flavour-->
+                <div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>

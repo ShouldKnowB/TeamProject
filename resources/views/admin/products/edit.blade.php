@@ -53,7 +53,7 @@
 
                       <li class="nav-item" role="presentation">
                         <button class="nav-link" id="flavours-tab" data-bs-toggle="tab" data-bs-target="#flavours-tab-pane" type="button" role="tab" >
-                          Product Image
+                          Product Flavour
                       </button>
                       </li>
 
@@ -185,18 +185,23 @@
                         <th>Delete</th>
                     </thead>
                     <tbody>
-                        @foreach ( $product->flavour->productFlavours as $prodFlavour)
-                        <tr>
-                            <td>{{$prodFlavour->flavours_id}}</td>
+                        @foreach ( $product->productFlavours as $prodFlavour)
+                        <tr class="prod-flavour-tr">
+                            @if($prodFlavour->flavour)
+                            <td>{{$prodFlavour->flavour->name}}
+                                @else
+                                No Flavour Found
+                                @endif
+                            </td>
                             <td>
                             <div class="input-group mb-3" style="width:150px">
-                                <input type="text" value="{{$prodFlavour->quantity}}" class="form-control form-control -sm">
-                                <button type="button" value="{{$prodFlavour->id}}" class="btn btn-primary btn-sm text-white">Update</button>
+                                <input type="text" value="{{$prodFlavour->quantity}}" class="productFlavourQuantity form-control form-control -sm">
+                                <button type="button" value="{{$prodFlavour->id}}" class="updateProductFlavourBtn btn btn-primary btn-sm text-white">Update</button>
 
                             </div>
                         </td>
                         <td>
-                            <button type="button" value="{{$prodFlavour->id}}" class="btn btn-danger btn-sm text-white">Delete</button>
+                            <button type="button" value="{{$prodFlavour->id}}" class="deleteProductFlavourBtn btn btn-danger btn-sm text-white">Delete</button>
                         </td>
                         </tr>
                         @endforeach
@@ -216,5 +221,48 @@
     </div>
 </div>
 
+@endsection
 
+@section('scripts')
+<script>
+    $(document).ready(function ()) {
+
+        $.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+
+        $(document).on('click','.updateProductFlavourBtn', function(){
+
+            var product_id ="{{$product->id}}";
+            var prod_flavour_id = $(this).val(),
+            var qty = $(this).closest('.prod-flavour-tr').find('.productFlavourQuantity').val();
+
+            if(qty <=0){
+                alert('Quantity is required');
+                return false;
+            }
+
+            var datat = {
+                'product_id': product_id;
+                'prod_flavour_id':prod_flavour_id;
+                'qty': qty;
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/admin/product-flavour"+prod_flavour_id,
+                data: data,
+                success: function(reponse){
+                    alert(response.message)
+
+                }
+            });
+
+
+        });
+
+    }
+</script>
 @endsection

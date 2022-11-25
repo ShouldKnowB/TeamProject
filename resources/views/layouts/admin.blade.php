@@ -60,6 +60,7 @@
     <script src="{{ url('admin/js/jquery.dataTables.js') }}"></script>
     <script src="{{ url('admin/js/dataTables.bootstrap4.js') }}"></script>
 
+    @yield('scripts')
 
     @livewireScripts
     @stack('script')

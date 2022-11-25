@@ -19,15 +19,17 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug');
             $table->mediumText('small_description')->nullable();
-            $table->longText('ingredients')->nullable();
 
+            $table->longText('ingredients')->nullable();
             $table->Integer('price');
             $table->Integer('quantity');
             $table->tinyInteger('status')->default('0')->comment('1=hidden,0=visible');
-            $table->string('meta_title');
+
+            $table->string('meta_title')->nullable();
             $table->mediumText('meta_keyword')->nullable();
             $table->mediumText('meta_description')->nullable();
 
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }

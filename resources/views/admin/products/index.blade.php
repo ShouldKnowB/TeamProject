@@ -33,11 +33,12 @@
                             <td>{{$product->id}}</td>
                             <td>
                                 @if ($product->category)
-                                {{$product->category->name}}
+                                 {{$product->category->name}}
                                 @else
-                                No Category
+                                  No Category
                                 @endif
                             </td>
+
                             <td>{{$product->name}}</td>
                             <td>{{$product->price}}</td>
                             <td>{{$product->quantity}}</td>
