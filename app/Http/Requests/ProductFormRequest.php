@@ -24,57 +24,54 @@ class ProductFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'category_id' => [
-                'required',
-                'integer'
-            ],
-            'name' => [
-                'required',
-                'string'
-            ],
-            'slug' => [
-                'required',
-                'string',
-                'max:255'
-            ],
-            'ingredients' => [
-                'required',
-                'string'
-            ],
-            'small_description' => [
-                'required',
-                'string'
-            ],
-            'meta_title' => [
-                'required',
-                'string'
-            ],
-            'meta_description' => [
-                'required',
-                'string'
-            ],
-            'meta_keyword' => [
-                'required',
-                'string'
-            ],
-            'price' => [
-                'required',
-                 'integer'
-            ],
-            'quantity' => [
-                'required',
-                 'integer'
-            ],
-            'status' => [
-                'nullable',
 
-            ],
-            'image' => [
-                'nullable',
-
-
-            ],
-
+                'category_id' => [
+                    'required',
+                    'integer'
+                ],
+                'name' => [
+                    'required',
+                    'string'
+                ],
+                'slug' => [
+                    'required',
+                    'string',
+                    'max:255'
+                ],
+                'small_description' => [
+                    'required',
+                    'string'
+                ],
+                'ingredients' => [
+                    'required',
+                    'string'
+                ],
+                'meta_title' => [
+                    'required',
+                    'string'
+                ],
+                'meta_keyword' => [
+                    'required',
+                    'string'
+                ],
+                'meta_description' => [
+                    'required',
+                    'string'
+                ],
+                'price' => [
+                    'required',
+                     'integer'
+                ],
+                'quantity' => [
+                    'required',
+                     'integer'
+                ],
+                'status' => [
+                    'nullable',
+                ],
+                'image' => [
+                    'nullable',
+                ],
         ];
     }
 }
