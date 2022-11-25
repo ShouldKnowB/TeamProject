@@ -706,8 +706,10 @@ footer ul {
 /** -------------------------------------------------------- CART PAGE CSS ----------------------------------------------------------------------**/
 .cartpage {
     margin: 100px 100px;
-    height: 100vh;
     padding: 2%;
+    position: relative;
+    min-height: 110vh;
+    background: #fff;
 }
 
 .cart-products .cart-item {
@@ -747,6 +749,7 @@ footer ul {
     float: right;
     padding-left: 30px;
     color: #000;
+    padding-top: 5px;
 }
 
 .cart-name a {
@@ -761,7 +764,7 @@ footer ul {
 .cart-price {
     font-size: 10px;
     font-weight: 600;
-    padding: 4px 2px;
+    padding-top: 4px 2px;
     text-align: center;
 }
 
@@ -798,6 +801,16 @@ footer ul {
 .cart-remove:hover {
     transform: scale(1.2);
     text-decoration: none;
+}
+
+.checkoutbtn{
+    text-align: right;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #ffcdab;
+    padding: 5px 10px;
+    border-color: transparent;
 }
 
 /**/
