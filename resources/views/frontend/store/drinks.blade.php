@@ -12,7 +12,7 @@
 
         <table>
             <table class="productTables">
-        <h1 class="productTables">energy {{$categoryItem->name}}</h1>
+        <h1 class="productTables">{{$categoryItem->name}}</h1>
                 <tr>
 
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug )}}"><img class="shopProductImages energyImageSize"
@@ -71,7 +71,7 @@
 
         <table>
             <table class="productTables">
-                <h1 class="productTables">zero sugar {{$categoryItem->name}}</h1>
+                <h1 class="productTables">{{$categoryItem->name}}</h1>
                 <tr>
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages carbonatedImageSize"
                                 src="{{ url('assets/images/product-images/Berry Blast cda6b2/Carbonated/berryBlastZeroSugarTransparent.png') }}"></a>
@@ -128,7 +128,7 @@
 
         <table>
             <table class="productTables">
-                <h1 class="productTables">hydration {{$categoryItem->name}}</h1>
+                <h1 class="productTables">{{$categoryItem->name}}</h1>
                 <tr>
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages hydrationImageSize"
                                 src="{{ url('assets/images/product-images/Berry Blast cda6b2/Hydration/berryBlastHydrationTransparent.png') }}"></a>
