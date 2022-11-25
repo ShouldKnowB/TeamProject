@@ -9,7 +9,7 @@
 
     <!-- BEGINNING OF ENERGY DRINKS SECTION  -->
     <div class="everythingOnThisDiv">
-
+        @if($categoryItem->id == 1)
         <table>
             <table class="productTables">
         <h1 class="productTables">{{$categoryItem->name}}</h1>
@@ -62,6 +62,7 @@
             </table>
 
         </table>
+        @endif
 
         <!-- END OF ENERGY DRINKS SECTION  -->
 
@@ -69,6 +70,7 @@
 
         <!-- BEGINNING OF ZERO SUGAR DRINKS SECTION  -->
 
+        @if($categoryItem->id == 2)
         <table>
             <table class="productTables">
                 <h1 class="productTables">{{$categoryItem->name}}</h1>
@@ -119,15 +121,17 @@
             </table>
 
         </table>
+        @endif
 
         <!-- END OF CARBONATED DRINKS SECTION  -->
 
         <br><br>
 
         <!-- BEGINNING OF HYDRATION DRINKS SECTION  -->
-
+        @if($categoryItem->id == 3)
         <table>
             <table class="productTables">
+
                 <h1 class="productTables">{{$categoryItem->name}}</h1>
                 <tr>
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages hydrationImageSize"
@@ -156,6 +160,8 @@
                 </tr>
             </table>
 
+
+
             <table class="productTables">
                 <tr>
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages hydrationImageSize"
@@ -176,6 +182,7 @@
             </table>
 
         </table>
+        @endif
     </div>
 @empty
 <div class="col-md-12">
