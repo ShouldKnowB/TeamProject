@@ -14,7 +14,6 @@
             <table class="productTables">
         <h1 class="productTables">{{$categoryItem->name}}</h1>
                 <tr>
-
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug )}}"><img class="shopProductImages energyImageSize"
                                 src="{{ asset('assets/images/product-images/Berry Blast cda6b2/Energy/berryBlastEnergyTransparent.png') }}"></a>
                         <br><br>
@@ -22,7 +21,7 @@
                         <div>
                             <p class='drinkName'>BERRY BLAST</p>
                         </div>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
 
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages energyImageSize"
@@ -31,14 +30,14 @@
                         <div>
                             <p class='drinkName'>BLUE RASPBERRY</p>
                         </div>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
 
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages energyImageSize"
                                 src="{{ url('assets/images/product-images/Lime and lemon ecf7e1/Energy/limeAndLemonEnergyTransparent.png') }}"></a>
                         <br><br>
                         <p class='drinkName'>LIME AND LEMON</p>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                 </tr>
             </table>
 
@@ -48,7 +47,7 @@
                                 src="{{ url('assets/images/product-images/Tropical ffe1b3/Energy/tropicalEnergyTransparent.png') }}"></a>
                         <br><br>
                         <p class='drinkName'>TROPICAL</p>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
 
                     </th>
@@ -56,11 +55,13 @@
                                 src="{{ url('assets/images/product-images/Tart Cherry ffb6b6/Energy/tartCherryZeroSugarEnergyTransparent.png') }}"></a>
                         <br><br>
                         <p class='drinkName'>TART CHERRY</p>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
                 </tr>
             </table>
-
+        </table>
+        <table class="productTables">
+        <tr> <th> <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a></th></tr>
         </table>
         @endif
 
@@ -81,7 +82,7 @@
                         <div>
                             <p class='drinkName'>BERRY BLAST</p>
                         </div>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
 
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages carbonatedImageSize"
@@ -90,14 +91,14 @@
                         <div>
                             <p class='drinkName'>BLUE RASPBERRY</p>
                         </div>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
 
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages carbonatedImageSize"
                                 src="{{ url('assets/images/product-images/Lime and lemon ecf7e1/Carbonated/limeAndLemonZeroSugarTransparent.png') }}"></a>
                         <br><br>
                         <p class='drinkName'>LIME AND LEMON</p>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                 </tr>
             </table>
 
@@ -107,7 +108,7 @@
                                 src="{{ url('assets/images/product-images/Tropical ffe1b3/Carbonated/tropicalZeroSugarTransparent.png') }}"></a>
                         <br><br>
                         <p class='drinkName'>TROPICAL</p>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
 
                     </th>
@@ -115,12 +116,14 @@
                                 src="{{ url('assets/images/product-images/Tart Cherry ffb6b6/Carbonated/tartCherryZeroSugarTransparent.png') }}"></a>
                         <br><br>
                         <p class='drinkName'>TART CHERRY</p>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
                 </tr>
             </table>
-
         </table>
+        <table class="productTables">
+            <tr> <th> <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a></th></tr>
+            </table>
         @endif
 
         <!-- END OF CARBONATED DRINKS SECTION  -->
@@ -140,7 +143,7 @@
                         <div>
                             <p class='drinkName'>BERRY BLAST</p>
                         </div>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
 
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages hydrationImageSize"
@@ -149,14 +152,14 @@
                         <div>
                             <p class='drinkName'>BLUE RASPBERRY</p>
                         </div>
-                        <a href{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
 
                     <th class="cellPaddingPX"><a href="{{url('/store/'. $categoryItem->slug)}}"><img class="shopProductImages hydrationImageSize"
                                 src="{{ url('assets/images/product-images/Lime and lemon ecf7e1/Hydration/limeAndLemonHydrationTransparent.png') }}"></a>
                         <br><br>
                         <p class='drinkName'>LIME AND LEMON</p>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                 </tr>
             </table>
 
@@ -168,7 +171,7 @@
                                 src="{{ url('assets/images/product-images/Tropical ffe1b3/Hydration/tropicalHydrationTransparent.png') }}"></a>
                         <br><br>
                         <p class='drinkName'>TROPICAL</p>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
 
                     </th>
@@ -176,12 +179,14 @@
                                 src="{{ url('assets/images/product-images/Tart Cherry ffb6b6/Hydration/tartCherryHydrationTransparent.png') }}"></a>
                         <br><br>
                         <p class='drinkName'>TART CHERRY</p>
-                        <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a>
+
                     </th>
                 </tr>
             </table>
-
         </table>
+        <table class="productTables">
+            <tr> <th> <a href="{{url('/store/'. $categoryItem->slug)}}"><button class="shopAddToCartButtonCSS">VIEW MORE</button></a></th></tr>
+            </table>
         @endif
     </div>
 @empty
