@@ -147,3 +147,34 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
      *
      ***************************************************************************************/
 
+     // <!-- /***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce - Part 32: How to make Quantity increment decrement using livewire in laravel 9>
+// *   Author: <Funda of Web IT>
+// *   Date: <20 August 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: <https://www.youtube.com/watch?v=-sfej8ejXKs&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=4>
+// *
+// ***************************************************************************************/ -->
+
+// <!-- /***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce -Part 33: Add to Cart - How to Add product to cart using Livewire in Laravel 9>
+// *   Author: <Funda of Web IT>
+// *   Date: <22 August 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: https://www.youtube.com/watch?v=Iy_KLHg4Yn0&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=3>
+// ***************************************************************************************/ -->
+//***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce -Part 34: Show Cart items count using livewire event listeners in laravel 9>
+// *   Author: <Funda of Web IT>
+// *   Date: <28 August 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: <https://www.youtube.com/watch?v=x-izhuL-uU0&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=1>
+// ***************************************************************************************/ -->
+
+

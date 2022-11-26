@@ -74,3 +74,12 @@
     Type:<Computer Program>
     Web Address: <https://www.youtube.com/watch?v=kIyM4UUbKwM&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=9>
 ***************************************************************************************/ -->
+// <!-- /***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce -Part 28: How to show success message in Livewire | Integrate Alertify JS in Laravel>
+// *   Author: <Funda of Web IT>
+// *   Date: <16 August 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: <https://www.youtube.com/watch?v=s-LW_HcpRg4&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=2>
+// ***************************************************************************************/ -->
