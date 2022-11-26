@@ -808,13 +808,8 @@ footer ul {
     border-color: transparent;
 }
 
-<<<<<<< HEAD
 .checkoutbtn:hover{
     transform: scale(1.1);
-=======
-.checkoutbtn:hover {
-    transform: scale(1.2);
->>>>>>> abb726f70c08868844ed5c0e6d2c49c11ad8cbff
 }
 
 .cart-centre {
