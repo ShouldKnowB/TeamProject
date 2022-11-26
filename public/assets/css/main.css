@@ -1,5 +1,5 @@
 * {
-    font-family: "Gill Sans", sans-serif;
+    font-family: "Arimo", sans-serif;
 }
 
 /** -------------------------------------------------------- NAVBAR CSS ----------------------------------------------------------------------**/
@@ -526,6 +526,7 @@ input[type="checkbox"] {
 /** -------------------------------------------------------- HOME PAGE CSS ----------------------------------------------------------------------**/
 body {
     background-color: #fff; /* Fallback For Welcome Page*/
+
 }
 
 body .welcome-body {
@@ -1143,3 +1144,61 @@ div.row.justify-content-center {
     border-color: #000;
 }
 /** -------------------------------------------------------- END OF REGISTER PAGE CSS --------------------------------------------------------------**/
+/** -------------------------------------------------------- Individual Product Page CSS --------------------------------------------------------------**/
+/* Product View */
+.product-view{
+    margin-top: 40px ;
+}
+.w100{
+    margin-top: 50px ;
+}
+.product-view .product-name{
+    font-size: 24px;
+    color: #000;
+
+}
+.product-view .product-name .label-stock{
+    font-size: 13px;
+    padding: 4px 13px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    float: right;
+}
+.product-view .product-path{
+    font-size: 13px;
+    font-weight: 500;
+    color: #252525;
+    margin-bottom: 16px;
+}
+.product-view .selling-price{
+    font-size: 26px;
+    color: #000;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.product-view .btn1{
+    border: 1px solid;
+    margin-right: 3px;
+    border-radius: 0px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.product-view .btn1:hover{
+    background-color: #2874f0;
+    color: #fff;
+}
+.product-view .input-quantity{
+    border: 1px solid #000;
+    margin-right: 3px;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 58px;
+    outline: none;
+    text-align: center;
+}
+/* Product View */
+
+
+/** --------------------------------------------------------End of Individual Product Page CSS --------------------------------------------------------------**/

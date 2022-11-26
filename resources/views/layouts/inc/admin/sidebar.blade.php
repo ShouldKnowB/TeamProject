@@ -55,25 +55,4 @@
             </div>
           </li>
 
-
-          <!-- Flavours -->
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#flavours" aria-expanded="false" aria-controls="flavours">
-                <i class="mdi mdi-emoticon-tongue menu-icon"></i>
-              <span class="menu-title">Flavours</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="flavours">
-              <ul class="nav flex-column ">
-                <li class="nav-item"> <a class="nav-link" href="{{url('admin/flavours/create')}}">Add Flavours</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="{{url('admin/flavours')}}">View Flavours</a></li>
-              </ul>
-            </div>
-          </li>
-
-
-
-
-
-
       </nav>

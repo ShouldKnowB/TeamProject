@@ -51,12 +51,6 @@
                       </button>
                       </li>
 
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="flavours-tab" data-bs-toggle="tab" data-bs-target="#flavours-tab-pane" type="button" role="tab" >
-                          Product Flavour
-                      </button>
-                      </li>
-
                   </ul>
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade border p-3 show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
@@ -155,114 +149,15 @@
                     @endif
                 </div>
             </div>
-
-            <div class="tab-pane fade border p-3" id="flavours-tab-pane" role="tabpanel" tabindex="0">
-                <div class="mb3">
-                    <label>Select Flavour</label>
-                    <hr/>
-                    <div class="row">
-                        @forelse ($flavours as $flavoursitem)
-                        <div class="col-md-3">
-                        <div class="p-2 border mb-2">
-                        Flavour: <input type="checkbox" name="flavours[{{ $flavoursitem->id}}]" value="{{ $flavoursitem->id}} "/>
-                        {{ $flavoursitem->name}}
-                        <br/>
-                        Quantity: <input type="number" name="flavourquantity[{{ $flavoursitem->id}}]" style="width: 70px; border">
-                        </div>
-                    </div>
-                        @empty
-                        <div class="col-md-12">
-                            <h1>No flavours found</h1>
-                        </div>
-                        @endforelse
-                </div>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-sm table-bordered">
-                    <thead>
-                        <th>Flavour Name</th>
-                        <th>Quantity</th>
-                        <th>Delete</th>
-                    </thead>
-                    <tbody>
-                        @foreach ( $product->productFlavours as $prodFlavour)
-                        <tr class="prod-flavour-tr">
-                            @if($prodFlavour->flavour)
-                            <td>{{$prodFlavour->flavour->name}}
-                                @else
-                                No Flavour Found
-                                @endif
-                            </td>
-                            <td>
-                            <div class="input-group mb-3" style="width:150px">
-                                <input type="text" value="{{$prodFlavour->quantity}}" class="productFlavourQuantity form-control form-control -sm">
-                                <button type="button" value="{{$prodFlavour->id}}" class="updateProductFlavourBtn btn btn-primary btn-sm text-white">Update</button>
-
-                            </div>
-                        </td>
-                        <td>
-                            <button type="button" value="{{$prodFlavour->id}}" class="deleteProductFlavourBtn btn btn-danger btn-sm text-white">Delete</button>
-                        </td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-
-            </div>
-            <div class="py-4 float-end">
-                <button type="submit" class="btn btn-primary">Update</button>
-            </div>
+         <div class="py-4 float-end">
+             <button type="submit" class="btn btn-primary">Update</button>
+         </div>
+        </div>
         </form>
-
-                  </div>
-
+            </div>
             </div>
         </div>
-    </div>
 </div>
 
 @endsection
 
-@section('scripts')
-<script>
-    $(document).ready(function ()) {
-
-        $.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-});
-
-        $(document).on('click','.updateProductFlavourBtn', function(){
-
-            var product_id ="{{$product->id}}";
-            var prod_flavour_id = $(this).val(),
-            var qty = $(this).closest('.prod-flavour-tr').find('.productFlavourQuantity').val();
-
-            if(qty <=0){
-                alert('Quantity is required');
-                return false;
-            }
-
-            var datat = {
-                'product_id': product_id;
-                'prod_flavour_id':prod_flavour_id;
-                'qty': qty;
-            };
-
-            $.ajax({
-                type: "POST",
-                url: "/admin/product-flavour"+prod_flavour_id,
-                data: data,
-                success: function(reponse){
-                    alert(response.message)
-
-                }
-            });
-
-
-        });
-
-    }
-</script>
-@endsection

@@ -39,11 +39,6 @@ Route::controller(App\Http\Controllers\FrontendController::class)->group(functio
 Auth::routes();
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
 
-Route::get('/product_page', [App\Http\Controllers\ProductPageController::class, 'index'])->name('product_page');
-
-
-
-
 /*Admin Dashboard Routes*/
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
     Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
@@ -56,17 +51,10 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
        Route::put('/products/{product}', 'update');
        Route::get('product-image/{product_image_id}/delete','destroyImage');
        Route::get('products/{product_id}/delete','destroy');
-       Route::post('admin/product-flavour/{product_flavour_id}', 'updateProdFlavourQty');
+
 
     });
-    Route::controller(App\Http\Controllers\Admin\FlavoursController::class)->group(function () {
-        Route::get('/flavours', 'index');
-        Route::get('/flavours/create', 'create');
-        Route::post('/flavours/create', 'store');
-        Route::get('/flavours/{flavours}/edit','edit');
-        Route::put('/flavours/{flavours_id}','update');
-        Route::get('/flavours/{flavours_id}/delete','destroy');
-    });
+
     Route::controller(App\Http\Controllers\Admin\CategoryController::class)->group(function () {
         Route::get('/category', 'index');
         Route::get('/category/create', 'create');

@@ -15,7 +15,7 @@ class Cart extends Model
     protected $table = 'carts';
 
     protected $fillable = [
-        'user_id', 'product_id', 'product_flavour_id', 'quantity'
+        'user_id', 'product_id', 'quantity'
     ];
 
     /**
@@ -28,10 +28,7 @@ class Cart extends Model
         return $this->belongsTo(Product::class, 'product_id', 'id');
     }
 
-    public function productFlavour(): BelongsTo
-    {
-        return $this->belongsTo(ProductFlavour::class, 'product_flavour_id', 'id');
-    }
 
-    
+
+
 }

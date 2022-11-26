@@ -11,6 +11,8 @@ use Illuminate\Support\Str;
 use App\Models\ProductImage;
 use Illuminate\Support\Facades\File;
 
+
+
 class ProductController extends Controller
 {
     public function index()
@@ -22,8 +24,7 @@ class ProductController extends Controller
     public function create()
     {
         $categories = Category::all();
-        //$flavours = Flavours::where('status','0')->get();
-    return view('admin.products.create', compact('categories'/*,'flavours'*/));
+    return view('admin.products.create', compact('categories'));
 
     }
 
@@ -64,6 +65,7 @@ class ProductController extends Controller
                 ]);
             }
         }
+
         return redirect('/admin/products')->with('message','Product Added Sucessfully');
 
   }
@@ -72,9 +74,7 @@ class ProductController extends Controller
     {
       $categories = Category::all();
       $product = Product::findOrFail($product_id);
-      //$products_flavour = $product->productFlavours->pluck('flavours_id')->toArray();
-      //$flavours = Flavours::whereNotIn('id',$products_flavour)->get();
-    return view('admin.products.edit', compact('categories','product',/*'flavours'*/));
+      return view('admin.products.edit', compact('categories','product'));
 
     }
 
