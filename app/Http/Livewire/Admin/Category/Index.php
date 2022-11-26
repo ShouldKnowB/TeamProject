@@ -33,3 +33,15 @@ class Index extends Component
         return view('livewire.admin.category.index', ['categories' => $categories]);
     }
 }
+
+/***************************************************************************************
+*   Title: <Laravel 9 Ecom - Part 7: Category View, edit update, confirm delete using Livewire in Laravel>
+*   Author: <Funda of Web IT>
+*   Date: <29 May 2022>
+*   Code version: <1.73.1>
+*   Availability: <YouTube>
+    Type:<Computer Program>
+    Web Address: <https://www.youtube.com/watch?v=G6iJjxYWczA&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=11>
+***************************************************************************************/
+
+

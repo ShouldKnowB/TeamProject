@@ -72,11 +72,68 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
 
      });
 
+     // <!-- /***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce - Part 3: How to setup Admin Panel for ecommerce in laravel 9>
+// *   Author: <Funda of Web IT>
+// *   Date: <24 May 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: <https://www.youtube.com/watch?v=uG6QlZ938Ow&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=7>
+// *
+// ***************************************************************************************/ -->
+
+     /***************************************************************************************
+*   Title: <Laravel 9 Ecom - Part 4: How to make Admin Middleware in laravel | redirect admin login to dashboard>
+*   Author: <Funda of Web IT>
+*   Date: <25 May 2022>
+*   Code version: <1.73.1>
+*   Availability: <YouTube>
+    Type:<Computer Program>
+    Web Address: <https://www.youtube.com/watch?v=2Y5IJYZbaa8&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=8>
+***************************************************************************************/
+
+     /***************************************************************************************
+*   Title: <Laravel 9 Ecom - Part 4: How to make Admin Middleware in laravel | redirect admin login to dashboard>
+*   Author: <Funda of Web IT>
+*   Date: <25 May 2022>
+*   Code version: <1.73.1>
+*   Availability: <YouTube>
+    Type:<Computer Program>
+    Web Address: <https://www.youtube.com/watch?v=2Y5IJYZbaa8&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=8>
+***************************************************************************************/
+
+     /***************************************************************************************
+     *   Title: <Laravel 9 Ecom - Part 6: Add Category in ecommerce with creating migration, model, controller>
+     *   Author: <Funda of Web IT>
+     *   Date: <28 May 2022>
+     *   Code version: <1.73.1>
+     *   Availability: <YouTube>
+         Type:<Computer Program>
+         Web Address: <https://www.youtube.com/watch?v=D9QcZIhLSlA&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=10>
+     ***************************************************************************************/
+
+     /***************************************************************************************
+*   Title: <Laravel 9 Ecom - Part 7: Category View, edit update, confirm delete using Livewire in Laravel>
+*   Author: <Funda of Web IT>
+*   Date: <29 May 2022>
+*   Code version: <1.73.1>
+*   Availability: <YouTube>
+    Type:<Computer Program>
+    Web Address: <https://www.youtube.com/watch?v=G6iJjxYWczA&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=11>
+***************************************************************************************/
 
 
-
-
-
+/***************************************************************************************
+*   Title: <Laravel 9 Ecom - Part 10: Add Product w/ multiple Images using relationship & validation in laravel>
+*   Author: <Funda of Web IT>
+*   Date: <10 June 2022>
+*   Code version: <1.73.1>
+*   Availability: <YouTube>
+    Type:<Computer Program>
+    Web Address: <https://www.youtube.com/watch?v=9roKu4-uPxA&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=12>
+*
+***************************************************************************************/
 
 
      /***************************************************************************************
@@ -89,4 +146,35 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
          Web Address: <https://www.youtube.com/watch?v=PhDkujgfa4Y&list=PLRheCL1cXHruG6bV4tAIF4AhkUMaABf3F&index=12>
      *
      ***************************************************************************************/
+
+     // <!-- /***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce - Part 32: How to make Quantity increment decrement using livewire in laravel 9>
+// *   Author: <Funda of Web IT>
+// *   Date: <20 August 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: <https://www.youtube.com/watch?v=-sfej8ejXKs&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=4>
+// *
+// ***************************************************************************************/ -->
+
+// <!-- /***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce -Part 33: Add to Cart - How to Add product to cart using Livewire in Laravel 9>
+// *   Author: <Funda of Web IT>
+// *   Date: <22 August 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: https://www.youtube.com/watch?v=Iy_KLHg4Yn0&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=3>
+// ***************************************************************************************/ -->
+//***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce -Part 34: Show Cart items count using livewire event listeners in laravel 9>
+// *   Author: <Funda of Web IT>
+// *   Date: <28 August 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: <https://www.youtube.com/watch?v=x-izhuL-uU0&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=1>
+// ***************************************************************************************/ -->
+
 

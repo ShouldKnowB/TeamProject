@@ -40,6 +40,17 @@ class Product extends Model
 
 }
 
+/***************************************************************************************
+*   Title: <Laravel 9 Ecom - Part 10: Add Product w/ multiple Images using relationship & validation in laravel>
+*   Author: <Funda of Web IT>
+*   Date: <10 June 2022>
+*   Code version: <1.73.1>
+*   Availability: <YouTube>
+    Type:<Computer Program>
+    Web Address: <https://www.youtube.com/watch?v=9roKu4-uPxA&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=12>
+*
+***************************************************************************************/
+
 
 // <!-- /***************************************************************************************
 // *   Title: <Laravel 9 Ecommerce - Part 11: Product read, edit update and delete with images in laravel>
@@ -51,3 +62,4 @@ class Product extends Model
 //     Web Address: <https://www.youtube.com/watch?v=PhDkujgfa4Y&list=PLRheCL1cXHruG6bV4tAIF4AhkUMaABf3F&index=12>
 // *
 // ***************************************************************************************/ -->
+
