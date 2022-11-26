@@ -12,7 +12,7 @@
 
     <p>
         <a href="{{ url('/') }}">
-            <img class="logo" src="{{asset('assets/images/logo(black).png')}}" alt="logo">
+            <img class="logo" src="{{ asset('assets/images/logo(black).png') }}" alt="logo">
         </a>
     </p>
 
@@ -31,15 +31,14 @@
                     <a href="{{ route('register') }}">{{ __('Register') }}</a>
                 </li>
             @endif
-
-            @elseif(Auth::user()->role_as =='1')
+        @elseif(Auth::user()->role_as == '1')
             <li class="nav-item dropdown">
                 <a href="{{ route('login') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Admin
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{{url('admin/dashboard')}}">View Admin Dashboard</a></li>
+                    <li><a class="dropdown-item" href="{{ url('admin/dashboard') }}">View Admin Dashboard</a></li>
                     <li>
 
                         <a class="dropdown-item" href="{{ route('logout') }}"
@@ -54,8 +53,7 @@
                     </li>
                 </ul>
             </li>
-
-            @else
+        @else
             <li class="nav-item dropdown">
                 <a href="{{ route('login') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -81,13 +79,15 @@
         @endguest
 
         @if (Auth::user())
-        <li><a href="{{ asset('/cart') }}"><i class="fa fa-basket-shopping"></i></a></li>
+            <li><a href="{{ asset('/cart') }}"><i class="fa fa-basket-shopping"></i></a></li>
         @else
-        <li><a onclick="pleaseLogin()"><i class="fa fa-basket-shopping"></i></a></li>
-        <script>function pleaseLogin() {
-            alert("Log in to view your basket!")}</script>
+            <li><a onclick="pleaseLogin()"><i class="fa fa-basket-shopping"></i></a></li>
+            <script>
+                function pleaseLogin() {
+                    alert("Log in to view your basket!")
+                }
+            </script>
         @endif
 
     </ul>
 </nav>
-

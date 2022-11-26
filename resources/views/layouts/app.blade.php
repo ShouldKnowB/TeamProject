@@ -16,14 +16,15 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
+
     <!-- CSS Styles -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- JS Alertify CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
     <!-- Default theme -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
 
 
     <!-- CSRF Token -->
@@ -54,12 +55,32 @@
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script>
         window.addEventListener('message', event => {
-            alertify.set('notifier','position', 'top-right');
+            alertify.set('notifier', 'position', 'top-right');
             alertify.notify(event.detail.text, event.detail.type);
-});
+        });
     </script>
 
 
 </body>
 
 </html>
+
+<!-- /***************************************************************************************
+*   Title: <Laravel 9 Ecom - Part 5: How to make admin logout system in laravel 9 for ecommerce>
+*   Author: <Funda of Web IT>
+*   Date: <26 May 2022>
+*   Code version: <1.73.1>
+*   Availability: <YouTube>
+    Type:<Computer Program>
+    Web Address: <https://www.youtube.com/watch?v=kIyM4UUbKwM&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=9>
+***************************************************************************************/ -->
+
+<!-- /***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce -Part 28: How to show success message in Livewire | Integrate Alertify JS in Laravel>
+// *   Author: <Funda of Web IT>
+// *   Date: <16 August 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: <https://www.youtube.com/watch?v=s-LW_HcpRg4&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=2>
+// ***************************************************************************************/ -->
