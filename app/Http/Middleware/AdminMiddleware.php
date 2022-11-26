@@ -25,3 +25,23 @@ class AdminMiddleware
         return $next($request);
     }
 }
+
+/***************************************************************************************
+*   Title: <Laravel 9 Ecom - Part 4: How to make Admin Middleware in laravel | redirect admin login to dashboard>
+*   Author: <Funda of Web IT>
+*   Date: <25 May 2022>
+*   Code version: <1.73.1>
+*   Availability: <YouTube>
+    Type:<Computer Program>
+    Web Address: <https://www.youtube.com/watch?v=2Y5IJYZbaa8&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=8>
+***************************************************************************************/
+
+/***************************************************************************************
+*   Title: <Laravel 9 Ecom - Part 4: How to make Admin Middleware in laravel | redirect admin login to dashboard>
+*   Author: <Funda of Web IT>
+*   Date: <25 May 2022>
+*   Code version: <1.73.1>
+*   Availability: <YouTube>
+    Type:<Computer Program>
+    Web Address: <https://www.youtube.com/watch?v=2Y5IJYZbaa8&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=8>
+***************************************************************************************/
