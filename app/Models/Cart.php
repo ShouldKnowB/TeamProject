@@ -32,3 +32,14 @@ class Cart extends Model
 
 
 }
+
+// <!-- /***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce -Part 33: Add to Cart - How to Add product to cart using Livewire in Laravel 9>
+// *   Author: <Funda of Web IT>
+// *   Date: <22 August 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: <https://www.youtube.com/watch?v=Iy_KLHg4Yn0&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=3>
+// ***************************************************************************************/ -->
+
