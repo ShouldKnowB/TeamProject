@@ -785,11 +785,12 @@ footer ul {
     line-height: 90px;
 }
 
-.cart-remove a {
+.cart-remove button {
     color: red;
     font-weight: 200;
     cursor: pointer;
-    text-decoration: none;
+    border: none;
+    background-color: transparent;
 }
 
 .cart-remove:hover {
