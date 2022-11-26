@@ -10,21 +10,21 @@
         <div class = "col-md-12">
             <div class="cart-products">
                 <div class="cart-header" >
-                    <div class="row ">
+                    <div class="row">
                         <div class="col-md-6" >
                             <h5 class="cart-header">Products</h5>
                         </div>
                         <div class="col-md-1">
-                            <h5 class="cart-header">Price</h5>
+                            <h5 class="cart-header cart-centre">Price</h5>
                         </div>
                         <div class="col-md-2">
-                            <h5 class="cart-header">Quantity</h5>
+                            <h5 class="cart-header cart-centre">Quantity</h5>
                         </div>
                         <div class="col-md-1">
-                            <h5 class="cart-header">Total</h5>
+                            <h5 class="cart-header cart-centre">Total</h5>
                         </div>
                         <div class="col-md-2 remove-title">
-                            <h5 class="cart-header">Remove</h5>
+                            <h5 class="cart-header cart-centre">Remove</h5>
                         </div>
                     </div>
                 </div>
@@ -41,23 +41,23 @@
                                     </label>
                             </a>
                         </div>
-                        <div class="col-md-1 my-auto">
+                        <div class="col-md-1 my-auto cart-centre">
                             <label class="cart-price">
                                 <h5>£3</h5>
                             </label>
                         </div>
-                        <div class="col-md-2 my-auto">
+                        <div class="col-md-2 my-auto cart-centre">
                             <button type="button" class="quantitybtn"><i class="fa fa-minus" id="quantitybtn"></i></button>
-                            <input type="text" value="" class="cart-quantity" placeholder="0"/>
+                            <input type="text" value="" class="cart-quantity cart-centre" placeholder="0"/>
                             <button type="button" class="quantitybtn"><i class="fa fa-plus" id="quantitybtn"></i></button>
                         </div>
-                        <div class="col-md-1 my-auto">
+                        <div class="col-md-1 my-auto cart-centre">
                             <label class="cart-price">
                                 <h4>...</h4>
                             </label>
                         </div>
                         <div class="col-md-2 my-auto cart-remove">
-                            <a href="" class= "remove-btn">
+                            <a href="" class="cart-centre">
                                 <h5 class="">X</h5>
                             </a>
                         </div>
