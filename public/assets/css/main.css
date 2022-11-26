@@ -713,14 +713,13 @@ footer ul {
     background: #fff;
 }
 
-.cart-products .cart-item {
+.cart-item {
     color: #000;
     text-decoration: none;
     padding: 10px 10px;
     margin-top: 10px;
     font-size: 10px;
     font-weight: 600;
-    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     border-color: lightgray;
@@ -740,13 +739,11 @@ footer ul {
 .cart-image {
     width: 50px;
     height: 50px;
-    text-align: center;
     margin-left: 5px;
     margin-right: auto;
 }
 
 .cart-name {
-    text-align: right;
     float: right;
     padding-left: 30px;
     color: #000;
@@ -765,8 +762,7 @@ footer ul {
 .cart-price {
     font-size: 10px;
     font-weight: 600;
-    padding-top: 4px 2px;
-    text-align: center;
+    padding-top: 4px;
 }
 
 .cart-quantity {
@@ -776,17 +772,15 @@ footer ul {
     color: #000;
     border: transparent;
     font-size: 20px;
-    text-align: center;
 }
 
 .quantitybtn {
     background-color: transparent;
     border: transparent;
-    text-align: center;
+    margin: -5px;
 }
 
 .remove-title {
-    text-align: center;
     vertical-align: middle;
     line-height: 90px;
 }
@@ -794,7 +788,6 @@ footer ul {
 .cart-remove a {
     color: red;
     font-weight: 200;
-    text-align: center;
     cursor: pointer;
     text-decoration: none;
 }
@@ -812,6 +805,14 @@ footer ul {
     background-color: #ffcdab;
     padding: 5px 10px;
     border-color: transparent;
+}
+
+.checkoutbtn:hover{
+    transform: scale(1.2);
+}
+
+.cart-centre{
+    text-align: center;
 }
 
 /**/
