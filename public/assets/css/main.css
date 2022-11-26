@@ -808,7 +808,7 @@ footer ul {
     border-color: transparent;
 }
 
-.checkoutbtn:hover{
+.checkoutbtn:hover {
     transform: scale(1.1);
 }
 
@@ -817,9 +817,8 @@ footer ul {
 }
 
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
     margin: 0;
-  }
+}
 
 /**/
 
@@ -1151,9 +1150,9 @@ div.row.justify-content-center {
 /** -------------------------------------------------------- END OF REGISTER PAGE CSS --------------------------------------------------------------**/
 /** -------------------------------------------------------- Individual Product Page CSS --------------------------------------------------------------**/
 /* Product View */
-.product-view{
-    margin-top: 70px ;
-    padding-top: 50px
+.product-view {
+    margin-top: 70px;
+    padding-top: 50px;
 }
 .w100 {
     margin-top: 50px;
