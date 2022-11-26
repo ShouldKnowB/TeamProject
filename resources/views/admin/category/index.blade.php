@@ -1,10 +1,9 @@
 @extends('layouts.admin')
 
 @section('content')
-<div>
-    <livewire:admin.category.index />
-</div>
-
+    <div>
+        <livewire:admin.category.index />
+    </div>
 @endsection
 
 <!-- /***************************************************************************************
@@ -26,5 +25,3 @@
     Type:<Computer Program>
     Web Address: <https://www.youtube.com/watch?v=G6iJjxYWczA&list=PLnpvTT4vbVmsEBPxoJIccMoDsMcors8gG&index=11>
 ***************************************************************************************/ -->
-
-
