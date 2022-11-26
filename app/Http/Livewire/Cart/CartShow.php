@@ -15,10 +15,7 @@ class CartShow extends Component
         $cartData = Cart::where('id', $cartId)->where('user_id', auth()->user()->id)->first();
         if($cartData)
         {
-            if($cartData->productFlavour()->where('id', $cartData->product_flavour_id)->exists())
-            {
-                $productFlavour = $cartData->productFlavour()->where('id', $cartData->product_flavour_id)->first();
-                if($productFlavour->quantity > $cartData->quantity)
+            if($cartData->quantity > 1)
                 {
                     $cartData->decrement('quantity');
                     $this->dispatchBrowserEvent('message', [
@@ -28,30 +25,13 @@ class CartShow extends Component
                     ]);
                 }else{
                     $this->dispatchBrowserEvent('message', [
-                        'text' => 'Only' .$productFlavour->quantity. 'Available',
+                        'text' => 'Quantity cannot be less than 1',
                         'type' => 'success',
                         'status' => 200
                     ]);
                 }
 
                 }else{
-                if($cartData->product->quantity > $cartData->quantity)
-                {
-                    $cartData->decrement('quantity');
-                    $this->dispatchBrowserEvent('message', [
-                        'text' => 'Quantity Updated',
-                        'type' => 'success',
-                        'status' => 200
-                    ]);
-                }else{
-                    $this->dispatchBrowserEvent('message', [
-                        'text' => 'Only' .$cartData->product->quantity. 'Available',
-                        'type' => 'success',
-                        'status' => 200
-                    ]);
-                }
-            }
-        }else{
             $this->dispatchBrowserEvent('message', [
                 'text' => 'Something Went Wrong...',
                 'type' => 'error',
@@ -65,10 +45,10 @@ class CartShow extends Component
         $cartData = Cart::where('id', $cartId)->where('user_id', auth()->user()->id)->first();
         if($cartData)
         {
-            if($cartData->productFlavour()->where('id', $cartData->product_flavour_id)->exists())
+            if($cartData->product()->where('id', $cartData->product__id)->exists())
             {
-                $productFlavour = $cartData->productFlavour()->where('id', $cartData->product_flavour_id)->first();
-                if($productFlavour->quantity > $cartData->quantity)
+                $product = $cartData->product()->where('id', $cartData->product__id)->first();
+                if($product->quantity < $cartData->quantity)
                 {
                     $cartData->increment('quantity');
                     $this->dispatchBrowserEvent('message', [
@@ -78,7 +58,7 @@ class CartShow extends Component
                     ]);
                 }else{
                     $this->dispatchBrowserEvent('message', [
-                        'text' => 'Only' .$productFlavour->quantity. 'Available',
+                        'text' => 'Only' .$product->quantity. 'Available',
                         'type' => 'success',
                         'status' => 200
                     ]);

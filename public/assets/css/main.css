@@ -725,7 +725,7 @@ footer ul {
     border-color: lightgray;
     border-radius: 5px;
     box-shadow: 5px 5px 5px lightgray;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(243, 242, 242);
 }
 
 .cart-header {
@@ -772,6 +772,7 @@ footer ul {
     color: #000;
     border: transparent;
     font-size: 20px;
+    outline: none;
 }
 
 .quantitybtn {
@@ -809,12 +810,17 @@ footer ul {
 }
 
 .checkoutbtn:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .cart-centre{
     text-align: center;
 }
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
 /**/
 
