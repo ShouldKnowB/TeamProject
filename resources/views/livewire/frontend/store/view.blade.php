@@ -1,15 +1,4 @@
 <div>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ecommerce Product View Design</title>
-
-    <link href="{{ asset('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') }}" rel="stylesheet">
-
-</head>
-<body>
     <div class="productview">
     <div class="py-3 py-md-5 bg-light">
         <div class="container">
@@ -49,19 +38,18 @@
                             </button>
                         </div>
                         <div class="mt-3">
-                            <h5 class="mb-0">Product Flavour Description</h5>
+                            <h5 class="mb-0 text-center  border bg-white ">Product Flavour Description</h5>
                             <p>
                                 {!! $product->small_description!!}
                             </p>
                         </div>
-                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 mt-3">
                     <div class="card">
-                        <div class="card-header bg-white">
-                            <h4>Product Ingredients</h4>
+                        <div class="card-header mx-autobg-white">
+                            <h4 class=" text-center">Product Ingredients</h4>
                         </div>
                         <div class="card-body">
                             <p> {!! $product->ingredients!!}</p>
@@ -72,6 +60,4 @@
         </div>
     </div>
 </div>
-</body>
-</html>
 </div>
