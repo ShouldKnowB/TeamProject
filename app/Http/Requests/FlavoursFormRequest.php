@@ -30,3 +30,12 @@ class FlavoursFormRequest extends FormRequest
         ];
     }
 }
+/***************************************************************************************
+// *   Title: <Laravel 9 Ecommerce -Part 12: Color CRUD with confirm delete in laravel 9>
+// *   Author: <Funda of Web IT>
+// *   Date: <22 June 2022>
+// *   Code version: <1.73.1>
+// *   Availability: <YouTube>
+//     Type:<Computer Program>
+//     Web Address: <https://www.youtube.com/watch?v=pP2Puj1mJq8&t=1296s>
+// ***************************************************************************************/
