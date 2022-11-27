@@ -5,8 +5,8 @@
         <div class="about_us">
             <h1>About punch</h1>
             <div>
-                <div class="content">
-                    <div class="abimage">
+                <div class="ContentAb">
+                    <div class="AbImage">
                         <img src="{{ url('assets/images/Final-no-bg.png') }}" alt="">
 
                     </div>
@@ -31,12 +31,12 @@
     </section>
 
     <section>
-        <div class="wrapperab">
-            <div class="rowab">
-                <div class="imab2">
+        <div class="WrapperAb">
+            <div class="RowAb">
+                <div class="AbImg2">
                     <img src="{{ url('assets/images/V3-no-bg.png') }}" alt="">
                 </div>
-                <div class="contentab2">
+                <div class="ContentAb2">
                     <h1>OUR STORY</h1>
                     <p>Punch was developed with the goal of achieving a functional hydration drink that caters to everyone's wants and needs. Whether it be energy, carbonated, or sugar-free drinks.
                         We worked endlessly to achieve this while still delivering the best tasting drinks possible. Punch was crafted with natural fruit juices that provide a refreshing authentic flavor,
