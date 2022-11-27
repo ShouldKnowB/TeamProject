@@ -23,7 +23,7 @@
                             no matter the circumstances.
                         </p>
                         <div class="aboutUs-button">
-                            <a href="shop">See options</a>
+                            <a href="{{url ('/store')}}">See options</a>
                     </article>
                 </div>
             </div>

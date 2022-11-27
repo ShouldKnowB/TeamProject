@@ -1012,10 +1012,13 @@ div.row.justify-content-center {
     text-decoration: none;
     border: 1px solid #ffcdab;
     border-radius: 5px;
+    display: grid;
+    text-align: center;
 }
 
 .about_us article .button {
     margin-bottom: 35px;
+
 }
 
 .about_us article a:hover {
