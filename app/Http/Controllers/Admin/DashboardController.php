@@ -4,12 +4,27 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Product;
+use App\Models\Category;
+use App\Models\User;
+//use App\Models\Order;
+
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        return view('admin.dashboard');
+        $totalProducts = Product::count();
+        $totalCategories = Category::count();
+
+        $totalAllUsers = User::count();
+        $totalUser = User::where('role_as','0')->count();
+        $totalAdmin = User::where('role_as','1')->count();
+
+
+       // $totalOrder = Order::count();
+
+    return view('admin.dashboard', compact('totalProducts','totalCategories','totalAllUsers','totalUser', 'totalAdmin',/*'totalOrder'*/));
     }
 }
 

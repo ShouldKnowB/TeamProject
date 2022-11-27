@@ -43,7 +43,7 @@
                                     <td>{{ $product->name }}</td>
                                     <td>{{ $product->price }}</td>
                                     <td>{{ $product->quantity }}</td>
-                                    <td>@if ($product->quantity)
+                                    <td>@if ($product->quantity > 1)
                                         <label class="label-stock bg-success">In Stock</label>
                                     @else
                                         <label class="label-stock bg-danger">Out of Stock</label>

@@ -15,6 +15,14 @@
             </a>
         </li>
 
+        <!-- Customer Queries -->
+        <li class="nav-item">
+            <a class="nav-link" href="{{url('admin/queries')}}">
+                <i class="mdi mdi-account menu-icon"></i>
+                <span class="menu-title">Customer Queries</span>
+            </a>
+        </li>
+
         <!-- Orders -->
         <li class="nav-item">
             <a class="nav-link" href="#ui-basic">
