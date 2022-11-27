@@ -1,5 +1,5 @@
 * {
-    font-family: "Arimo", sans-serif;
+    font-family: "Gill Sans", sans-serif;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
@@ -188,6 +188,11 @@ input[type="checkbox"] {
     margin: 1rem 0 2rem;
 }
 
+.welcome-about .about-text p {
+    margin: 1rem 0 2rem;
+    line-height: 1.5;
+}
+
 .welcome-about .button {
     display: inline-block;
     padding: 10px 20px;
@@ -195,6 +200,18 @@ input[type="checkbox"] {
     color: #fff;
     border-radius: 0.5rem;
     text-decoration: none;
+}
+
+.welcome-products .products-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.welcome-products .products-heading span {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #ffcdab;
+    font-weight: 600;
 }
 
 /** -------------------------------------------------------- END OF HOME PAGE CSS ----------------------------------------------------------------------**/
