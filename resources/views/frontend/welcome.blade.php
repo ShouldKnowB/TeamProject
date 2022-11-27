@@ -20,11 +20,8 @@
             <div class="about-text">
                 <span>About Us</span>
                 <h2>We are the ultimate drink brand</h2>
-                <p>It's a drink that's made with real fruit juice, natural caffeine and electrolytes. It's got no
-                    sugar,
-                    no
-                    artificial sweeteners and no artificial colours. It's got a great taste and it's got a great
-                    name.
+                <p>It's a drink made from real fruits, natural caffeine, and electrolytes. It contains no sugar,
+                    artificial sweeteners or artificial colours. It has amazing taste and a great name.
                 </p>
                 <a href="{{ url('/about_us') }}" class="button">Find Out More</a>
             </div>
@@ -52,7 +49,7 @@
                             src="{{ url('assets/images/product-images/Blue Raspberry b836ff/Carbonated/blueRaspberryZeroSugarTransparent.png') }}">
                     </div>
                     <h2>Blue Raspberry</h2>
-                    <h3>Carbonated drink</h3>
+                    <h3>Zero sugar drink</h3>
                     <span>£3.00</span>
                 </div>
 
@@ -63,7 +60,7 @@
                     </div>
                     <h2>Lime and Lemon</h2>
                     <h3>Hydration drink</h3>
-                    <span>£3.00</span>
+                    <span>£5.00</span>
                 </div>
             </div>
         </section>
