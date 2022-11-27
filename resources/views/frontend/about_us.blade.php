@@ -29,4 +29,21 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="wrapperab">
+            <div class="rowab">
+                <div class="imab2">
+                    <img src="{{ url('assets/images/V3-no-bg.png') }}" alt="">
+                </div>
+                <div class="contentab2">
+                    <h1>OUR STORY</h1>
+                    <p>Punch was developed with the goal of achieving a functional hydration drink that caters to everyone's needs. Whether it be energy, carbonated, or sugar-free.
+                        We worked endlessly to achieve this while still delivering the best tasting drinks possible. Punch was crafted with natural fruit juices that provide a refreshing authentic flavor.
+                        leaving you wanting more with every sip. It also contains natural caffeine to give you that energy boost you may need for whatever the situation may be.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
