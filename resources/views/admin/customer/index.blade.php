@@ -22,11 +22,13 @@
                         </thead>
                         <tbody>
                             @foreach ($users as $customer)
+                            @if($customer->role_as == 0)
                                 <tr>
                                     <td>{{ $customer->id }}</td>
                                     <td>{{ $customer->name }}</td>
                                     <td>{{ $customer->email }}</td>
                                 </tr>
+                            @endif
                             @endforeach
 
 

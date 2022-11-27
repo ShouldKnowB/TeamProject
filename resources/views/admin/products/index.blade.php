@@ -23,6 +23,7 @@
                                 <th>Name</th>
                                 <th>Price</th>
                                 <th>Quantity</th>
+                                <th>Stock Availablity</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
@@ -42,6 +43,11 @@
                                     <td>{{ $product->name }}</td>
                                     <td>{{ $product->price }}</td>
                                     <td>{{ $product->quantity }}</td>
+                                    <td>@if ($product->quantity)
+                                        <label class="label-stock bg-success">In Stock</label>
+                                    @else
+                                        <label class="label-stock bg-danger">Out of Stock</label>
+                                    @endif</td>
                                     <td>{{ $product->status == '1' ? 'Hidden' : 'Visible' }}</td>
                                     <td>
                                         <a href="{{ url('admin/products/' . $product->id . '/edit') }}"
