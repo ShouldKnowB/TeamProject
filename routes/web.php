@@ -67,10 +67,8 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
 
 
      //Customer Routes
-     Route::controller(App\Http\Controllers\Admin\UserController::class)->group(function () {
-        Route::get('/customer', 'index');
+     Route::get('/customer', [App\Http\Controllers\Admin\UserController::class, 'index'])->name('cart');
 
-     });
 
      // <!-- /***************************************************************************************
 // *   Title: <Laravel 9 Ecommerce - Part 3: How to setup Admin Panel for ecommerce in laravel 9>

@@ -16,11 +16,11 @@
             <div class="footer-col">
                 <h2>drinks</h2>
                 <ul>
-                    <li><a href="{{ asset('/') }}">berry blast</a></li>
-                    <li><a href="{{ asset('/') }}">blue raspberry</a></li>
-                    <li><a href="{{ asset('/') }}">lime and lemon</a></li>
-                    <li><a href="{{ asset('/') }}">tropical</a></li>
-                    <li><a href="{{ asset('/') }}">tart cherry</a></li>
+                    <li><a href="{{ asset('/store') }}">berry blast</a></li>
+                    <li><a href="{{ asset('/store') }}">blue raspberry</a></li>
+                    <li><a href="{{ asset('/store') }}">lime and lemon</a></li>
+                    <li><a href="{{ asset('/store') }}">tropical</a></li>
+                    <li><a href="{{ asset('/store') }}">tart cherry</a></li>
                 </ul>
             </div>
 
