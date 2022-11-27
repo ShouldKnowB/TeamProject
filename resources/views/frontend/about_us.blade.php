@@ -38,9 +38,10 @@
                 </div>
                 <div class="contentab2">
                     <h1>OUR STORY</h1>
-                    <p>Punch was developed with the goal of achieving a functional hydration drink that caters to everyone's needs. Whether it be energy, carbonated, or sugar-free.
-                        We worked endlessly to achieve this while still delivering the best tasting drinks possible. Punch was crafted with natural fruit juices that provide a refreshing authentic flavor.
-                        leaving you wanting more with every sip. It also contains natural caffeine to give you that energy boost you may need for whatever the situation may be.
+                    <p>Punch was developed with the goal of achieving a functional hydration drink that caters to everyone's wants and needs. Whether it be energy, carbonated, or sugar-free drinks.
+                        We worked endlessly to achieve this while still delivering the best tasting drinks possible. Punch was crafted with natural fruit juices that provide a refreshing authentic flavor,
+                        leaving you wanting more with every sip. It also contains natural caffeine to give you that energy boost you may need for whatever the situation may be. If you are looking for a drink packed with fruity flavours
+                        while providing the benefits of energy and refreshment then punch is the perfect pick for you. 
                     </p>
                 </div>
             </div>
