@@ -724,7 +724,7 @@ footer ul {
     border-color: lightgray;
     border-radius: 5px;
     box-shadow: 5px 5px 5px lightgray;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(243, 242, 242);
 }
 
 .cart-header {
@@ -771,6 +771,7 @@ footer ul {
     color: #000;
     border: transparent;
     font-size: 20px;
+    outline: none;
 }
 
 .quantitybtn {
@@ -807,13 +808,23 @@ footer ul {
     border-color: transparent;
 }
 
+<<<<<<< HEAD
+.checkoutbtn:hover{
+    transform: scale(1.1);
+=======
 .checkoutbtn:hover {
     transform: scale(1.2);
+>>>>>>> abb726f70c08868844ed5c0e6d2c49c11ad8cbff
 }
 
 .cart-centre {
     text-align: center;
 }
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
 /**/
 
@@ -1252,9 +1263,15 @@ div.row.justify-content-center {
 /** -------------------------------------------------------- END OF REGISTER PAGE CSS --------------------------------------------------------------**/
 /** -------------------------------------------------------- Individual Product Page CSS --------------------------------------------------------------**/
 /* Product View */
+<<<<<<< HEAD
+.product-view{
+    margin-top: 70px ;
+    padding-top: 50px
+=======
 .product-view {
     margin-top: 7s0px;
     padding-top: 50px;
+>>>>>>> e8482d03dc73b7906acf3da1be6307c0814628cd
 }
 .w100 {
     margin-top: 50px;
