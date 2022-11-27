@@ -80,7 +80,7 @@
                             <div class="shadow-sm bg-white p-3">
                                 <h5>Total: £<span>{{$totalPrice}}</span></h5>
                                 <hr>
-                                <button href="" class="checkoutbtn">Pay & Go</button>
+                                <button wire:click="codOrder" class="checkoutbtn">Pay & Go </a></button>
                             </div>
 
                         </div>
