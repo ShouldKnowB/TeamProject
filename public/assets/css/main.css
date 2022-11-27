@@ -848,7 +848,7 @@ div.row.justify-content-center {
     border-spacing: 50px;
     border-collapse: separate;
     font-size: 35px;
-    font-weight:bolder;
+    font-weight: bolder;
     color: #000;
 }
 
@@ -961,6 +961,7 @@ div.row.justify-content-center {
 .about_us {
     width: 100%;
     min-height: 70vh;
+    padding: 50px 100px;
 }
 
 .about_us h1 {
@@ -978,7 +979,6 @@ div.row.justify-content-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 10px;
 }
 
 .abimage {
@@ -995,7 +995,6 @@ div.row.justify-content-center {
 .about_us article {
     width: 90%;
 }
-
 
 .about_us article p {
     font-size: 28px;
@@ -1018,7 +1017,6 @@ div.row.justify-content-center {
 
 .about_us article .button {
     margin-bottom: 35px;
-
 }
 
 .about_us article a:hover {
