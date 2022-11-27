@@ -964,26 +964,21 @@ div.row.justify-content-center {
 }
 
 .about_us h1 {
-    text-transform: capitalize;
-    letter-spacing: 5px;
     text-align: center;
     padding-top: 155px;
+    text-transform: capitalize;
     font-size: 35px;
     font-weight: bold;
-    color: #000;
-}
-.about_us h1 .about {
-    font-weight: bold;
-    color: #000;
+    letter-spacing: 5px;
 }
 
 .about_us .content {
     width: 100%;
-    height: 450px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 100px;
+    padding: 0px 10px;
 }
 
 .abimage {
@@ -991,7 +986,7 @@ div.row.justify-content-center {
 }
 
 .abimage img {
-    width: 90%;
+    width: 110%;
     height: auto;
     display: block;
     margin: auto;
@@ -1001,13 +996,125 @@ div.row.justify-content-center {
     width: 90%;
 }
 
-.about_us article h3:hover {
-    color: #ffcdab;
+
+.about_us article p {
+    font-size: 28px;
+    color: #000;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.about_us article a {
+    color: #000;
+    padding: 10px 25px;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: none;
+    border: 1px solid #ffcdab;
+    border-radius: 5px;
+}
+
+.about_us article .button {
+    margin-bottom: 35px;
+}
+
+.about_us article a:hover {
+    background-color: #ffcdab;
     transition: 0.5s ease;
 }
 
-.about_us article p {
-    font-size: 18px;
+.wrapperab {
+    width: 100%;
+    min-height: 60vh;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.rowab {
+    width: 100%;
+    padding: 50px 30px;
+}
+
+.imab2 {
+    width: 35%;
+    float: right;
+}
+
+.imab2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.contentab2 {
+    width: 60%;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.contentab2 h1 {
+    font-size: 28px;
+    letter-spacing: 1.4px;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.contentab2 p {
+    font-size: 28px;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media screen and (max-width: 1510px) {
+    .about_us h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .abimage img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about_us {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .about_us article {
+        margin-top: 30px;
+    }
+
+    .about_us article h3 {
+        font-size: 18px;
+    }
+
+    .about_us article p {
+        font-size: 20px;
+    }
+
+    .about_us article .button {
+        margin-bottom: 50px;
+    }
+
+    .about_us article a {
+        padding: 8px 20px;
+        font-size: 17px;
+    }
+
+    .about_us article .button {
+        margin-bottom: 50px;
+    }
+
+    .contentab2 p {
+        font-size: 20px;
+    }
 }
 
 /** -------------------------------------------------------- LOGIN PAGE CSS --------------------------------------------------------------**/
