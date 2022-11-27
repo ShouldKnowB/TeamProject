@@ -1046,8 +1046,6 @@ div.row.justify-content-center {
     transform: scale(1.1);
 }
 
-
-
 /** END OF IMAGE SIZE BIGGER WHEN HOVERED ----------------------------------------------------------------------------------**/
 
 /** --------------------------------------------------------  END OF SHOP PAGE CSS --------------------------------------------------------------**/
@@ -1138,6 +1136,7 @@ div.row.justify-content-center {
     height: auto;
     display: block;
     margin: auto;
+    margin-top: 2rem;
 }
 
 .ContentAb2 {
@@ -1407,17 +1406,17 @@ div.row.justify-content-center {
 /** --------------------------------------------------------End of Individual Product Page CSS --------------------------------------------------------------**/
 
 /* Home Dashboard */
-.home .loggedin{
+.home .loggedin {
     padding-top: 10px;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.home .cardheader{
+.home .cardheader {
     font-weight: bold;
-    background:#ffcdab;
+    background: #ffcdab;
 }
-.home .header{
+.home .header {
     font-weight: bold;
 }
 
