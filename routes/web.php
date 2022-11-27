@@ -1,9 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AboutusController;
-use App\Http\Controllers\ContactusController;
-use App\Http\Controllers\ShopController;
+
 
 
 /*
@@ -26,6 +24,7 @@ Route::controller(App\Http\Controllers\FrontendController::class)->group(functio
     Route::get('/store/{category_slug}','products');
     Route::get('/store/{category_slug}/{product_slug}','productView');
     Route::get('/contact_us', 'contactus');
+    Route::post('/contact_us', 'store');
     Route::get('/home', 'home');
     Route::get('/faqs', 'faqs');
     Route::get('/terms_and_conditions', 'tandc');
@@ -65,6 +64,7 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
      });
      //Customer Routes
      Route::get('/customer', [App\Http\Controllers\Admin\UserController::class, 'index']);
+     Route::get('/queries', [App\Http\Controllers\Admin\QueriesController::class, 'index']);
     });
 
 

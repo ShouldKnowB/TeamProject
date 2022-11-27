@@ -1,9 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\CustomerQueries;
 use App\Models\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\http\Requests\QueriesFormRequest;
+
+
 
 class FrontendController extends Controller
 {
@@ -23,6 +28,16 @@ class FrontendController extends Controller
     public function contactus()
     {
         return view('frontend.contact_us');
+    }
+    public function store(QueriesFormRequest $request){
+       $validatedData = $request->validated();
+       $queries = new CustomerQueries;
+       $queries->name = $validatedData['name'];
+       $queries->email = $validatedData['email'];
+       $queries->queries = $validatedData['queries'];
+       $queries->save();
+
+       return redirect('/contact_us')->with('message','Query Submitted');
     }
     public function faqs()
     {
