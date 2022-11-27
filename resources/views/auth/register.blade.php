@@ -61,7 +61,7 @@
                 </button>
             </div>
         </div>
-        <p> Already Have An Account? <a href="{{ url('register') }}">Login!</a></p>
+        <p> Already Have An Account? <a href="{{ url('login') }}">Login!</a></p>
         </form>
     </div>
 @endsection
