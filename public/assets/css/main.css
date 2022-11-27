@@ -1054,7 +1054,7 @@ div.row.justify-content-center {
 .about_us {
     width: 100%;
     min-height: 70vh;
-    padding: 50px 100px;
+    padding: 20px 100px;
 }
 
 .about_us h1 {
@@ -1122,11 +1122,7 @@ div.row.justify-content-center {
     min-height: 60vh;
     overflow: hidden;
     background-color: #fff;
-}
-
-.rowab {
-    width: 100%;
-    padding: 50px 30px;
+    padding: 20px 100px;
 }
 
 .imab2 {
