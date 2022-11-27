@@ -10,7 +10,7 @@
                     </div>
                     <div class="col-md-7 mt-3">
                         <div class="product-view">
-                            <h4 class="product-name">
+                            <h4 class="product-name header">
                                 {{ $product->name }}
                                 @if ($product->quantity)
                                     <label class="label-stock bg-success">In Stock</label>
@@ -41,7 +41,8 @@
                                 </button>
                             </div>
                             <div class="mt-3">
-                                <h5 class="mb-0 text-center  border bg-white ">Product Flavour Description</h5>
+                                <h5 class="header mb-0 text-center">Product Flavour Description</h5>
+                                <hr>
                                 <p>
                                     {!! $product->small_description !!}
                                 </p>
@@ -50,14 +51,15 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 mt-3">
-                            <div class="card">
-                                <div class="card-header mx-autobg-white">
-                                    <h4 class=" text-center">Product Ingredients</h4>
+                            <div class="card text-dark mt-3">
+                                <div class="card-header text-center" style="font-weight: bold">
+                                    Product Ingredients
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body d-flex justify-content-center">
                                     <p> {!! $product->ingredients !!}</p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

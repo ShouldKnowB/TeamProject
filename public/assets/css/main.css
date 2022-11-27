@@ -1412,6 +1412,10 @@ div.row.justify-content-center {
     outline: none;
     text-align: center;
 }
+.product-view .header{
+    font-weight: bold;
+}
+
 /* Product View */
 
 /** --------------------------------------------------------End of Individual Product Page CSS --------------------------------------------------------------**/
