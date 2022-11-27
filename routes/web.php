@@ -63,11 +63,12 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
         Route::put('/category/{category}', 'update');
 
      });
+     //Customer Routes
+     Route::get('/customer', [App\Http\Controllers\Admin\UserController::class, 'index']);
     });
 
 
-     //Customer Routes
-     Route::get('/customer', [App\Http\Controllers\Admin\UserController::class, 'index'])->name('cart');
+
 
 
      // <!-- /***************************************************************************************
