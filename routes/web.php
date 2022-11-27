@@ -39,6 +39,8 @@ Route::controller(App\Http\Controllers\FrontendController::class)->group(functio
 Auth::routes();
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
 
+Route::get('/order', [App\Http\Controllers\OrderController::class, 'index'])->name('order');
+
 /*Admin Dashboard Routes*/
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
     Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
