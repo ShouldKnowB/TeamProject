@@ -1080,7 +1080,7 @@ div.row.justify-content-center {
     letter-spacing: 5px;
 }
 
-.about_us .content {
+.about_us .ContentAb {
     width: 100%;
     height: auto;
     display: flex;
@@ -1088,11 +1088,11 @@ div.row.justify-content-center {
     align-items: center;
 }
 
-.abimage {
+.AbImage {
     width: 90%;
 }
 
-.abimage img {
+.AbImage img {
     width: 110%;
     height: auto;
     display: block;
@@ -1131,7 +1131,7 @@ div.row.justify-content-center {
     transition: 0.5s ease;
 }
 
-.wrapperab {
+.WrapperAb {
     width: 100%;
     min-height: 60vh;
     overflow: hidden;
@@ -1139,19 +1139,19 @@ div.row.justify-content-center {
     padding: 20px 100px;
 }
 
-.imab2 {
+.AbImg2 {
     width: 35%;
     float: right;
 }
 
-.imab2 img {
+.AbImg2 img {
     width: 100%;
     height: auto;
     display: block;
     margin: auto;
 }
 
-.contentab2 {
+.ContentAb2 {
     width: 60%;
     height: auto;
     float: left;
@@ -1159,7 +1159,7 @@ div.row.justify-content-center {
     padding-top: 20px;
 }
 
-.contentab2 h1 {
+.ContentAb2 h1 {
     font-size: 28px;
     letter-spacing: 1.4px;
     margin-top: 25px;
@@ -1168,7 +1168,7 @@ div.row.justify-content-center {
     font-weight: bold;
 }
 
-.contentab2 p {
+.ContentAb2 p {
     font-size: 28px;
     margin-top: 10px;
     line-height: 1.5;
@@ -1181,7 +1181,7 @@ div.row.justify-content-center {
         text-align: center;
     }
 
-    .abimage img {
+    .AbImage img {
         height: auto;
         width: 100%;
     }
@@ -1216,7 +1216,7 @@ div.row.justify-content-center {
         margin-bottom: 50px;
     }
 
-    .contentab2 p {
+    .ContentAb2 p {
         font-size: 20px;
     }
 }
