@@ -39,28 +39,23 @@
                                         src="{{ url('assets/images/product-images/Lime and lemon ecf7e1/Energy/limeAndLemonEnergyTransparent.png') }}"></a>
                                 <br><br>
                                 <p class='drinkName'>LIME AND LEMON</p>
+                                <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
+                                    class="shopProductImages energyImageSize"
+                                    src="{{ url('assets/images/product-images/Tropical ffe1b3/Energy/tropicalEnergyTransparent.png') }}"></a>
+                            <br><br>
+                            <p class='drinkName'>TROPICAL</p>
 
-                        </tr>
-                    </table>
+                        </th>
 
-                    <table class="productTables">
-                        <tr>
-                            <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
-                                        class="shopProductImages energyImageSize"
-                                        src="{{ url('assets/images/product-images/Tropical ffe1b3/Energy/tropicalEnergyTransparent.png') }}"></a>
-                                <br><br>
-                                <p class='drinkName'>TROPICAL</p>
+                        </th>
+                        <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
+                                    class="shopProductImages energyImageSize"
+                                    src="{{ url('assets/images/product-images/Tart Cherry ffb6b6/Energy/tartCherryZeroSugarEnergyTransparent.png') }}"></a>
+                            <br><br>
+                            <p class='drinkName'>TART CHERRY</p>
 
-                            </th>
+                        </th>
 
-                            </th>
-                            <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
-                                        class="shopProductImages energyImageSize"
-                                        src="{{ url('assets/images/product-images/Tart Cherry ffb6b6/Energy/tartCherryZeroSugarEnergyTransparent.png') }}"></a>
-                                <br><br>
-                                <p class='drinkName'>TART CHERRY</p>
-
-                            </th>
                         </tr>
                     </table>
                 </table>
@@ -109,27 +104,23 @@
                                 <br><br>
                                 <p class='drinkName'>LIME AND LEMON</p>
 
-                        </tr>
-                    </table>
+                                <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
+                                    class="shopProductImages carbonatedImageSize"
+                                    src="{{ url('assets/images/product-images/Tropical ffe1b3/Carbonated/tropicalZeroSugarTransparent.png') }}"></a>
+                            <br><br>
+                            <p class='drinkName'>TROPICAL</p>
 
-                    <table class="productTables">
-                        <tr>
-                            <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
-                                        class="shopProductImages carbonatedImageSize"
-                                        src="{{ url('assets/images/product-images/Tropical ffe1b3/Carbonated/tropicalZeroSugarTransparent.png') }}"></a>
-                                <br><br>
-                                <p class='drinkName'>TROPICAL</p>
+                        </th>
 
-                            </th>
+                        </th>
+                        <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
+                                    class="shopProductImages carbonatedImageSize"
+                                    src="{{ url('assets/images/product-images/Tart Cherry ffb6b6/Carbonated/tartCherryZeroSugarTransparent.png') }}"></a>
+                            <br><br>
+                            <p class='drinkName'>TART CHERRY</p>
 
-                            </th>
-                            <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
-                                        class="shopProductImages carbonatedImageSize"
-                                        src="{{ url('assets/images/product-images/Tart Cherry ffb6b6/Carbonated/tartCherryZeroSugarTransparent.png') }}"></a>
-                                <br><br>
-                                <p class='drinkName'>TART CHERRY</p>
+                        </th>
 
-                            </th>
                         </tr>
                     </table>
                 </table>
@@ -178,29 +169,23 @@
                                 <br><br>
                                 <p class='drinkName'>LIME AND LEMON</p>
 
-                        </tr>
-                    </table>
+                                <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
+                                    class="shopProductImages hydrationImageSize"
+                                    src="{{ url('assets/images/product-images/Tropical ffe1b3/Hydration/tropicalHydrationTransparent.png') }}"></a>
+                            <br><br>
+                            <p class='drinkName'>TROPICAL</p>
 
+                        </th>
 
+                        </th>
+                        <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
+                                    class="shopProductImages hydrationImageSize"
+                                    src="{{ url('assets/images/product-images/Tart Cherry ffb6b6/Hydration/tartCherryHydrationTransparent.png') }}"></a>
+                            <br><br>
+                            <p class='drinkName'>TART CHERRY</p>
 
-                    <table class="productTables">
-                        <tr>
-                            <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
-                                        class="shopProductImages hydrationImageSize"
-                                        src="{{ url('assets/images/product-images/Tropical ffe1b3/Hydration/tropicalHydrationTransparent.png') }}"></a>
-                                <br><br>
-                                <p class='drinkName'>TROPICAL</p>
+                        </th>
 
-                            </th>
-
-                            </th>
-                            <th class="cellPaddingPX"><a href="{{ url('/store/' . $categoryItem->slug) }}"><img
-                                        class="shopProductImages hydrationImageSize"
-                                        src="{{ url('assets/images/product-images/Tart Cherry ffb6b6/Hydration/tartCherryHydrationTransparent.png') }}"></a>
-                                <br><br>
-                                <p class='drinkName'>TART CHERRY</p>
-
-                            </th>
                         </tr>
                     </table>
                 </table>
