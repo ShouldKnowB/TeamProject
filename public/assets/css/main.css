@@ -1313,3 +1313,35 @@ div.row.justify-content-center {
 /* Product View */
 
 /** --------------------------------------------------------End of Individual Product Page CSS --------------------------------------------------------------**/
+
+/* Home Dashboard */
+.home .loggedin{
+    padding-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.home .cardheader{
+    font-weight: bold;
+    background:#ffcdab;
+}
+.home .header{
+    font-weight: bold;
+}
+
+.home .orderbtn {
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: right;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #ffcdab;
+    padding: 5px 10px;
+    border-color: transparent;
+}
+
+.home .orderbtn:hover {
+    transform: scale(1.1);
+}
+/* End of Home Dashbord */
