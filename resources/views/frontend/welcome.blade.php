@@ -3,9 +3,7 @@
 <body>
     <div class="welcome">
 
-        <!-- <video autoplay loop muted playsinline class="welcome-bg-video">
-            <source src="{{ url('assets/images/punchVideo.mp4') }}" type="video/mp4">
-            </video> -->
+
 
         <div class="welcome-bg">
             <h1>energise, hydrate, zero sugar</h1>
