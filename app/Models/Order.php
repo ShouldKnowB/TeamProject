@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\AllOrders;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Order extends Model
 {
@@ -20,8 +21,11 @@ class Order extends Model
 
     ];
 
-    public function all_orders(){
+    public function all_orders(): HasMany
+    {
+        return $this->hasMany(AllOrders::class, 'order_id','id');
 
-        return $this->hasMany(AllOrders::class, 'order_id','product_id','quantity','price');
     }
+
+
 }

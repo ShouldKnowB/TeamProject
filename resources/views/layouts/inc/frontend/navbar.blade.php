@@ -82,6 +82,7 @@
             <li><a href="{{ asset('/cart') }}"><i class="fa fa-basket-shopping"></i></a></li>
         @else
             <li><a onclick="pleaseLogin()"><i class="fa fa-basket-shopping"></i></a></li>
+
             <script>
                 function pleaseLogin() {
                     alert("Log in to view your basket!")

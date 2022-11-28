@@ -8,11 +8,18 @@
             @endif
            <div class="me-md-3 me-xl-5">
             <h2>Dashboard, </h2>
-            <p class="mb-md-0">Your analytics dashboard template.</p>
+            <p class="mb-md-0">Your analytics dashboard.</p>
             <hr>
            </div>
            <div class="row">
-
+            <!--Total Orders-->
+            <div class="col-md-3">
+                <div class="card card-body bg-primary text-white mb-3">
+                    <label>Total Orders</label>
+                    <h1>{{$totalOrder}}</h1>
+                    <a href="{{url('admin/orders')}}" class="text-white">view</a>
+                </div>
+            </div>
 
             <div class="col-md-3">
                 <div class="card card-body bg-success text-white mb-3">

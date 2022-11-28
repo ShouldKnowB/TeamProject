@@ -20,7 +20,7 @@
                                 View Recent Orders
                             </div>
                             <div class="card-body d-flex justify-content-center">
-                                    <button href="" class="orderbtn">My Orders</button>
+                                    <a href="{{ url('order') }}"><button  class="orderbtn">My Orders</button></a>
                             </div>
                         </div>
                         <div class="card text-dark mt-3">
