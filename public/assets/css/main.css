@@ -98,7 +98,7 @@ input[type="checkbox"] {
 
 /** -------------------------------------------------------- WELCOME PAGE CSS ----------------------------------------------------------------------**/
 .welcome-bg {
-    background-image: linear-gradient(to right, #ffb6b6, #f2ff68);
+    background-image: linear-gradient(to right, #ffb6b6, #aeff68);
     min-height: 100vh;
     display: grid;
     place-items: center;
@@ -953,8 +953,7 @@ div.row.justify-content-center {
     display: none;
 }
 
-.theThreeBanners{
-
+.theThreeBanners {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -1413,7 +1412,7 @@ div.row.justify-content-center {
     outline: none;
     text-align: center;
 }
-.product-view .header{
+.product-view .header {
     font-weight: bold;
 }
 
@@ -1452,7 +1451,7 @@ div.row.justify-content-center {
     transform: scale(1.1);
 }
 
-.orders{
+.orders {
     padding-top: 50px;
 }
 /* End of Home Dashbord */
