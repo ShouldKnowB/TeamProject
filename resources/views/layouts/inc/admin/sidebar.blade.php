@@ -25,7 +25,7 @@
 
         <!-- Orders -->
         <li class="nav-item">
-            <a class="nav-link" href="#ui-basic">
+            <a class="nav-link" href="{{url('admin/orders')}}">
                 <i class="mdi mdi-credit-card-multiple menu-icon"></i>
                 <span class="menu-title">Orders</span>
             </a>

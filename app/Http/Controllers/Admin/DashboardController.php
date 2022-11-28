@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Category;
 use App\Models\User;
-//use App\Models\Order;
+use App\Models\Order;
 
 
 class DashboardController extends Controller
@@ -22,9 +22,9 @@ class DashboardController extends Controller
         $totalAdmin = User::where('role_as','1')->count();
 
 
-       // $totalOrder = Order::count();
+       $totalOrder = Order::count();
 
-    return view('admin.dashboard', compact('totalProducts','totalCategories','totalAllUsers','totalUser', 'totalAdmin',/*'totalOrder'*/));
+    return view('admin.dashboard', compact('totalProducts','totalCategories','totalAllUsers','totalUser', 'totalAdmin','totalOrder'));
     }
 }
 

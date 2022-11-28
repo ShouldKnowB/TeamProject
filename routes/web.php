@@ -36,9 +36,11 @@ Route::controller(App\Http\Controllers\FrontendController::class)->group(functio
 
 });
 Auth::routes();
-Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
-
-Route::get('/order', [App\Http\Controllers\OrderController::class, 'index'])->name('order');
+Route::middleware(['auth'])->group(function(){
+    Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
+    Route::get('/order', [App\Http\Controllers\OrderController::class, 'index'])->name('order');
+    Route::get('/order/{orderId}', [App\Http\Controllers\OrderController::class, 'show'])->name('showorder');
+});
 
 /*Admin Dashboard Routes*/
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
@@ -55,7 +57,7 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
 
 
     });
-
+    //category routes
     Route::controller(App\Http\Controllers\Admin\CategoryController::class)->group(function () {
         Route::get('/category', 'index');
         Route::get('/category/create', 'create');
@@ -67,6 +69,15 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() {
      //Customer Routes
      Route::get('/customer', [App\Http\Controllers\Admin\UserController::class, 'index']);
      Route::get('/queries', [App\Http\Controllers\Admin\QueriesController::class, 'index']);
+
+     // orders
+     Route::controller(App\Http\Controllers\OrderController::class)->group(function () {
+        Route::get('/orders', 'order');
+        Route::get('/orders/{orderId}', 'showadmin');
+
+
+     });
+
     });
 
 
