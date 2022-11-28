@@ -221,7 +221,7 @@
                                         <p class='drinkName'>{{ $productItem->name }}</p>
                                     </div>
                                     <a
-                                        href{{ url('/store/' . $productItem->category->slug . '/' . $productItem->slug) }}"><button
+                                        href="{{ url('/store/' . $productItem->category->slug . '/' . $productItem->slug) }}"><button
                                             class="shopAddToCartButtonCSS">SHOP</button></a>
                                 </th>
                             @endif
