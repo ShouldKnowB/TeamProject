@@ -342,6 +342,7 @@ input[type="checkbox"] {
     width: 40%;
     padding: 40px;
     background: #000;
+    border-radius: 10px;
 }
 
 .contact-form .input-box {
@@ -494,7 +495,7 @@ input[type="checkbox"] {
 
 /** -------------------------------------------------------- TERMS OF USE PAGE CSS ----------------------------------------------------------------------**/
 .terms_and_conditions {
-    margin-top: 5rem;
+    margin-top: 7rem;
     position: relative;
     min-height: 110vh;
     padding: 50px 100px;
@@ -588,7 +589,6 @@ input[type="checkbox"] {
 
 /** -------------------------------------------------------- REFUND POLICY PAGE CSS ----------------------------------------------------------------------**/
 .refund_policy {
-    margin-top: 5rem;
     position: relative;
     min-height: 110vh;
     padding: 50px 100px;
@@ -665,7 +665,7 @@ footer ul {
     flex-flow: column;
     justify-content: space-between;
     background-color: #000;
-    padding-block: 70px;
+    padding-top: 70px;
 }
 
 .footer-col {
@@ -738,7 +738,7 @@ footer ul {
     text-transform: capitalize;
     font-size: 13px;
     color: #fff;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .footer-col p.text2 {
@@ -778,7 +778,7 @@ footer ul {
 }
 
 .footer-col .socials a:hover {
-    color: #808080;
+    color: #000;
     background-color: #fff;
 }
 
@@ -1233,7 +1233,6 @@ div.row.justify-content-center {
 
 .login-page input {
     width: 500px;
-    border-radius: -10;
 }
 
 /* .login-page .forgotten {
@@ -1255,8 +1254,8 @@ div.row.justify-content-center {
     color: #999;
 }
 
-.login-page .body {
-    padding-block: 1rem;
+.login-page .email {
+    padding-bottom: 1rem;
 }
 
 .login-page a {
@@ -1304,11 +1303,14 @@ div.row.justify-content-center {
 
 .register input {
     width: 500px;
-    border-radius: -10px;
+}
+
+.register .email {
+    padding-block: 1rem;
 }
 
 .register .password {
-    padding-block: 1rem;
+    padding-bottom: 1rem;
 }
 
 .register h1 {
@@ -1321,10 +1323,6 @@ div.row.justify-content-center {
 .register p {
     font-size: 18px;
     color: #999;
-}
-
-.register .body {
-    padding-block: 1rem;
 }
 
 .register a {

@@ -5,8 +5,6 @@
         <div class="content">
             <h1 class="title">{{ __('Login') }}</h1>
 
-            <p> Please enter your e-mail and password: </p>
-
             <div class="body">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
@@ -44,7 +42,7 @@
                 </button>
             </div>
         </div>
-        <p> Don't have an account? <a href="{{ url('register') }}">Create one!</a></p>
+        <p> Don't have an account? <a href="{{ url('register') }}">Register!</a></p>
         </form>
     </div>
 @endsection

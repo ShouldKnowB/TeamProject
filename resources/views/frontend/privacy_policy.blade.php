@@ -4,17 +4,8 @@
     <section class="privacy_policy">
         <div class="content">
             <h2>privacy policy</h2>
-            <section>This site is operated by Punch LLC, and your use of it is regulated by this Privacy Policy. We are
-                committed to safeguarding your privacy while using our website. Unless you voluntarily volunteer such
-                information, no personally identifiable information is tracked or collected on the generally accessible
-                areas of the site. If you use a particular account authorised by us or a use name and password to access
-                certain portions of the site, certain information, including your user name and password, will be
-                collected and identified with the information we have on file for that user name, and the information
-                and materials you access and actions you take while logged on with that user name, will be tracked by
-                us. We never sell or give away names or other personally identifiable information to third parties for
-                direct marketing, sales, or any other reason.</section>
             <h3>introduction</h3>
-            <p> Punch LLC values your privacy and has created this Privacy Policy to explain how we collect, use,
+            <p> Punch values your privacy and has created this Privacy Policy to explain how we collect, use,
                 communicate, disclose, and utilise personal information. This Privacy Statement only applies to this
                 website. We are no longer responsible for the privacy practises of the linked website after you enter
                 it, whether through a link provided by this website or through other means. Our privacy policies are as

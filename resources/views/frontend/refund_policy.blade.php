@@ -4,15 +4,6 @@
     <section class="refund_policy">
         <div class="content">
             <h2>refund policy</h2>
-            <section>Punch LLC abides by all UK regulations.  Before packing, all parcels transported by Punch LLC are
-                inspected for any faults or defects. No broken or defective items are shipped without first informing
-                you, the receiving customer. Each bottle is sent in carefully designed packaging to provide maximum
-                protection. While we make every effort to preserve all containers, some are weaker than others and are
-                more prone to leaks and breakages.
-            </section>
-            <p class="importance">
-                Follow the steps below if you received a damaged, defective, inaccurate, or unwanted parcel.
-            </p>
             <h3>damaged and defective products</h3>
             <p>If you receive a faulty goods, you can refuse to sign for it if it is damaged or has leaked. As a result,
                 if you open the package and discover that the goods is damaged or has leaked, you will be required to
@@ -22,7 +13,7 @@
                 or sending out a new product.</p>
             <p>
             <h3>incorrect or unwanted goods</h3>
-            <p>You, as our customer, have 7 days from the date of shipment to return an unwanted item to Punch LLC. Even
+            <p>You, as our customer, have 7 days from the date of shipment to return an unwanted item to Punch. Even
                 if the product you ordered was part of a larger order. You will need to contact our Team for more
                 assistance. Please keep in mind: </p>
             <ul>
